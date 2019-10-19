@@ -13,7 +13,7 @@ Static Site Generator
 
 
 ## 명령어
-hugo 프로젝트 생성
+hugo 프로젝트 생성 (project 프로젝트명)
 ```shell
 hugo new site project
 ```
@@ -23,3 +23,7 @@ hugo new site project
 hugo server -D
 ```
 
+빌드하여 public폴더에 생성한다. (theme 테마명))
+```shell
+hugo -t theme
+```
