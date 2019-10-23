@@ -1,6 +1,5 @@
 ---
-weight: 1
-bookFlatSection: true
+weight: 2
 title: "infra"
 ---
 
