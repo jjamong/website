@@ -1,0 +1,17 @@
+entries:
+
+- title: EC2
+
+  sections:
+
+  - title: 인스턴스 생성/접속
+    url: /docs/aws/ec2/instancecreate
+
+  - title: 웹서버
+    url: /docs/aws/ec2/webserver
+
+  - title: 보안그룹
+    url: /docs/aws/ec2/securitygroup
+
+  - title: 로드 밸런서
+    url: /docs/aws/ec2/loadbalancer

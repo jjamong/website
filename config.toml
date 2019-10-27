@@ -1,4 +1,29 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
 title = "짜몽 기술 LAB"
-theme = "hugo-book"
+
+contentDir = "content/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+    weight = -130
+
+  [[menu.main]]
+    identifier = "docs"
+    name = "docs"
+    url = "/docs/"
+    weight = -120
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "/blog/"
+    weight = -110
+
+  [[menu.main]]
+    identifier = "community"
+    name = "community"
+    url = "/community/"
+    weight = -100
