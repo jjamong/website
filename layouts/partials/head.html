@@ -4,11 +4,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   {{ hugo.Generator }}
   <!-- {{ partialCached "favicons.html" . }} -->
-  {{ if eq (getenv "HUGO_ENV") "production" }}
-  <meta name="robots" content="index, follow">
-  {{ else }}
-  <meta name="robots" content="noindex, nofollow">
-  {{ end }}
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
   {{ partial "css.html" . }}
   <!-- {{ if eq (getenv "HUGO_ENV") "production" }} -->
@@ -24,7 +19,6 @@
   <!-- {{ end }} -->
   <!-- Algolia DocSearch, Reference: https://community.algolia.com/docsearch/dropdown.html -->
   <!-- Before the closing </head> -->
-  <link rel="stylesheet" hre="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149836281-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
