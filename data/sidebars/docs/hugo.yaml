@@ -8,7 +8,7 @@ entries:
     url: /docs/hugo/
 
   - title: 컨텐츠 포맷
-    url: /docs/hugo/content_format
+    url: /docs/hugo/content_format/
 
   - title: 프론트 메터
-    url: /docs/hugo/front_matter
+    url: /docs/hugo/front_matter/

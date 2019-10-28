@@ -3,15 +3,14 @@ entries:
 - title: EC2
 
   sections:
+  - title: 서버 아키텍처
+    url: /docs/aws/ec2/architecture/
 
   - title: 인스턴스 생성/접속
-    url: /docs/aws/ec2/instancecreate
+    url: /docs/aws/ec2/instancecreate/
 
   - title: 웹서버
-    url: /docs/aws/ec2/webserver
+    url: /docs/aws/ec2/webserver/
 
   - title: 보안그룹
-    url: /docs/aws/ec2/securitygroup
-
-  - title: 로드 밸런서
-    url: /docs/aws/ec2/loadbalancer
+    url: /docs/aws/ec2/securitygroup/
