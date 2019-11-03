@@ -3,6 +3,7 @@ entries:
 - title: EC2
 
   sections:
+
   - title: 서버 아키텍처
     url: /docs/aws/ec2/architecture/
 
@@ -14,3 +15,19 @@ entries:
 
   - title: 보안그룹
     url: /docs/aws/ec2/securitygroup/
+    
+  - title: Auto Scaling(오토 스케일링)
+    subsections:
+    - title: 서버 구성
+      url: /docs/aws/ec2/autoscaling/configuration/
+    - title: 그룹 생성
+      url: /docs/aws/ec2/autoscaling/groupcreate/
+    - title: stress 명령어 테스트
+      url: /docs/aws/ec2/autoscaling/test/
+      
+  - title: Elastic Load Balancing(ELB 로드 밸런싱)
+    subsections:
+    - title: ELB 생성
+      url: /docs/aws/ec2/elb/elbcreate/
+    - title: ELB 테스트
+      url: /docs/aws/ec2/elb/test/

@@ -6358,7 +6358,7 @@ html, body {
 .footer {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: -75px;
   background-color: #121212;
   padding: 0;
   height: 3.125rem; }
@@ -6460,7 +6460,6 @@ html, body {
     padding-left: 0; }
     .navbar .container .navbar-brand .navbar-item.logo {
       font-size: 1.5rem;
-      color: #fcfdfd;
       font-weight: bold;
       line-height: 2.125; }
   .navbar .navbar-menu .navbar-end .navbar-item {
@@ -7496,7 +7495,6 @@ body {
     padding-left: 1rem; }
     .navbar .container .navbar-brand .navbar-item.logo {
       font-size: 1.5rem;
-      color: #fcfdfd;
       font-weight: bold;
       line-height: 2.125; }
   .navbar .navbar-menu {
