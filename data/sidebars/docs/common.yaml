@@ -1,0 +1,11 @@
+entries:
+
+- title: Common
+
+  sections:
+
+  - title: VS Code
+    url: /docs/common/vscode/
+
+  - title: Yarn
+    url: /docs/common/yarn/

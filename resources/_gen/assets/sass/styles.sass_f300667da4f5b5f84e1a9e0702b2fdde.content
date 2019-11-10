@@ -748,10 +748,10 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   background-color: #ff3860 !important; }
 
 .has-text-black-bis {
-  color: #121212 !important; }
+  color: #34314c !important; }
 
 .has-background-black-bis {
-  background-color: #121212 !important; }
+  background-color: #34314c !important; }
 
 .has-text-black-ter {
   color: #242424 !important; }
@@ -6263,7 +6263,7 @@ html, body {
   background-color: #fbfbfb; }
 
 .hero {
-  background-color: #121212; }
+  background-color: #34314c; }
 
 .hero-body .container {
   max-width: 700px; }
@@ -6359,7 +6359,7 @@ html, body {
   position: absolute;
   width: 100%;
   bottom: -75px;
-  background-color: #121212;
+  background-color: #34314c;
   padding: 0;
   height: 3.125rem; }
   .footer .container {
@@ -6455,7 +6455,7 @@ html, body {
     width: 100%; }
 
 .navbar {
-  background: #121212; }
+  background: #34314c; }
   .navbar .container .navbar-brand {
     padding-left: 0; }
     .navbar .container .navbar-brand .navbar-item.logo {
@@ -6469,9 +6469,9 @@ html, body {
   .navbar .navbar-menu a {
     color: #fff; }
     .navbar .navbar-menu a:hover {
-      color: #e85f8f; }
+      color: #ffc0c0; }
     .navbar .navbar-menu a.is-active {
-      color: #dc1f61;
+      color: #ff7473;
       font-weight: 700; }
   .navbar .navbar-burger {
     color: #fff; }
@@ -6481,9 +6481,9 @@ html, body {
     .navbar.is-flipped .container a {
       color: #4a4a4a; }
       .navbar.is-flipped .container a:hover {
-        color: #e85f8f; }
+        color: #ffc0c0; }
       .navbar.is-flipped .container a.is-active {
-        color: #dc1f61;
+        color: #ff7473;
         font-weight: 700; }
     .navbar.is-flipped .navbar-burger {
       color: #4a4a4a; }
@@ -6498,11 +6498,11 @@ html, body {
     width: 95%;
     margin: 0 auto 0 4rem; }
     .top-menu .tabs a:hover {
-      color: #ef8cae;
-      border-bottom-color: #ef8cae; }
+      color: #ffc0c0;
+      border-bottom-color: #ffc0c0; }
     .top-menu .tabs a.is-active {
-      color: #dc1f61;
-      border-bottom-color: #dc1f61; }
+      color: #ff7473;
+      border-bottom-color: #ff7473; }
   .top-menu.fixed {
     position: fixed;
     top: 3.75rem;
@@ -6578,7 +6578,7 @@ html, body {
     background-position-y: -8px; }
   .nav li.active > a {
     background-color: rgba(64, 49, 39, 0.2);
-    color: #dc1f61 !important;
+    color: #ff7473 !important;
     border-radius: 2px; }
   .nav li.thirdlevel > a {
     color: #248EC2;
@@ -6586,7 +6586,7 @@ html, body {
     padding-left: 20px; }
   .nav > li.open ul li.active > a {
     background-color: rgba(64, 49, 39, 0.15);
-    color: #dc1f61;
+    color: #ff7473;
     border-radius: 2px; }
   .nav > li.open ul li.active.subsections > a {
     background: #f0f0f0;
@@ -6681,7 +6681,7 @@ input:checked + .slider:before {
     margin-left: 5px; }
 
 .is-active-link::before {
-  background-color: #dc1f61; }
+  background-color: #ff7473; }
 
 .toc-list {
   word-break: keep-all;
@@ -6729,7 +6729,7 @@ body {
     margin-top: 1.5em; }
 
 .content a:hover {
-  color: #dc1f61; }
+  color: #ff7473; }
 
 .content li, .content li p {
   margin: 0.5rem 0 !important;
@@ -6765,7 +6765,7 @@ body {
   word-break: break-word; }
 
 .content article.message a:hover {
-  color: #dc1f61 !important; }
+  color: #ff7473 !important; }
 
 .content article.message .message-body .fas.fa-tag, .content article.message .message-body .fas.fa-ban, .content article.message .message-body .fas.fa-exclamation-triangle {
   margin-right: 0.5rem; }
@@ -7296,7 +7296,7 @@ body {
         .blog-home-container .pagination .page-item.active a {
           color: #fff; }
       .blog-home-container .pagination .page-item:hover {
-        border-color: #121212; }
+        border-color: #34314c; }
       .blog-home-container .pagination .page-item a {
         color: #878787;
         display: inline-block;
@@ -7495,16 +7495,19 @@ body {
     padding-left: 1rem; }
     .navbar .container .navbar-brand .navbar-item.logo {
       font-size: 1.5rem;
+      color: #fcfdfd;
       font-weight: bold;
       line-height: 2.125; }
   .navbar .navbar-menu {
-    background-color: #121212; }
+    background-color: #34314c; }
     .navbar .navbar-menu .navbar-end .navbar-item {
       padding: 0.5rem 1.2rem; }
       .navbar .navbar-menu .navbar-end .navbar-item:last-child {
         padding: 0.5rem 0.62rem; }
   .navbar.is-flipped .container .navbar-brand {
     padding-left: 1rem; }
+    .navbar.is-flipped .container .navbar-brand .navbar-item.logo {
+      color: #4a4a4a; }
   .navbar.is-flipped .navbar-menu {
     background-color: #fafafa; }
   .hero.is-small .hero-body {
