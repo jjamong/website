@@ -19,5 +19,8 @@ $ yarn global add create-react-app
 $ create-react-app react-project
 ```
 
-
-
+리액트 서버 실행 / localhost:3000
+```
+cd react-project
+npm start
+```
