@@ -19,7 +19,7 @@ $ yum list | grep httpd
 ```
 httpd가 이름에 포함된 패키지 목록 확인.
 
-![01](/docs/aws/ec2/webserver/01.png)
+![01](/docs/infra/ec2/webserver/01.png)
 
 Apache 2.2 패키지 명은 httpd 이며, 2.4 패키지 명은 httpd24이다.
 
@@ -43,10 +43,10 @@ $ sudo service httpd restart
 
 ### Apache 접속
 
-![02](/docs/aws/ec2/webserver/02.png)
+![02](/docs/infra/ec2/webserver/02.png)
 
 
 서버를 실행했는데도 아래와 같이 접속되지 않는다면,
-[EC2 HTTP 보안그룹](/docs/aws/ec2/securitygroup#http-https)을 확인해 보자.
-![03](/docs/aws/ec2/webserver/03.png)
+[EC2 HTTP 보안그룹](/docs/infra/ec2/securitygroup#http-https)을 확인해 보자.
+![03](/docs/infra/ec2/webserver/03.png)
 

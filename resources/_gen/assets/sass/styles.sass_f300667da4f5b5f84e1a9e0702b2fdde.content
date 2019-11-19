@@ -6459,6 +6459,7 @@ html, body {
   .navbar .container .navbar-brand {
     padding-left: 0; }
     .navbar .container .navbar-brand .navbar-item.logo {
+      color: #fcfdfd;
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 2.125; }

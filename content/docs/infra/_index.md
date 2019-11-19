@@ -1,5 +1,5 @@
 ---
-title: AWS
+title: infra
 section_main: true
 docs_home: true
 date: 2019-10-27

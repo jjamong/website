@@ -14,7 +14,7 @@ toc: true
 현재 인스턴스에 사용량 지표를 기본 5분에 한 번 씩만 모니터링 서버로 전송하고 있다.
 (기본 시간 변경 시 추가비용 발생)
 
-![01](/docs/aws/ec2/autoscaling/test/01.png)
+![01](/docs/infra/ec2/autoscaling/test/01.png)
 
 - - -
 
@@ -33,4 +33,4 @@ stess --cpu 1 --timeout 600
 5 ~ 10 분을 기다리면 인스턴스가 1대더 추가됨을 확인 할 수 있으며, 
 그 이후로는 다시 정상적으로 1대로 줄어든다.
 
-![02](/docs/aws/ec2/autoscaling/test/02.png)
+![02](/docs/infra/ec2/autoscaling/test/02.png)
