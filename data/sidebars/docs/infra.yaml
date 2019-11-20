@@ -42,9 +42,9 @@ entries:
   - title: 도메인 등록
     url: /docs/infra/route53/domainrigster/
 
-- title: 배포구성
+- title: 배포 구성
 
   sections:
 
-  - title: 무중단/중단 배포
-    url: /docs/infra/deploy/discontinued/
+  - title: 배포 방법
+    url: /docs/infra/deploy/method/
