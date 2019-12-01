@@ -9,8 +9,30 @@ slug: index
 
 ## 확장 프로그램
 
-### Korean Language Pack for Visual Studio Code
+### 언어 관련
+
+#### Korean Language Pack for Visual Studio Code
 VS code 한국어 언어 팩 플러그인.
+
+- - -
+
+### SASS 관련
+
+#### Sass
+VSCode용 Indented Sass 구문 강조 표시, 자동 완성 및 형식
+
+#### Live Sass Compiler
+SASS/SCSS 파일을 실시간으로 컴파일하여 브라우저에 재로드.
+
+- - -
+
+### React 관련 
+
+#### Redux DevTools (크롬)
+
+
+
+- - -
 
 ### ESLint
 자바스크립트 문법을 체크한다.
@@ -26,3 +48,5 @@ VS code 한국어 언어 팩 플러그인.
 
 ### React-beautify
 코드 정리
+
+

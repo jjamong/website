@@ -1,7 +1,7 @@
 ---
 weight: 1
 slug: index
-title: "배포 구성"
+title: "배포 방법"
 toc: true
 ---
 
