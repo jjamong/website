@@ -4,8 +4,16 @@ entries:
 
   sections:
 
-  - title: React 시작
-    url: /docs/react/
+  - title: React 시작/설정
+    subsections:
+    - title: React
+      url: /docs/react/
+    - title: Sass
+      url: /docs/react/setting/sass/
+    - title: Rouer
+      url: /docs/react/setting/router/
+    - title: redux
+      url: /docs/react/setting/redux/
 
   - title: JSX
     url: /docs/react/jsx/
@@ -18,8 +26,3 @@ entries:
       url: /docs/react/component/props/
     - title: state
       url: /docs/react/component/state/
-  
-  - title: Setting (설정)
-    subsections:
-    - title: SASS
-      url: /docs/react/setting/sass/

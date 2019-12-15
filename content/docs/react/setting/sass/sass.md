@@ -1,16 +1,10 @@
 ---
-title: SASS
+title: Sass 적용
 docs_home: true
 date: 2019-11-11
 weight: 1
 slug: index
 ---
-
-## eject 설정
-
-```
-yarn eject
-```
 
 ## CSS Module 설정
 
@@ -88,17 +82,53 @@ webpack.config.js 는 나중에 리액트를 빌드하는 과정에서 사용되
 
 위의 설정을 통하면, css가 적용된 것을 확인 할 수 있다.
 
+## classnames 설정
+클래스를 여러개 적용 할 수 있다.
+```
+$ yarn add classnames
+```
 
 ## SASS 설정
 
 sass-loader 는 webpack 에서 sass 파일들을 읽어오는 역할을 하고, node-sass 는 sass 로 작성된 코드들을 CSS로 변환한다.
 
 ```
-$ yarn add node-sass sass-loader classnames
+$ yarn add node-sass sass-loader
 ```
 
-### open-color 적용
+
+### open-color 설정
+
+변수 세트 라이브러리를 사용하며,
+색상을 간편하게 불러올 수 있음.
 
 ```
 $ yarn add open-color
+```
+
+```
+@import '~open-color/open-color';
+```
+
+### include-media 설정
+
+믹스인 라이브러리 반응형 디자인 지원
+
+```
+$ yarn add include-media
+```
+
+
+## globalStyles 설정
+sass 경로를 간소화 할 수 있다.
+
+```
+config.paths.js - 아래쪽
+
+(...)
+module.exports = {
+  (...)
+  globalStyles: resolveApp('src/styles')
+}
+(...)
 ```
