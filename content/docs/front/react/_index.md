@@ -1,9 +1,8 @@
 ---
 title: React
 section_main: true
-docs_home: true
 date: 2019-11-10
-weight: 3
+weight: 1
 ---
 
 

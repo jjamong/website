@@ -4,13 +4,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   {{ hugo.Generator }}
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+  <!--  -->
   <meta name="title" content="IT 개발 블로그, Docs {{ .Site.Title }} 연구소">
   <meta name="keywords" content="웹, 서버, 프론트엔드, 백엔드, DB 블로그/DOCS">
   <meta name="description" content="짜몽이 개발하고 연구하는 웹, 서버, 프론트엔드, 백엔드 관련 블로그/DOCS">
-
+  <!-- 파비콘 -->
+  {{ partial "favicons.html" . }}
+  <!-- CSS -->
   {{ partial "css.html" . }}
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- 구글 애널리틱스 Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149836281-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,5 +22,6 @@
 
     gtag('config', 'UA-149836281-1');
   </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
 </head>

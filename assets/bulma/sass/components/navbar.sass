@@ -1,7 +1,9 @@
+
 $navbar-background-color: $white !default
 $navbar-box-shadow-size: 0 2px 0 0 !default
 $navbar-box-shadow-color: $background !default
-$navbar-height: 3.25rem !default
+//$navbar-height: 3.25rem
+//$navbar-height: 6.75rem !default
 $navbar-padding-vertical: 1rem !default
 $navbar-padding-horizontal: 2rem !default
 $navbar-z: 30 !default
@@ -54,7 +56,9 @@ $navbar-breakpoint: $desktop !default
 
 .navbar
   background-color: $navbar-background-color
-  min-height: $navbar-height
+  
+  // header 탑 height값 조절 시
+  //min-height: $navbar-height
   position: relative
   z-index: $navbar-z
   @each $name, $pair in $colors
@@ -118,6 +122,7 @@ $navbar-breakpoint: $desktop !default
       box-shadow: $navbar-bottom-box-shadow-size $navbar-box-shadow-color
   &.is-fixed-top
     top: 0
+    height: 110px
 
 html,
 body

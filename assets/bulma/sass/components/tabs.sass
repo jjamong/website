@@ -37,15 +37,19 @@ $tabs-toggle-link-active-color: $link-invert !default
   overflow: hidden
   overflow-x: auto
   white-space: nowrap
-  a
+  .tabs-li
+    margin-left: 10px
+    &:first-child
+      margin-left: 0
+  .tabs-a
     align-items: center
-    border-bottom-color: $tabs-border-bottom-color
-    border-bottom-style: $tabs-border-bottom-style
-    border-bottom-width: $tabs-border-bottom-width
+    //border-bottom-color: $tabs-border-bottom-color
+    //border-bottom-style: $tabs-border-bottom-style
+    //border-bottom-width: $tabs-border-bottom-width
     color: $tabs-link-color
     display: flex
     justify-content: center
-    margin-bottom: -#{$tabs-border-bottom-width}
+    //margin-bottom: -#{$tabs-border-bottom-width}
     padding: $tabs-link-padding
     vertical-align: top
     &:hover
@@ -59,9 +63,9 @@ $tabs-toggle-link-active-color: $link-invert !default
         color: $tabs-link-active-color
   ul
     align-items: center
-    border-bottom-color: $tabs-border-bottom-color
-    border-bottom-style: $tabs-border-bottom-style
-    border-bottom-width: $tabs-border-bottom-width
+    //border-bottom-color: $tabs-border-bottom-color
+    //border-bottom-style: $tabs-border-bottom-style
+    //border-bottom-width: $tabs-border-bottom-width
     display: flex
     flex-grow: 1
     flex-shrink: 0
@@ -149,3 +153,36 @@ $tabs-toggle-link-active-color: $link-invert !default
     font-size: $size-medium
   &.is-large
     font-size: $size-large
+
+  /* 수정 영역 */
+  .sub-menu
+    display: none
+    position: absolute
+    top: 70px
+    background: #fff
+    z-index: 10
+    opacity: 0
+    padding: 20px 0
+    margin-top: 20px
+    box-shadow: 0 0 50px 0 rgba(82,63,105,.15)
+    &.active
+      display: block
+      margin-top: 0
+      opacity: 1
+      transition-duration: .5s
+    ul
+      display: block
+      width: 275px
+      li
+        a
+          display: block
+          float: left
+          padding: 11px 30px
+          width: 275px
+          color: #5f6281
+          cursor: pointer
+          font-size: 1rem        
+          //color: $tabs-link-color
+          &:hover
+            background:#f8f8fb
+            color: #374afb

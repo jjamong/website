@@ -1,9 +1,7 @@
 ---
 title: Angular
 section_main: true
-docs_home: true
 date: 2019-12-01
-weight: 4
 ---
 
 ## 앵귤러 시작

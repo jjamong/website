@@ -7,15 +7,23 @@
     overflow: visible
 
   .navbar
+    
     .container
       .navbar-brand
-        padding-left: 1rem
+        padding-left: 30px
         .navbar-item
           &.logo
             font-size: 1.5rem
             color: #fcfdfd
             font-weight: bold
             line-height: 2.125
+            margin-top: 25px
+            width: 60px
+            height: 60px
+            background-image: url(/images/logo.png)
+            background-size: contain
+            background-position: center center
+            background-repeat: no-repeat
 
             //position: relative
             //float: left
@@ -39,11 +47,11 @@
     &.is-flipped
       .container
         .navbar-brand
-          padding-left: 1rem
+          padding-left: 30px
           .navbar-item
             &.logo
-              color: #4a4a4a
-
+              background-image: url(/images/logo.png)
+              //color: #4a4a4a
               //background-image: url(/images/webOS_OSE_logo_gray.svg)
       .navbar-menu
         background-color: $white-bis
@@ -55,15 +63,11 @@
         .title
           font-size: 1.5rem
 
-  .tabs
-    &.docs-top-menu
-      margin-left: 0
-
   .content-main
-    padding-top: 0rem
-    padding-right: 0rem
+    padding-top: 1rem
+    padding-right: 1rem
     padding-bottom: 1rem
-    padding-left: 0rem
+    padding-left: 1rem
     margin-left: 0
     margin-right: 0
     border: none
@@ -155,6 +159,7 @@
 
 // tablet device: from 768px to 1024px
 @media screen and (min-width: 768px) and (max-width: 1024px)
+
   .section-02
     margin-top: 130px
     .features-wrap
@@ -201,6 +206,38 @@
 
 // mobile device: up to 767px
 @media screen and (max-width: 767px)
+  
+  /* 수정 영역 */
+  html,
+  body
+    &.has-navbar-fixed-top
+      padding-top: 3.75rem
+
+  .navbar
+    &.is-fixed-top
+      height: 60px
+      
+    .navbar-burger
+        width: 60px
+        height: 60px
+
+    .container
+      .navbar-brand
+        padding-left: 1rem
+        .navbar-item
+          &.logo
+            margin-top: 6px
+            width: 48px
+            height: 48px
+   
+  .tabs
+    &.docs-top-menu
+      margin-left: 0
+      height: 40px
+      
+  /* 수정 영역 // */
+
+  
   .dis-hidden-mobile
     display: none !important
   .landing

@@ -1,9 +1,7 @@
 ---
-title: infra
-section_main: true
-docs_home: true
+title: Infra
 date: 2019-10-27
-weight: 2
+weight: 1
 ---
 
 AWS(Amazon Web Services)는 미국 기업 아마존에서 만든 클라우드 서비스 플랫폼이다.

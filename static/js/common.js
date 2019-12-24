@@ -10,6 +10,24 @@ function controlClassOnCondition(element, className, condition) {
 }
 
 $(document).ready(function () {
+  
+  // tabs
+  $('.top-menu .tabs .tabs-a').each(function($index) {
+    if (location.href.split("/")[4].indexOf($(this).text().toLowerCase()) > -1) {
+      $(this).addClass('is-active')
+    }
+  });
+  $('.top-menu .tabs .tabs-a').on('click', function() {
+    $('.top-menu .tabs .tabs-a').removeClass('hover');
+    if (!$(this).next('.sub-menu').hasClass('active')) {
+      $('.top-menu .tabs .sub-menu').removeClass('active');
+      $(this).next('.sub-menu').addClass('active');
+      $(this).addClass('hover');
+    } else {
+      $(this).next('.sub-menu').removeClass('active');
+    }
+  });
+
   // navbar flip
   navbar = $('.navbar');
 

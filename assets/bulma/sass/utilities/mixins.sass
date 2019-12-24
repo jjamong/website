@@ -33,31 +33,31 @@
   span
     background-color: currentColor
     display: block
-    height: 1px
-    left: calc(50% - 8px)
+    height: 3px
+    left: calc(50% - 10px)
     position: absolute
     transform-origin: center
     transition-duration: $speed
     transition-property: background-color, opacity, transform
     transition-timing-function: $easing
-    width: 16px
+    width: 24px
     &:nth-child(1)
-      top: calc(50% - 6px)
+      top: calc(50% - 9px)
     &:nth-child(2)
       top: calc(50% - 1px)
     &:nth-child(3)
-      top: calc(50% + 4px)
+      top: calc(50% + 6px)
   &:hover
     background-color: rgba(black, 0.05)
   // Modifers
   &.is-active
     span
       &:nth-child(1)
-        transform: translateY(5px) rotate(45deg)
+        transform: translateY(7.5px) rotate(45deg)
       &:nth-child(2)
         opacity: 0
       &:nth-child(3)
-        transform: translateY(-5px) rotate(-45deg)
+        transform: translateY(-7.5px) rotate(-45deg)
 
 =overflow-touch
   -webkit-overflow-scrolling: touch

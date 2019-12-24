@@ -7,22 +7,22 @@ entries:
   - title: React 시작/설정
     subsections:
     - title: React
-      url: /docs/react/
+      url: /docs/front/react/
     - title: Sass
-      url: /docs/react/setting/sass/
+      url: /docs/front/react/setting/sass/
     - title: Rouer
-      url: /docs/react/setting/router/
+      url: /docs/front/react/setting/router/
     - title: redux
-      url: /docs/react/setting/redux/
+      url: /docs/front/react/setting/redux/
 
   - title: JSX
-    url: /docs/react/jsx/
+    url: /docs/front/react/jsx/
     
   - title: Component(컴포넌트)
     subsections:
     - title: 컴포넌트 생성
-      url: /docs/react/component/component/
+      url: /docs/front/react/component/component/
     - title: props
-      url: /docs/react/component/props/
+      url: /docs/front/react/component/props/
     - title: state
-      url: /docs/react/component/state/
+      url: /docs/front/react/component/state/

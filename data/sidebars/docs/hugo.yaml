@@ -5,20 +5,20 @@ entries:
   sections:
 
   - title: Hugo
-    url: /docs/hugo/
+    url: /docs/etc/hugo/
 
   - title: 디텍토리 구조
-    url: /docs/hugo/directory_structure/
+    url: /docs/etc/hugo/directory_structure/
 
   - title: 컨텐츠 포맷
-    url: /docs/hugo/content_format/
+    url: /docs/etc/hugo/content_format/
 
   - title: 프론트 메터
-    url: /docs/hugo/front_matter/
+    url: /docs/etc/hugo/front_matter/
 
 - title: 템플릿(Tempates)
 
   sections:
 
   - title: 소개
-    url: /docs/hugo/tempates/introduction/
+    url: /docs/etc/hugo/tempates/introduction/

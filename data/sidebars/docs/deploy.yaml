@@ -1,0 +1,8 @@
+entries:
+
+- title: deploy
+
+  sections:
+
+  - title: 배포 방법
+    url: /docs/infra/deploy/method/

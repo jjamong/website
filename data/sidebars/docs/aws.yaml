@@ -43,8 +43,3 @@ entries:
     url: /docs/infra/aws/route53/domainrigster/
 
 - title: 배포 구성
-
-  sections:
-
-  - title: 배포 방법
-    url: /docs/infra/deploy/method/
