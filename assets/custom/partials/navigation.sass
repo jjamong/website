@@ -132,10 +132,15 @@
     bottom: 82px
 
 // sidebar
+/* 수정 영역 */
+.slider-menu-wrap
+  background: #fff
+  
+/* 수정 영역 // */
 .nav
-  $sidebar-bg-color: #f0f0f0
+  $sidebar-bg-color: #fff
   list-style: none
-  padding: 0
+  padding: 0 10px !important
   margin: 0
 
   ul, li
@@ -145,6 +150,7 @@
     ul
       li
         a
+          margin-bottom: 5px
           padding-left: 20px
           font-size: 13px
         ul
@@ -165,17 +171,19 @@
     text-decoration: none
 
   a:hover
-    background-color: rgba(39, 49, 64, 0.1)
-    color: #868585
+    //background-color: rgba(39, 49, 64, 0.1)
+    //color: #868585
     //color: rgba($point-color, .6)
+    background-color:  #f7f8fa
+    color: $point-color
     border-radius: 2px
-
   li
     a
       position: relative
-      font-size: 14px
+      font-size: 12px
       line-height: 20px
-      padding: 4.5px 10px
+      //padding: 4.5px 10px
+      padding: 6px 10px
       background-color: $sidebar-bg-color
     > a
       color: #464646
@@ -194,8 +202,10 @@
       background-position-y: -8px
     &.active
       > a
-        background-color: rgba(64, 49, 39, 0.2)
-        color: $point-color !important
+        // background-color: rgba(64, 49, 39, 0.2)
+        // color: $point-color !important
+        background-color: #f7f8fa
+        color: $point-color
         border-radius: 2px
     &.thirdlevel > a
       color: #248EC2
@@ -208,7 +218,7 @@
         > a
           //background: rgba(180, 22, 28, 0.5)
           //color: #fff
-          background-color: rgba(64, 49, 39, 0.15)
+          background-color: #f7f8fa
           color: $point-color
           border-radius: 2px
         &.subsections
@@ -220,6 +230,7 @@
     font-size: 14px
     line-height: 24px
     padding: 6px 20px
+    margin: 10px 0
 
   .subsections
     a
@@ -236,7 +247,7 @@
     border-radius: 0
   .nav
     ul
-      background-color: #FAFAFA
+      //background-color: #FAFAFA
 
 .custom-side.show
   display: block

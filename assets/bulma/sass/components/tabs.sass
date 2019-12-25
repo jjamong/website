@@ -6,7 +6,7 @@ $tabs-link-hover-border-bottom-color: $text-strong !default
 $tabs-link-hover-color: $text-strong !default
 $tabs-link-active-border-bottom-color: $link !default
 $tabs-link-active-color: $link !default
-$tabs-link-padding: 0.5em 1em !default
+$tabs-link-padding: 0.6rem 1.45rem !default
 
 $tabs-boxed-link-radius: $radius !default
 $tabs-boxed-link-hover-background-color: $background !default
@@ -32,7 +32,7 @@ $tabs-toggle-link-active-color: $link-invert !default
   @extend %unselectable
   align-items: stretch
   display: flex
-  font-size: $size-normal
+  font-size: 13px
   justify-content: space-between
   overflow: hidden
   overflow-x: auto
@@ -172,17 +172,16 @@ $tabs-toggle-link-active-color: $link-invert !default
       transition-duration: .5s
     ul
       display: block
-      width: 275px
+      width: 210px
       li
         a
           display: block
           float: left
           padding: 11px 30px
-          width: 275px
+          width: 210px
           color: #5f6281
           cursor: pointer
-          font-size: 1rem        
-          //color: $tabs-link-color
+          font-size: 13px       
           &:hover
-            background:#f8f8fb
+            background:#f7f8fa
             color: #374afb

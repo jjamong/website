@@ -11,21 +11,29 @@
       </div>
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
+          <span class="navbar-item">
+            <a href="/docs/" class="is-active">Docs</a>
+          </span>
+          <span class="navbar-item"></span>
+          <span class="navbar-item"></span>
+          <span class="navbar-item"></span>
+          <span class="navbar-item"></span>
+          <!--           
           {{ $sections := slice "about" "docs" "blog" "community" }}
           {{ range $sections }}
           <span class="navbar-item">
             {{ with $.Site.GetPage "section" . }}<a href="{{ .RelPermalink }}" {{ if eq .Section $.Section }}
               class="is-active" {{ end }}>{{ .LinkTitle }}</a>{{ end }}
           </span>
-          {{ end }}
-          <span class="navbar-item">
+          {{ end }} -->
+          <!-- <span class="navbar-item">
             <p class="control has-icons-right">
               <input class="input" type="text" placeholder="Search">
               <span class="icon is-small is-right">
                 <i class="fa fa-search"></i>
               </span>
             </p>
-          </span>
+          </span> -->
           <!--
           <span class="navbar-item">
               <a class="button is-white" href="https://github.com/webosose">

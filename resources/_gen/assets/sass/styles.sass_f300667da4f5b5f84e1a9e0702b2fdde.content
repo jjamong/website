@@ -4541,7 +4541,7 @@ a.navbar-item,
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
   display: flex;
-  font-size: 1rem;
+  font-size: 13px;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
@@ -4556,7 +4556,7 @@ a.navbar-item,
     color: #4a4a4a;
     display: flex;
     justify-content: center;
-    padding: 0.5em 1em;
+    padding: 0.6rem 1.45rem;
     vertical-align: top; }
     .tabs .tabs-a:hover {
       border-bottom-color: #363636;
@@ -4657,17 +4657,17 @@ a.navbar-item,
       transition-duration: .5s; }
     .tabs .sub-menu ul {
       display: block;
-      width: 275px; }
+      width: 210px; }
       .tabs .sub-menu ul li a {
         display: block;
         float: left;
         padding: 11px 30px;
-        width: 275px;
+        width: 210px;
         color: #5f6281;
         cursor: pointer;
-        font-size: 1rem; }
+        font-size: 13px; }
         .tabs .sub-menu ul li a:hover {
-          background: #f8f8fb;
+          background: #f7f8fa;
           color: #374afb; }
 
 .column {
@@ -6572,15 +6572,21 @@ html, body {
     opacity: 1;
     bottom: 82px; }
 
+/* 수정 영역 */
+.slider-menu-wrap {
+  background: #fff; }
+
+/* 수정 영역 // */
 .nav {
   list-style: none;
-  padding: 0;
+  padding: 0 10px !important;
   margin: 0; }
   .nav ul, .nav li {
     list-style: none; }
     .nav ul a, .nav li a {
       padding-left: 20px; }
     .nav ul ul li a, .nav li ul li a {
+      margin-bottom: 5px;
       padding-left: 20px;
       font-size: 13px; }
     .nav ul ul li ul li a, .nav li ul li ul li a {
@@ -6589,22 +6595,22 @@ html, body {
     padding: 0;
     margin: 0; }
   .nav ul li a {
-    background-color: #f0f0f0; }
+    background-color: #fff; }
   .nav a {
     color: #646464;
     display: block;
     outline: none;
     text-decoration: none; }
   .nav a:hover {
-    background-color: rgba(39, 49, 64, 0.1);
-    color: #868585;
+    background-color: #f7f8fa;
+    color: #374afb;
     border-radius: 2px; }
   .nav li a {
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
-    padding: 4.5px 10px;
-    background-color: #f0f0f0; }
+    padding: 6px 10px;
+    background-color: #fff; }
   .nav li > a {
     color: #464646; }
     .nav li > a > span {
@@ -6621,24 +6627,25 @@ html, body {
   .nav li.open > a > span {
     background-position-y: -8px; }
   .nav li.active > a {
-    background-color: rgba(64, 49, 39, 0.2);
-    color: #374afb !important;
+    background-color: #f7f8fa;
+    color: #374afb;
     border-radius: 2px; }
   .nav li.thirdlevel > a {
     color: #248EC2;
     font-weight: bold;
     padding-left: 20px; }
   .nav > li.open ul li.active > a {
-    background-color: rgba(64, 49, 39, 0.15);
+    background-color: #f7f8fa;
     color: #374afb;
     border-radius: 2px; }
   .nav > li.open ul li.active.subsections > a {
-    background: #f0f0f0;
+    background: #fff;
     color: #646464; }
   .nav > li > a {
     font-size: 14px;
     line-height: 24px;
-    padding: 6px 20px; }
+    padding: 6px 20px;
+    margin: 10px 0; }
   .nav .subsections a {
     padding-right: 36px; }
 
@@ -6650,9 +6657,6 @@ html, body {
 
 .sidebar-menu ul {
   border-radius: 0; }
-
-.sidebar-menu .nav ul {
-  background-color: #FAFAFA; }
 
 .custom-side.show {
   display: block;
@@ -8262,7 +8266,7 @@ body {
     background: none;
     background-color: white; }
   .gen-wrapper {
-    background: white; }
+    background: #f9f9fc; }
   .section-01 {
     background: url("images/mobile_bg.png") no-repeat center center;
     background-size: cover; } }

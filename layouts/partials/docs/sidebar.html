@@ -27,43 +27,45 @@
         <p class="sidebar-title dis-hidden-mobile">
           {{ ($.Scratch.Get "sectionName") | humanize }}
         </p>
-        <ul class="sidebar-menu nav scrollbar-outer">
-          {{ range $entries }}
-          <li {{ if eq $.Page.RelPermalink .url }} class="active" {{ end }}>
-            {{ if .url }}
-            <a href="{{ .url }}"><strong>{{ .title }}</strong></a>
-            {{ else }}
-            <a href="#"><strong>{{ .title }}</strong></a>
-            <ul>
-              {{ range .sections }}
-                {{ if .url }}
-                <li {{ if eq $.Page.RelPermalink .url }} class="active" {{ end }} class="subsections">
-                  <a href="{{ .url }}">{{ .title }}</a>
-                </li>
-                {{ else }}
-                <li class="subsections">
-                  <a href="#">{{ .title }}</a>
-                  <ul>
-                    {{ range .subsections }}
-                      {{ if isset . "externalurl" }}
-                      <li>
-                        <a href="{{ .externalurl }}" target="_blank">{{ .title }} <i class="fas fa-external-link-alt"></i></a>
-                      </li>
-                      {{ else }}
-                      <li {{ if eq $.Page.RelPermalink .url }} class="active" {{ end }}>
-                        <a href="{{ .url }}">{{ .title }}</a>
-                      </li>
+        <div class="slider-menu-wrap">
+          <ul class="sidebar-menu nav scrollbar-outer">
+            {{ range $entries }}
+            <li {{ if eq $.Page.RelPermalink .url }} class="active" {{ end }}>
+              {{ if .url }}
+              <a href="{{ .url }}"><strong>{{ .title }}</strong></a>
+              {{ else }}
+              <a href="#"><strong>{{ .title }}</strong></a>
+              <ul>
+                {{ range .sections }}
+                  {{ if .url }}
+                  <li {{ if eq $.Page.RelPermalink .url }} class="active" {{ end }} class="subsections">
+                    <a href="{{ .url }}">{{ .title }}</a>
+                  </li>
+                  {{ else }}
+                  <li class="subsections">
+                    <a href="#">{{ .title }}</a>
+                    <ul>
+                      {{ range .subsections }}
+                        {{ if isset . "externalurl" }}
+                        <li>
+                          <a href="{{ .externalurl }}" target="_blank">{{ .title }} <i class="fas fa-external-link-alt"></i></a>
+                        </li>
+                        {{ else }}
+                        <li {{ if eq $.Page.RelPermalink .url }} class="active" {{ end }}>
+                          <a href="{{ .url }}">{{ .title }}</a>
+                        </li>
+                        {{ end }}
                       {{ end }}
-                    {{ end }}
-                  </ul>
-                </li>
+                    </ul>
+                  </li>
+                  {{ end }}
                 {{ end }}
+              </ul>
               {{ end }}
-            </ul>
+            </li>
             {{ end }}
-          </li>
-          {{ end }}
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
