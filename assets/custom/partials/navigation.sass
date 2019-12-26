@@ -21,13 +21,13 @@
           //color: #fcfdfd
           font-weight: bold
           line-height: 2.125
-          margin-top: 25px
           width: 60px
           height: 60px
-          background-image: url(/images/logo.png)
+          background-image: url(/images/logo_white.png)
           background-size: contain
           background-position: center center
           background-repeat: no-repeat
+          transition: .2s all
           //position: relative
           //float: left
           //display: block
@@ -52,7 +52,7 @@
         color: lighten($point-color, 15%)
       &.is-active
         color: $point-color
-        font-weight: 700
+        font-weight: 500
   .navbar-burger
     color: #fff
   &.is-flipped
@@ -62,7 +62,9 @@
       .navbar-brand
         .navbar-item
           &.logo
-            background-image: url(/images/logo.png)
+            background-image: url(/images/logo_black.png)
+            margin-top: 0
+            transition: .2s all
             //background-image: url(/images/webOS_OSE_logo_gray.svg)
       a
         color: $grey-dark
@@ -70,14 +72,17 @@
           color: lighten($point-color, 15%)
         &.is-active
           color: $point-color
-          font-weight: 700
+          font-weight: 500
     .navbar-burger
+      width: 3.75rem
+      height: 3.75rem
       color: $grey-dark
+      transition: .2s all
 
 // top menu
 // 탑 메뉴
 .top-menu
-  transition: all 0.2s ease
+  transition: all 2s ease
   max-width: 100%
   width: 100%
   background-color: #181824
@@ -106,9 +111,10 @@
         //border-bottom-color: $point-color
   &.fixed
     position: fixed
-    top: $navbar-height
+    top: 3.75rem
+    //top: $navbar-height
     z-index: 10
-    transition: all 0.2s ease
+    transition: all 1s ease
     -webkit-overflow-scrolling: touch
 
 // back to top button

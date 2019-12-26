@@ -46,7 +46,8 @@ $navbar-divider-height: 2px !default
 
 $navbar-bottom-box-shadow-size: 0 -2px 0 0 !default
 
-$navbar-breakpoint: $desktop !default
+//$navbar-breakpoint: $desktop !default
+$navbar-breakpoint: 1024px !default
 
 =navbar-fixed
   left: 0
@@ -122,11 +123,19 @@ $navbar-breakpoint: $desktop !default
       box-shadow: $navbar-bottom-box-shadow-size $navbar-box-shadow-color
   &.is-fixed-top
     top: 0
-    height: 110px
+    transition: .2s all
+  &.is-fixed-top.is-flipped
+    height: 60px
+    transition: .2s all
+  // &.is-fixed-top.is-flipped > .container,
+  // &.is-fixed-top.is-flipped .navbar-brand
+  //   min-height: 3.75rem
+    
 
 html,
 body
   &.has-navbar-fixed-top
+    transition: .2s all
     padding-top: $navbar-height
   &.has-navbar-fixed-bottom
     padding-bottom: $navbar-height
@@ -153,6 +162,7 @@ body
   color: $navbar-burger-color
   +hamburger($navbar-height)
   margin-left: auto
+  transition: .2s all
 
 .navbar-menu
   display: none
@@ -258,7 +268,7 @@ a.navbar-item,
         box-shadow: 0 -2px 3px rgba($black, 0.1)
     &.is-fixed-top-touch
       top: 0
-    &.is-fixed-top,
+    &.is-fixed-top
     &.is-fixed-top-touch
       .navbar-menu
         +overflow-touch

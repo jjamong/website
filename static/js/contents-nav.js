@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 $(window).on('load', function () {
-
   if (window.innerWidth > 769) {
     // Fix with sticky sidebar only in Desktop
     var sidebar = new StickySidebar('.sidebar-main', {
