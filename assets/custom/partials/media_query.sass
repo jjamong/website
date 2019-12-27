@@ -4,6 +4,8 @@
 @media screen and (min-width: 1281px)
   .sidebar-container
     width: 20%
+    .sidebar-main
+      width: 18%
 
   .is-hidden-touch
     width: 20%
@@ -12,8 +14,16 @@
   .is-two-thirds-tablet
     width: 60%
 
+  .is-fluid
+    margin-left: $gap
+    margin-right: $gap
+
 @media screen and (min-width: 1025px) and (max-width: 1280px)
-  
+  .sidebar-container
+    width: 33%
+    .sidebar-main
+      width: 28%
+
   //.navbar-burger
   //  display: none
   // .navbar-menu
@@ -31,8 +41,6 @@
     
 // media query
 @media screen and (max-width: 1025px)
-  .sidebar-container
-    width: 33%
   .is-two-thirds-tablet
     width: 66%
 
@@ -82,7 +90,6 @@
           padding-left: 2rem
           .navbar-item
             &.logo
-              margin: 6px 0
               background-image: url(/images/logo_black.png)
               //color: #4a4a4a
               //background-image: url(/images/webOS_OSE_logo_gray.svg)
@@ -113,6 +120,7 @@
     margin-bottom: 3rem
 
   .sidebar-container
+    width: 33%
     padding-top: 0
     padding-right: 2rem
     padding-bottom: 2rem
@@ -125,16 +133,15 @@
       //font-size: 1.1875rem
       vertical-align: middle
       &.dis-hidden-mobile
-        margin-bottom: 1rem
-    .sidebar
-      width: 100%
+        margin-bottom: 0.5rem
+    .sidebar-main
+      position: fixed
+      top: 170px
+      transition: all .5s ease
+      width: 28%
       &.is-affixed
-        .sidebar-inner
-          width: 25.5% !important
-          top: 100px !important
-          position: fixed !important
-          transform: translate(0, 0) !important
-          transform: translate3d(0, 0, 0) !important
+        top: 80px
+        transition: all .5s ease
 
   .verticals, .features
     padding: 2rem
@@ -253,7 +260,6 @@
 @media screen and (max-width: 767px)
   
   /* 수정 영역 */
-    
   html,
   body
     &.has-navbar-fixed-top
@@ -266,15 +272,7 @@
     .navbar-burger
         width: 60px
         height: 60px
-        margin-right: 1rem
-    .container
-      .navbar-brand
-        .navbar-item
-          &.logo
-            margin: 6px 0
-            width: 48px
-            height: 48px
-   
+        margin-right: 1rem   
   .tabs
     &.docs-top-menu
       margin: 0 2rem
@@ -284,6 +282,11 @@
 
   .sidebar-container
     width: 100%
+    padding-right: 0
+    .sidebar-main
+      position: relative
+      top: 0
+      width: 100%
   .is-hidden-touch
     display: none
   .custom-side

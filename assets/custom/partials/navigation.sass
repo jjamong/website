@@ -146,8 +146,8 @@
 .nav
   $sidebar-bg-color: #fff
   list-style: none
-  padding: 0 10px !important
   margin: 0
+  box-shadow: 0 0 13px 0 rgba(82,63,105,.05)
 
   ul, li
     list-style: none
@@ -322,6 +322,14 @@ input:checked + .slider:before
 
 
 // TOC
+.toc-main
+  position: fixed
+  top: 170px
+  transition: all .5s ease
+  &.is-position-fixed
+      top: 80px
+      transition: all .5s ease
+    
 .toc-menu
   position: relative
   overflow: hidden
@@ -341,8 +349,8 @@ input:checked + .slider:before
 .toc-list-item
   padding: 3px 0 3px 0
   color: #868585
-.is-position-fixed
-  top: 80px
+// .is-position-fixed
+//   top: 80px
 
 // Search custom css
 .navbar-item

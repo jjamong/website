@@ -57,15 +57,21 @@ html, body
     &.dis-hidden-mobile
       //margin-bottom: .5rem
       margin-bottom: 1.5rem
-  .sidebar
-    width: 100%
+  .sidebar-main
+    position: fixed
+    top: 170px
+    transition: all .5s ease
     &.is-affixed
-      .sidebar-inner
-        width: 16.5% !important
-        top: 100px !important
-        position: fixed !important
-        transform: translate(0, 0) !important
-        transform: translate3d(0, 0, 0) !important
+      top: 80px
+      transition: all .5s ease
+
+    // &.is-affixed
+    //   .sidebar-inner
+    //     width: 16.5% !important
+    //     top: 100px !important
+    //     position: fixed !important
+    //     transform: translate(0, 0) !important
+    //     transform: translate3d(0, 0, 0) !important
 
 .content-main
   background-color: #FFF

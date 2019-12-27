@@ -3,15 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 $(window).on('load', function () {
-  if (window.innerWidth > 769) {
-    // Fix with sticky sidebar only in Desktop
-    var sidebar = new StickySidebar('.sidebar-main', {
-      containerSelector: '.sidebar-container',
-      innerWrapperSelector: '.sidebar-inner',
-      topSpacing: 100,
-      bottomSpacing: 20
-    });
-  }
+  // if (window.innerWidth > 769) {
+  //   // Fix with sticky sidebar only in Desktop
+  //   var sidebar = new StickySidebar('.sidebar-main', {
+  //     containerSelector: '.sidebar-container',
+  //     innerWrapperSelector: '.sidebar-inner',
+  //     topSpacing: 100,
+  //     bottomSpacing: 20
+  //   });
+  // }
 });
 
 $(document).ready(function () {

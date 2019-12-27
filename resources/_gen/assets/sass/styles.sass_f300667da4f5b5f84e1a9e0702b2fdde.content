@@ -338,8 +338,8 @@ fieldset {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  background-color: whitesmoke;
-  color: #4a4a4a;
+  background-color: #272727;
+  color: #f0f0f0;
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -1896,26 +1896,6 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 .container {
   margin: 0 auto;
   position: relative; }
-  @media screen and (min-width: 1088px) {
-    .container {
-      max-width: 960px;
-      width: 960px; } }
-  @media screen and (max-width: 1279px) {
-    .container.is-widescreen {
-      max-width: 1152px;
-      width: auto; } }
-  @media screen and (max-width: 1471px) {
-    .container.is-fullhd {
-      max-width: 1344px;
-      width: auto; } }
-  @media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1152px;
-      width: 1152px; } }
-  @media screen and (min-width: 1472px) {
-    .container {
-      max-width: 1344px;
-      width: 1344px; } }
 
 .content li + li {
   margin-top: 0.25em; }
@@ -3785,7 +3765,7 @@ a.tag:hover {
   padding: 1.25em 1.5em; }
   .message-body code,
   .message-body pre {
-    background-color: white; }
+    background-color: #4a4a4a; }
   .message-body pre code {
     background-color: transparent; }
 
@@ -4492,12 +4472,15 @@ a.navbar-item,
       right: 0; }
   .navbar-divider {
     display: block; }
-  .navbar > .container .navbar-brand,
-  .container > .navbar .navbar-brand {
-    margin-left: -.75rem; }
-  .navbar > .container .navbar-menu,
-  .container > .navbar .navbar-menu {
-    margin-right: -.75rem; }
+  .navbar > .container,
+  .container > .navbar {
+    margin: 0px 5rem; }
+    .navbar > .container .navbar-brand,
+    .container > .navbar .navbar-brand {
+      margin-left: -.75rem; }
+    .navbar > .container .navbar-menu,
+    .container > .navbar .navbar-menu {
+      margin-right: -.75rem; }
   .navbar.is-fixed-bottom-desktop, .navbar.is-fixed-top-desktop {
     left: 0;
     position: fixed;
@@ -6307,14 +6290,13 @@ html, body {
     vertical-align: middle; }
     .sidebar-container .sidebar-title.dis-hidden-mobile {
       margin-bottom: 1.5rem; }
-  .sidebar-container .sidebar {
-    width: 100%; }
-    .sidebar-container .sidebar.is-affixed .sidebar-inner {
-      width: 16.5% !important;
-      top: 100px !important;
-      position: fixed !important;
-      transform: translate(0, 0) !important;
-      transform: translate3d(0, 0, 0) !important; }
+  .sidebar-container .sidebar-main {
+    position: fixed;
+    top: 170px;
+    transition: all .5s ease; }
+    .sidebar-container .sidebar-main.is-affixed {
+      top: 80px;
+      transition: all .5s ease; }
 
 .content-main {
   background-color: #FFF;
@@ -6567,8 +6549,8 @@ html, body {
 /* 수정 영역 // */
 .nav {
   list-style: none;
-  padding: 0 10px !important;
-  margin: 0; }
+  margin: 0;
+  box-shadow: 0 0 13px 0 rgba(82, 63, 105, 0.05); }
   .nav ul, .nav li {
     list-style: none; }
     .nav ul a, .nav li a {
@@ -6710,6 +6692,14 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
+.toc-main {
+  position: fixed;
+  top: 170px;
+  transition: all .5s ease; }
+  .toc-main.is-position-fixed {
+    top: 80px;
+    transition: all .5s ease; }
+
 .toc-menu {
   position: relative;
   overflow: hidden; }
@@ -6729,9 +6719,6 @@ input:checked + .slider:before {
 .toc-list-item {
   padding: 3px 0 3px 0;
   color: #868585; }
-
-.is-position-fixed {
-  top: 80px; }
 
 .navbar-item .control.has-icons-right .algolia-autocomplete {
   width: 100%; }
@@ -7527,13 +7514,22 @@ body {
 @media screen and (min-width: 1281px) {
   .sidebar-container {
     width: 20%; }
+    .sidebar-container .sidebar-main {
+      width: 18%; }
   .is-hidden-touch {
     width: 20%;
     display: block; }
   .is-two-thirds-tablet {
-    width: 60%; } }
+    width: 60%; }
+  .is-fluid {
+    margin-left: 64px;
+    margin-right: 64px; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .sidebar-container {
+    width: 33%; }
+    .sidebar-container .sidebar-main {
+      width: 28%; }
   .is-hidden-touch {
     display: none; }
   .is-two-thirds-tablet {
@@ -7543,8 +7539,6 @@ body {
     margin-right: 64px; } }
 
 @media screen and (max-width: 1025px) {
-  .sidebar-container {
-    width: 33%; }
   .is-two-thirds-tablet {
     width: 66%; }
   .navbar .container .navbar-brand {
@@ -7569,7 +7563,6 @@ body {
   .navbar.is-flipped .container .navbar-brand {
     padding-left: 2rem; }
     .navbar.is-flipped .container .navbar-brand .navbar-item.logo {
-      margin: 6px 0;
       background-image: url(/images/logo_black.png); }
   .navbar.is-flipped .navbar-menu {
     background-color: #fafafa; }
@@ -7592,6 +7585,7 @@ body {
     padding-left: 1rem;
     margin-bottom: 3rem; }
   .sidebar-container {
+    width: 33%;
     padding-top: 0;
     padding-right: 2rem;
     padding-bottom: 2rem;
@@ -7602,15 +7596,15 @@ body {
       font-size: 1.2rem;
       vertical-align: middle; }
       .sidebar-container .sidebar-title.dis-hidden-mobile {
-        margin-bottom: 1rem; }
-    .sidebar-container .sidebar {
-      width: 100%; }
-      .sidebar-container .sidebar.is-affixed .sidebar-inner {
-        width: 25.5% !important;
-        top: 100px !important;
-        position: fixed !important;
-        transform: translate(0, 0) !important;
-        transform: translate3d(0, 0, 0) !important; }
+        margin-bottom: 0.5rem; }
+    .sidebar-container .sidebar-main {
+      position: fixed;
+      top: 170px;
+      transition: all .5s ease;
+      width: 28%; }
+      .sidebar-container .sidebar-main.is-affixed {
+        top: 80px;
+        transition: all .5s ease; }
   .verticals, .features {
     padding: 2rem;
     margin: 0; }
@@ -7702,17 +7696,18 @@ body {
     width: 60px;
     height: 60px;
     margin-right: 1rem; }
-  .navbar .container .navbar-brand .navbar-item.logo {
-    margin: 6px 0;
-    width: 48px;
-    height: 48px; }
   .tabs.docs-top-menu {
     margin: 0 2rem;
     height: 50px; }
   .tabs .sub-menu {
     top: 50px; }
   .sidebar-container {
-    width: 100%; }
+    width: 100%;
+    padding-right: 0; }
+    .sidebar-container .sidebar-main {
+      position: relative;
+      top: 0;
+      width: 100%; }
   .is-hidden-touch {
     display: none; }
   .custom-side {

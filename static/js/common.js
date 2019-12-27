@@ -84,11 +84,13 @@ $(document).ready(function () {
         } else {
           iScrollPosFlag = 0;
           //$('.top-menu').attr('style', 'visibility:hidden');
-          $('.top-menu').attr('style', 'display:none');
+          $('.top-menu').attr('style', 'display: none;');
+          $('.sidebar-container .sidebar-main').addClass('is-affixed')
         }
       } else {
         if (windowScrollTop < isSmallHeight + isFixedTopHeight - $('.top-menu').height()) {
           $('.top-menu').removeClass('fixed').attr('style', 'visibility:visible')
+          $('.sidebar-container .sidebar-main').removeClass('is-affixed')
         }
       }
       iScrollPos = windowScrollTop;
