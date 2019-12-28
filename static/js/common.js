@@ -13,13 +13,24 @@ function controlClassOnCondition(element, className, condition) {
 }
 
 $(document).ready(function () {
-  
+
   // tabs
-  $('.top-menu .tabs .tabs-a').each(function($index) {
-    if (location.href.split("/")[4].indexOf($(this).text().toLowerCase()) > -1) {
-      $(this).addClass('is-active')
+  $('.top-menu .tabs .tabs-a').each(function() {
+    if (location.href.split("/")[4]) {
+      if (location.href.split("/")[4].indexOf($(this).text().toLowerCase()) > -1) {
+        $(this).addClass('is-active')
+      }
     }
   });
+
+  $('.top-menu .sub-menu li').each(function() {
+    if (location.href.split("/")[5]) {
+      if (location.href.split("/")[5].indexOf($(this).text().toLowerCase()) > -1) {
+        $(this).addClass('is-active')
+      }
+    }
+  });
+
   $('.top-menu .tabs .tabs-a').on('click', function() {
     $('.top-menu .tabs .tabs-a').removeClass('hover');
     if (!$(this).next('.sub-menu').hasClass('active')) {
@@ -74,7 +85,9 @@ $(document).ready(function () {
       if (windowScrollTop> isSmallHeight + isFixedTopHeight) {
         if (windowScrollTop < iScrollPos) {
           iScrollPosFlag = 1;
-          //$('.top-menu').addClass('fixed').attr('style', 'visibility:visible');
+          $('.top-menu').addClass('fixed').attr('style', 'visibility:visible');
+          $('.sidebar-container .sidebar-main').removeClass('is-affixed')
+          $('.toc-main').removeClass('is-affixed')
         } else if (windowScrollTop === iScrollPos) {
           if (iScrollPosFlag === 0) {
             $('.top-menu').attr('style', 'visibility:hidden');
@@ -86,11 +99,13 @@ $(document).ready(function () {
           //$('.top-menu').attr('style', 'visibility:hidden');
           $('.top-menu').attr('style', 'display: none;');
           $('.sidebar-container .sidebar-main').addClass('is-affixed')
+          $('.toc-main').addClass('is-affixed')
         }
       } else {
         if (windowScrollTop < isSmallHeight + isFixedTopHeight - $('.top-menu').height()) {
           $('.top-menu').removeClass('fixed').attr('style', 'visibility:visible')
           $('.sidebar-container .sidebar-main').removeClass('is-affixed')
+          $('.toc-main').removeClass('is-affixed')
         }
       }
       iScrollPos = windowScrollTop;

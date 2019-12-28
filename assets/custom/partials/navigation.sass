@@ -82,10 +82,13 @@
 // top menu
 // 탑 메뉴
 .top-menu
+  position: fixed
+  top: 60px
   transition: all 2s ease
   max-width: 100%
   width: 100%
   background-color: #181824
+  z-index: 5
   //background-color: #eff3f4
   .tabs
     max-width: 95%
@@ -156,7 +159,6 @@
     ul
       li
         a
-          margin-bottom: 5px
           padding-left: 20px
           font-size: 13px
         ul
@@ -324,11 +326,13 @@ input:checked + .slider:before
 // TOC
 .toc-main
   position: fixed
-  top: 170px
   transition: all .5s ease
+  top: 170px
   &.is-position-fixed
-      top: 80px
-      transition: all .5s ease
+    top: 170px
+    transition: all .5s ease
+  &.is-affixed
+    top: 80px
     
 .toc-menu
   position: relative

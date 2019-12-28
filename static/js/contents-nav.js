@@ -30,6 +30,12 @@ $(document).ready(function () {
       }
     });
 
+    // 내용이 부족할 경우 컨텐츠 height 조절
+    //setTimeout(function() {
+      if ($('.sidebar-main').height() > $('.columns').height()) {
+        $('.columns').css('height', $('.sidebar-main').height() + $('.footer').height() + 130)
+      }
+    //})
   }
 
   // add "target=_blank" to external links

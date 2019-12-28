@@ -177,14 +177,38 @@ $tabs-toggle-link-active-color: $link-invert !default
       display: block
       width: 210px
       li
+        height: 41px
+        &:hover
+           background:#f7f8fa
         a
           display: block
           float: left
-          padding: 11px 30px
+          padding: 11px 0 11px 54px
           width: 210px
           color: #5f6281
           cursor: pointer
-          font-size: 13px       
+          font-size: 13px
+          background: url(images/icon_default_off.png) 28px center no-repeat
+          background-size: 5px 5px
           &:hover
-            background:#f7f8fa
             color: #374afb
+            background: url(images/icon_default_on.png) 28px center no-repeat
+            background-size: 5px 5px
+        &.React:hover,
+        &.React.is-active
+          background:#f7f8fa
+          a
+            background: url(images/icon_react_on.png) 18px center no-repeat
+            background-size: 25px 22px
+        &.AWS:hover,
+        &.AWS.is-active
+          background:#f7f8fa
+          a
+            background: url(images/icon_aws_on.png) 18px center no-repeat
+            background-size: 25px 25px
+        &.is-active
+          background:#f7f8fa
+          a
+            color: #363638
+            background: url(images/icon_default_on.png) 28px center no-repeat
+            background-size: 5px 5px

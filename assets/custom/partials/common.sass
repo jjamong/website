@@ -57,14 +57,15 @@ html, body
     &.dis-hidden-mobile
       //margin-bottom: .5rem
       margin-bottom: 1.5rem
+
   .sidebar-main
     position: fixed
     top: 170px
-    transition: all .5s ease
+    transition-property: top
+    transition-duration: .5s
     &.is-affixed
       top: 80px
       transition: all .5s ease
-
     // &.is-affixed
     //   .sidebar-inner
     //     width: 16.5% !important
@@ -80,11 +81,12 @@ html, body
   padding-bottom: 3rem
   padding-left: 3rem
   margin-left: 2rem
-  margin-right: 0rem
-  margin-bottom: 1rem
+  // margin-right: 0rem
+  // margin-bottom: 1rem
   -webkit-box-shadow: 0 0 13px 0 rgba(82,63,105,.05)
   box-shadow: 0 0 13px 0 rgba(82,63,105,.05)
   //border: 1px solid #ccc
+  font-size: 14px
 
   h2,h3,h4,h5,h6
     &:before
@@ -139,7 +141,7 @@ $footer-color: rgba(255, 255, 255, 0.4)
 .footer
   position: absolute
   width: 100%
-  bottom: -75px
+  //bottom: -75px
   background-color: $main-color
   padding: 0
   height: $footer-height

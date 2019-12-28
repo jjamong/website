@@ -11,7 +11,7 @@
         <div class="sub-menu">
           <ul>
             {{ range $front.Sections }}
-            <li><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
+            <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
             {{ end }}
           </ul>
         </div>
@@ -22,7 +22,7 @@
         <div class="sub-menu">
           <ul>
             {{ range $infra.Sections }}
-            <li><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
+            <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
             {{ end }}
           </ul>
         </div>
@@ -33,7 +33,7 @@
         <div class="sub-menu">
           <ul>
             {{ range $etc.Sections }}
-            <li><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
+            <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
             {{ end }}
           </ul>
         </div>

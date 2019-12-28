@@ -51,7 +51,7 @@ $navbar-breakpoint: 1024px !default
 
 =navbar-fixed
   left: 0
-  position: fixed
+  //position: fixed
   right: 0
   z-index: $navbar-fixed-z
 
@@ -122,6 +122,7 @@ $navbar-breakpoint: 1024px !default
     &.has-shadow
       box-shadow: $navbar-bottom-box-shadow-size $navbar-box-shadow-color
   &.is-fixed-top
+    position: fixed
     top: 0
     transition: .2s all
   &.is-fixed-top.is-flipped
@@ -136,7 +137,7 @@ html,
 body
   &.has-navbar-fixed-top
     transition: .2s all
-    padding-top: $navbar-height
+    //padding-top: $navbar-height
   &.has-navbar-fixed-bottom
     padding-bottom: $navbar-height
 
