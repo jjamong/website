@@ -1,6 +1,5 @@
 ---
 title: JSX
-docs_home: true
 date: 2019-11-10
 weight: 1
 slug: index

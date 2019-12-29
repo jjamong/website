@@ -1,6 +1,5 @@
 ---
 title: Router 적용
-docs_home: true
 date: 2019-12-07
 weight: 1
 slug: index

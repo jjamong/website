@@ -2,6 +2,7 @@
 weight: 1
 slug: index
 title: "서버 아키텍처"
+description: "서버를 구성하는 기본 방법 및 구성 방법을 설명하며, 장단점 등을 통해 더 상세하게 설명한다."
 toc: true
 ---
 

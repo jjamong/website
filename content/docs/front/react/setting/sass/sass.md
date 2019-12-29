@@ -1,6 +1,5 @@
 ---
 title: Sass 적용
-docs_home: true
 date: 2019-11-11
 weight: 1
 slug: index

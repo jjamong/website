@@ -1,29 +1,4 @@
 baseURL = "https://jjamong.github.io/"
-title = "짜몽 기술 LAB"
+title = "짜몽 개발 연구소"
 
 contentDir = "content/"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    url = "/about/"
-    weight = -130
-
-  [[menu.main]]
-    identifier = "docs"
-    name = "docs"
-    url = "/docs/"
-    weight = -120
-
-  [[menu.main]]
-    identifier = "blog"
-    name = "blog"
-    url = "/blog/"
-    weight = -110
-
-  [[menu.main]]
-    identifier = "community"
-    name = "community"
-    url = "/community/"
-    weight = -100
