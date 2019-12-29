@@ -14,7 +14,7 @@ toc: true
 
 편집을 통해 목표용량, 최소, 최대를 2대로 설정한다.
 
-![01](/docs/infra/ec2/elb/test/01.png)
+![01](/docs/infra/aws/ec2/elb/test/01.png)
 
 # 2. 대상 그룹 설정 변경
 
@@ -24,7 +24,7 @@ toc: true
 경로와 상태코드를 통해 연결된 ec2 상태를 확인하므로 반드시
 설정에 맞아야 한다.
 
-![02](/docs/infra/ec2/elb/test/02.png)
+![02](/docs/infra/aws/ec2/elb/test/02.png)
 
 
 # 3. 장애 상황 테스트
@@ -34,7 +34,7 @@ toc: true
 이후 장애 상황을 만들기 위해 EC2 1대의 웹서버를 종료한다.
 종료하면 아래와 같이 종료한 웹서버에 붙어 오류가 발생된다.
 
-![03](/docs/infra/ec2/elb/test/03.png)
+![03](/docs/infra/aws/ec2/elb/test/03.png)
 
 그러나 ELB가 다시 정상적인 ec2로 요청을 보내 웹서버가 곧 정상동작하는 것을 확인 할 수 있다.
 

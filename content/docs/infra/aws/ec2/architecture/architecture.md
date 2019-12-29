@@ -7,7 +7,7 @@ toc: true
 
 ## 단일서버
 
-![단일서버](/docs/infra/ec2/architecture/01.png)
+![단일서버](/docs/infra/aws/ec2/architecture/01.png)
 
 가장 기본적인 서버 구성으로 테스트 서버나, 간단한고 작은 서비스를 할 때 많이 사용된다.
 
@@ -33,7 +33,7 @@ toc: true
 
 ## 애플리케이션/데이터베이스 서버 분리
 
-![애플리케이션/데이터베이스 서버 분리](/docs/infra/ec2/architecture/02.png)
+![애플리케이션/데이터베이스 서버 분리](/docs/infra/aws/ec2/architecture/02.png)
 
 단일 서버 구성에서 데이터베이스를 별도의 서버로 분리한 구성.
 
@@ -54,7 +54,7 @@ toc: true
 
 ## 로드 밸런서
 
-![로드밸런서](/docs/infra/ec2/architecture/03.png)
+![로드밸런서](/docs/infra/aws/ec2/architecture/03.png)
 클라이언트는 로드 밸런서 서버와 통신하고 그 뒤에 여러 애플리케이션 서버를 두는 구성.
 
 ### 장점

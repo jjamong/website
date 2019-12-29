@@ -7,7 +7,7 @@ toc: true
 
 ## 기본 구성
 
-![01](/docs/infra/ec2/autoscaling/configuration/01.png)
+![01](/docs/infra/aws/ec2/autoscaling/configuration/01.png)
 
 AWS Auto Scaling(오토 스케일링) 그룹은 AWS에서 제공하는 자동 다중 서버 서비스다.
 같은 사양, 환경, 코드를 가진 똑같은 EC2 인스턴스 묶음이며, AMI를 이용하기 때문에 같은 서버를 구성할 수 있다.
@@ -17,7 +17,7 @@ AWS Auto Scaling(오토 스케일링) 그룹은 AWS에서 제공하는 자동 �
 
 ## 오토 스케일링 응용
 
-![02](/docs/infra/ec2/autoscaling/configuration/02.png)
+![02](/docs/infra/aws/ec2/autoscaling/configuration/02.png)
 
 ### CPU 사용량 정책
 예를 들어, 평균 CPU 사용량 정책에 따라 평소 EC2 3대로 요청을 처리하다가,

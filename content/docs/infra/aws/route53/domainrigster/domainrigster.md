@@ -9,7 +9,7 @@ toc: true
 
 도메인 등록을 선택한다.
 
-![01](/docs/infra/route53/domainrigster/01.png)
+![01](/docs/infra/aws/route53/domainrigster/01.png)
 
 - - -
 
@@ -17,4 +17,4 @@ toc: true
 
 원하는 도메인을 검색하고 장바구니에 담아 구매한다.
 
-![02](/docs/infra/route53/domainrigster/02.png)
+![02](/docs/infra/aws/route53/domainrigster/02.png)

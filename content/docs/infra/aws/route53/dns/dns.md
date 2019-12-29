@@ -13,7 +13,7 @@ DNS(Domain Name System) 서버는 도메인과 그 도메인에 연결된 IP를 
 
 ## 도메인 주소의 작동방식
 
-![01](/docs/infra/route53/dns/01.png)
+![01](/docs/infra/aws/route53/dns/01.png)
 
 1. 웹 브라우저의 주소창에 test.com을 입력하고 엔터를 친다.
 2. 현재 IP에서 가까운 DNS 서버에 test.com이라는 도메인의 실제 IP주소를 알고 있는지 물어본다.
