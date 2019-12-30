@@ -1,9 +1,17 @@
 <link type="text/css" rel="stylesheet" href="{{"css/fonts.css" | relURL}}" />
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+
+{{ if .IsHome }}
+<!-- 홈일 경우 -->
+
+{{ end }}
+
 {{ if (and (not .IsHome) (not .Params.docs_home) )}}
 <link type="text/css" rel="stylesheet" href="{{"css/tocbot.css" | relURL}}" />
 <link type="text/css" rel="stylesheet" href="{{"css/scrollbar.css" | relURL}}" />
 {{ end }}
+
 {{ $sass := resources.Get "styles.sass" }}
 {{ if .Site.IsServer }}
 {{ $css := $sass | toCSS }}

@@ -35,9 +35,9 @@
   transform-origin: center;
   width: 0.625em; }
 
-.content:not(:last-child), .notification:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child),
-.subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .message:not(:last-child), .tabs:not(:last-child) {
-  margin-bottom: 1.5rem; }
+.content, .notification, .table, .table-container, .title,
+.subtitle, .block, .highlight, .breadcrumb, .level, .message, .tabs {
+  display: block; }
 
 .delete {
   -moz-appearance: none;
@@ -1966,15 +1966,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     .content ol:not([type]).is-upper-roman {
       list-style-type: upper-roman; }
 
-.content ul {
-  list-style: disc outside;
-  margin-left: 2em;
-  margin-top: 1em; }
-  .content ul ul {
-    list-style-type: circle;
-    margin-top: 0.5em; }
-    .content ul ul ul {
-      list-style-type: square; }
+.content ul ul {
+  list-style-type: circle;
+  margin-top: 0.5em; }
+  .content ul ul ul {
+    list-style-type: square; }
 
 .content dd {
   margin-left: 2em; }
@@ -7527,6 +7523,34 @@ body {
         width: 100%;
         height: 100%;
         font-size: 1rem; }
+
+.container.main {
+  margin-top: 60px; }
+  .container.main .content-main {
+    margin: 0;
+    padding: 2rem; }
+  .container.main .content-list li {
+    list-style: none;
+    padding: 30px 0;
+    border-bottom: 1px solid #dddddd; }
+    .container.main .content-list li a {
+      color: black;
+      text-decoration: none; }
+  .container.main .content-list .list-date {
+    color: #262626;
+    font-size: 15px;
+    font-weight: 500; }
+  .container.main .content-list .list-title {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #212121; }
+  .container.main .content-list .list-desc {
+    font-size: 1em;
+    font-weight: 300;
+    color: #424242; }
 
 @media screen and (min-width: 1281px) {
   .sidebar-container {

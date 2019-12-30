@@ -1,3 +1,39 @@
-<script>
-  location.href = '/docs/';
-</script>
+<!DOCTYPE html>
+<html lang="ko">
+{{ partial "head.html" . }}
+
+<body class="has-navbar-fixed-top">
+  <section class="wrap">
+    {{ partial "header.html" . }}
+    
+    <div class="container main">
+      <div class="content-main content">
+        {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
+
+        {{ if gt $paginator.TotalPages 0 }}
+
+        <ul class="content-list">
+          {{- range $paginator.Pages -}}
+          <li>
+            <span class="list-date">{{- .Date.Format "2006-01-02" -}}</span>
+            <div class="list-title"><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></div>
+              <p class="list-desc">
+                <a href="{{ .RelPermalink }}">
+                {{ .Summary | plainify | safeHTML }}
+                {{ if .Truncated }}…{{ end }}
+                </a>
+              </p>
+          </li>
+          {{- end -}}
+        </ul>
+        {{ end }}
+    </div>
+
+    {{ partial "scripts-footer.html" . }}
+    {{ partialCached "footer.html" . }}
+    {{ if and (isset .Params "file_download") (.Params.file_download) }}
+    {{ partial "docs/file-download-terms.html" . }}
+    {{ end }}
+  </section>
+</body>
+</html>
