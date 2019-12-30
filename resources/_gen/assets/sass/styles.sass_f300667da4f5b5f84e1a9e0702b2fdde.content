@@ -6461,6 +6461,14 @@ html, body {
   background: #2c2d3a; }
   .navbar .container .navbar-brand {
     padding-left: 0; }
+    .navbar .container .navbar-brand .logo-area {
+      display: flex; }
+      .navbar .container .navbar-brand .logo-area .logo-text {
+        line-height: 60px;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700; }
     .navbar .container .navbar-brand .navbar-item.logo {
       color: #fcfdfd;
       font-size: 1.5rem;
