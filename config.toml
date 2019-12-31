@@ -2,3 +2,8 @@ baseURL = "https://jjamong.github.io/"
 title = "짜몽 개발 연구소"
 
 contentDir = "content/"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+enableRobotsTXT = true

@@ -1,6 +1,4 @@
 User-agent: *
+Allow: /
 
-Disallow: /404/
-Disallow: /404.html
-
-SITEMAP: {{ "sitemap.xml" | absLangURL }}
+Sitemap: https://jjamong.github.io/sitemap.xml
