@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jjamong.github.io/sitemap.xml
