@@ -6778,7 +6778,6 @@ body {
   color: #374afb; }
 
 .content li, .content li p {
-  margin: 0.5rem 0 !important;
   padding: 0; }
 
 .content ol li ol {
@@ -7562,6 +7561,45 @@ body {
     font-weight: 300;
     color: #424242; }
 
+.container.study {
+  margin-top: 60px;
+  background-color: #f9f9fc; }
+  .container.study .content-main {
+    margin: 0;
+    padding: 2rem; }
+  .container.study .content-list {
+    overflow: hidden;
+    width: 1280px;
+    margin: 0 auto; }
+    .container.study .content-list .content-li {
+      float: left;
+      list-style: none;
+      margin-left: 35px;
+      margin-bottom: 35px;
+      width: 400px;
+      height: 360px;
+      box-shadow: 0 0 13px 0 rgba(82, 63, 105, 0.05); }
+      .container.study .content-list .content-li:nth-child(3n-2) {
+        margin-left: 5px; }
+      .container.study .content-list .content-li a {
+        color: #48465b;
+        text-decoration: none; }
+    .container.study .content-list .list-title {
+      padding: 25px;
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 600; }
+    .container.study .content-list .list-desc {
+      padding: 25px;
+      height: 205px;
+      font-size: 13px;
+      color: #595d6e;
+      font-weight: 500; }
+    .container.study .content-list .list-date {
+      text-align: right;
+      padding: 25px;
+      border-top: 1px solid #ebedf2; }
+
 @media screen and (min-width: 1281px) {
   .sidebar-container {
     width: 20%; }
@@ -7760,9 +7798,11 @@ body {
   .tabs .sub-menu {
     top: 50px; }
   .is-fluid .columns {
+    padding: 0;
     margin-top: 110px; }
   .sidebar-container {
     width: 100%;
+    padding-top: 8px;
     padding-right: 0; }
     .sidebar-container .sidebar-main {
       position: relative;

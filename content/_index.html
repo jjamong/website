@@ -9,9 +9,7 @@
     <div class="container main">
       <div class="content-main content">
         {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
-
         {{ if gt $paginator.TotalPages 0 }}
-
         <ul class="content-list">
           {{- range $paginator.Pages -}}
           <li>
@@ -31,9 +29,6 @@
 
     {{ partial "scripts-footer.html" . }}
     {{ partialCached "footer.html" . }}
-    {{ if and (isset .Params "file_download") (.Params.file_download) }}
-    {{ partial "docs/file-download-terms.html" . }}
-    {{ end }}
   </section>
 </body>
 </html>
