@@ -156,19 +156,18 @@ $tabs-toggle-link-active-color: $link-invert !default
 
   /* 수정 영역 */
   .sub-menu
-    //display: none
+    display: block
     visibility: hidden
     position: absolute
     top: 70px
     background: #fff
-    z-index: 10
+    z-index: 100
     opacity: 0
     padding: 20px 0
     margin-top: 20px
     box-shadow: 0 0 50px 0 rgba(82,63,105,.15)
     transition: all .3s ease
     &.active
-      //display: block
       visibility: visible
       margin-top: 0
       opacity: 1

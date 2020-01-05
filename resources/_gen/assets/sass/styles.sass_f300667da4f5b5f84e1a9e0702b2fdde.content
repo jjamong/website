@@ -4609,11 +4609,12 @@ a.navbar-item,
   .tabs.is-large {
     font-size: 1.5rem; }
   .tabs .sub-menu {
+    display: block;
     visibility: hidden;
     position: absolute;
     top: 70px;
     background: #fff;
-    z-index: 10;
+    z-index: 100;
     opacity: 0;
     padding: 20px 0;
     margin-top: 20px;
@@ -6517,7 +6518,7 @@ html, body {
       transition: .2s all; }
 
 .top-menu {
-  position: fixed;
+  position: relative;
   top: 60px;
   transition: all 2s ease;
   max-width: 100%;
@@ -7614,7 +7615,7 @@ body {
     margin-left: 64px;
     margin-right: 64px; }
     .is-fluid .columns {
-      padding-top: 162px; } }
+      padding-top: 136px; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .sidebar-container {
@@ -7631,7 +7632,7 @@ body {
     margin-left: 32px;
     margin-right: 32px; }
     .is-fluid .columns {
-      padding-top: 162px; } }
+      padding-top: 100px; } }
 
 @media screen and (max-width: 1025px) {
   .is-two-thirds-tablet {
@@ -7752,7 +7753,7 @@ body {
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
   .is-fluid .columns {
-    padding-top: 162px; }
+    padding-top: 100px; }
   .section-02 {
     margin-top: 130px; }
     .section-02 .features-wrap .list.first .img-box img {
@@ -7799,10 +7800,11 @@ body {
     top: 50px; }
   .is-fluid .columns {
     padding: 0;
-    margin-top: 110px; }
+    margin-top: 60px; }
   .sidebar-container {
     width: 100%;
     padding-top: 8px;
+    padding-bottom: 8px;
     padding-right: 0; }
     .sidebar-container .sidebar-main {
       position: relative;
