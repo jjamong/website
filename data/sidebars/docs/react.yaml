@@ -10,7 +10,7 @@ entries:
       url: /docs/front/react/
     - title: Sass
       url: /docs/front/react/setting/sass/
-    - title: Rouer
+    - title: Router
       url: /docs/front/react/setting/router/
     - title: redux
       url: /docs/front/react/setting/redux/

@@ -4,7 +4,7 @@
 {{ $menuTitle := delimit (slice "/study/" ($menuDepth)) "" }}
 {{ $study := .Site.GetPage (string $menuTitle) }}
 {{ $menuSections := (where $study.Sections ".Params.section_main" true) }}
-{{ $.Scratch.Set "sectionName" "d2react" }}
+{{ $.Scratch.Set "sectionName" "d2" }}
 {{ range $menuSections }}
   {{ $isDescendant := $p.IsDescendant . }}
   {{ if $isDescendant }}

@@ -26,12 +26,6 @@ yarn start
 
 ## 리엑트 설정
 
-### eject 설정
-
-```
-yarn eject
-```
-
 ### 불필요 파일 제거
 ```
 App.css
@@ -69,6 +63,12 @@ package.json - script
     "start": "cross-env NODE_PATH=src react-scripts start",
     src/index.js"
 }
+```
+
+이후 아래와 같이 import 및 경로 불러올 시에 src이하 경로로 인식
+
+```
+import App from 'components/App';
 ```
 
 ### axios 설정

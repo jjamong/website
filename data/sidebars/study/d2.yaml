@@ -1,0 +1,9 @@
+entries:
+
+- title: D2 프로젝트
+
+  sections:
+  - title: 01. 설정
+    subsections:
+    - title: 프로젝트 설정
+      url: /study/d2/01/project
