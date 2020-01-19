@@ -1,28 +1,28 @@
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  {{ hugo.Generator }}
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{ hugo.Generator }}
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
-  <!-- SEO  -->
-  <link rel="canonical" href="http://jjamong.github.io">
-  <meta name="title" content="{{ .Site.Title }}">
-  <meta name="keywords" content="웹, 서버, 프론트엔드, 백엔드, DB 등 IT 개발 블로그/Docs">
-  <meta name="description" content="{{ if .IsHome }}짜몽 개발 연구소는 IT 개발 지식과 경험을 토대로 작성된 가이드 문서를 제공합니다.{{ else }}{{.Description}}{{ end }}">
+<!-- SEO  -->
+<link rel="canonical" href="http://jjamong.github.io">
+<meta name="title" content="{{ .Site.Title }}">
+<meta name="keywords" content="웹, 서버, 프론트엔드, 백엔드, DB 등 IT 개발 블로그/Docs">
+<meta name="description" content="{{ if .IsHome }}짜몽 개발 연구소는 IT 개발 지식과 경험을 토대로 작성된 가이드 문서를 제공합니다.{{ else }}{{.Description}}{{ end }}">
 
-  <!-- 파비콘 -->
-  {{ partial "favicons.html" . }}
-  <!-- CSS -->
-  {{ partial "css.html" . }}
-  <!-- 구글 애널리틱스 Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149836281-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!-- 파비콘 -->
+{{ partial "favicons.html" . }}
+<!-- CSS -->
+{{ partial "css.html" . }}
+<!-- 구글 애널리틱스 Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149836281-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'UA-149836281-1');
-  </script>
+  gtag('config', 'UA-149836281-1');
+</script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
 </head>

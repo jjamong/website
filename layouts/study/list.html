@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+{{ partial "head.html" . }}
+
+<body class="has-navbar-fixed-top">
+  <section class="gen-wrapper white-bg">
+    {{ partial "header.html" . }}
+    <!--{{ partialCached "hero.html" . .Section }}-->
+    
+    <div class="container main">
+      <div class="content-main content">
+        <ul class="content-list">
+          {{ range .Pages }}
+          <li>
+            <span class="list-date">{{- .Date.Format "2006-01-02" -}}</span>
+            <div class="list-title"><a href="{{ .RelPermalink }}/01/overview">{{ .Title | safeHTML }}</a></div>
+              <p class="list-desc">
+                <a href="{{ .RelPermalink }}/01/">
+                  {{ .Params.description }}
+                </a>
+              </p>
+          </li>
+          {{ end }}
+        </ul>
+    </div>
+
+    {{ partial "scripts-footer.html" . }}
+    {{ partialCached "footer.html" . }}
+  </section>
+</body>
+
+</html>

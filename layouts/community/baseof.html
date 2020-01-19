@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">/stduy/study_home
+<html lang="en">
 {{ partial "head.html" . }}
 
 <body class="has-navbar-fixed-top">
   <section class="gen-wrapper">
     {{ partial "header.html" . }}
     <!--{{ partialCached "hero.html" . .Section }}-->
-    {{ partial "docs/top-menu.html" . }}
-    {{ .Content }}
+    {{ block "main" . }}{{ end }}
     {{ partial "scripts-footer.html" . }}
     {{ partialCached "footer.html" . }}
   </section>

@@ -3,7 +3,10 @@ entries:
 - title: D2 프로젝트
 
   sections:
-  - title: 01. 설정
+  - title: 01. 개요 및 시작
+
     subsections:
-    - title: 프로젝트 설정
+    - title: 개요
+      url: /study/d2/01/overview
+    - title: 설정
       url: /study/d2/01/project

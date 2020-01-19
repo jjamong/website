@@ -6,7 +6,8 @@
   <section class="gen-wrapper">
     {{ partial "header.html" . }}
     <!--{{ partialCached "hero.html" . .Section }}-->
-    {{ block "main" . }}{{ end }}
+    {{ partial "docs/top-menu.html" . }}
+    {{ .Content }}
     {{ partial "scripts-footer.html" . }}
     {{ partialCached "footer.html" . }}
   </section>

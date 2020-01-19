@@ -1904,7 +1904,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 .content blockquote:not(:last-child),
 .content pre:not(:last-child),
 .content table:not(:last-child) {
-  margin: 6px 0; }
+  margin: 8px 0; }
 
 .content h1,
 .content h2,
@@ -1992,7 +1992,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   white-space: pre;
-  word-wrap: normal; }
+  word-wrap: normal;
+  padding-bottom: 16px; }
 
 .content sup,
 .content sub {
@@ -6315,6 +6316,9 @@ html, body {
       top: 80px;
       transition: all .5s ease; }
 
+.sidebar-container.study .sidebar-main {
+  top: 136px; }
+
 .content-main {
   background-color: #FFF;
   padding-top: 3rem;
@@ -7414,8 +7418,6 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%; }
-    .card a:hover .thumbnail, .card a:hover .card-info {
-      background-color: #dcdcdc; }
     .card a:hover .image:before {
       content: '';
       z-index: 1;
@@ -7471,7 +7473,6 @@ body {
   .card .card-info {
     padding: 1.875rem .9375rem;
     height: 12.5rem;
-    background-color: #f9f9f9;
     transition: .2s all; }
     .card .card-info .tag {
       color: #fff;
@@ -7819,6 +7820,8 @@ body {
         top: 0; }
       .sidebar-container .sidebar-main.is-affixed {
         top: 0; }
+  .sidebar-container.study .sidebar-main {
+    top: 0; }
   .is-hidden-touch {
     display: none; }
   .custom-side {
