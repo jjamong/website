@@ -7,6 +7,8 @@ entries:
 
     subsections:
     - title: 개요
-      url: /study/d2/01/overview
+      url: /study/d2/01/overview/
+    - title: 퍼블리싱
+      url: /study/d2/01/publishing/
     - title: 설정
-      url: /study/d2/01/project
+      url: /study/d2/01/project/
