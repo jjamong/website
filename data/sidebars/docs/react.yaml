@@ -4,16 +4,17 @@ entries:
 
   sections:
 
-  - title: React 시작/설정
+  - title: React
     subsections:
     - title: React
       url: /docs/front/react/
     - title: Sass
       url: /docs/front/react/setting/sass/
-    - title: Router
-      url: /docs/front/react/setting/router/
-    - title: redux
-      url: /docs/front/react/setting/redux/
+
+  - title: 플러그인
+    subsections:
+    - title: axios
+      url: /docs/front/react/plugin/axios/
 
   - title: JSX
     url: /docs/front/react/jsx/

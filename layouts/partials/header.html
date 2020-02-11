@@ -17,15 +17,17 @@
           <span class="navbar-item">
             <a href="javascript:alert('comming soon')">PORTFOLIO</a>
           </span>
-          <span class="navbar-item">
+          <!-- <span class="navbar-item">
             <a href="javascript:alert('comming soon')">BLOG</a>
-          </span>
+          </span> -->
           <span class="navbar-item">
-            <a href="/docs/front/react/" class="is-active">DOCS</a>
+            {{ $menu := index (split .Permalink "/") 3 }}
+            <a href="/docs/front/react/" {{ if eq $menu "docs" }}class="is-active"{{ end }}>DOCS</a>
           </span>
-          <span class="navbar-item">
-            <a href="/study/">STUDY</a>
-          </span>
+          <!-- <span class="navbar-item">
+            <a href="javascript:alert('comming soon')" {{ if eq $menu "study" }}class="is-active"{{ end }}>STUDY</a>
+            <a href="/study/" {{ if eq $menu "study" }}class="is-active"{{ end }}>STUDY</a>
+          </span> -->
           <span class="navbar-item"></span>
           <!--           
           {{ $sections := slice "about" "docs" "blog" "community" }}
