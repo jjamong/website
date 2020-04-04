@@ -4522,7 +4522,7 @@ a.navbar-item,
       margin-left: 0; }
   .tabs .tabs-a {
     align-items: center;
-    color: #4a4a4a;
+    color: #fff;
     display: flex;
     justify-content: center;
     padding: 0.6rem 1.45rem;
@@ -6623,7 +6623,6 @@ html, body {
       transform: translate(0, -50%);
       width: 11px;
       height: 7px;
-      background: url("/images/arrow_up_down.png") no-repeat;
       background-size: cover; }
   .nav li.open > a > span {
     background-position-y: -8px; }
@@ -7205,16 +7204,13 @@ body {
     vertical-align: middle;
     width: 20px;
     height: 16px;
-    margin-left: .5rem;
-    background: url("images/btn_arrow_pink.png") center right no-repeat; }
+    margin-left: .5rem; }
   .text-link a {
     display: inline-block;
     vertical-align: middle;
     color: #bc2e65;
     font-weight: 700;
     border-bottom: .5px solid #bc2e65; }
-  .text-link.white i {
-    background: url("images/btn_arrow_white.png") center right no-repeat; }
   .text-link.white a {
     color: #fff;
     border-color: #fff; }
@@ -7987,3 +7983,111 @@ body {
       margin: 0.5rem !important; }
   .card {
     margin: 0.625rem; } }
+
+.portfolio {
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 400;
+  background: #EFF3F4; }
+  .portfolio .profile_area {
+    float: left;
+    padding: 100px 20px;
+    margin: 0 auto;
+    width: 340px;
+    background: #181824;
+    height: 1812px; }
+    .portfolio .profile_area .profile {
+      position: fixed; }
+      .portfolio .profile_area .profile .profile_img {
+        margin-bottom: 20px; }
+      .portfolio .profile_area .profile .profile_txt .tit {
+        font-size: 24px;
+        color: #828efd;
+        font-weight: bold;
+        border-bottom: 2px solid; }
+      .portfolio .profile_area .profile .profile_txt .txt_area {
+        margin: 20px 0; }
+        .portfolio .profile_area .profile .profile_txt .txt_area dl {
+          margin: 15px 0; }
+          .portfolio .profile_area .profile .profile_txt .txt_area dl dt {
+            margin-bottom: 5px;
+            color: #828efd;
+            font-size: 16px; }
+          .portfolio .profile_area .profile .profile_txt .txt_area dl dd {
+            color: #fff;
+            font-size: 12px; }
+  .portfolio .content_area {
+    overflow: hidden; }
+    .portfolio .content_area .activity {
+      float: left;
+      width: 50%;
+      padding: 20px 2.5%;
+      border-right: 2px solid #828efd;
+      border-right-style: dashed; }
+      .portfolio .content_area .activity .career .tit {
+        font-size: 22px;
+        line-height: 40px;
+        color: #2c2d3a;
+        border-bottom: 1px solid; }
+      .portfolio .content_area .activity .career .list {
+        margin: 15px 0; }
+        .portfolio .content_area .activity .career .list li {
+          overflow: hidden;
+          margin-bottom: 15px;
+          font-size: 12px; }
+          .portfolio .content_area .activity .career .list li .year {
+            float: left;
+            margin-right: 10px;
+            width: 30%; }
+          .portfolio .content_area .activity .career .list li .desc {
+            float: left;
+            width: 60%;
+            color: #000; }
+    .portfolio .content_area .ability {
+      float: left;
+      width: 50%;
+      padding: 20px 2.5%; }
+      .portfolio .content_area .ability .education {
+        margin-bottom: 40px; }
+        .portfolio .content_area .ability .education .tit {
+          font-size: 22px;
+          line-height: 40px;
+          color: #2c2d3a;
+          border-bottom: 1px solid; }
+        .portfolio .content_area .ability .education .list {
+          margin: 15px 0; }
+          .portfolio .content_area .ability .education .list li {
+            overflow: hidden;
+            margin-bottom: 15px;
+            font-size: 12px; }
+            .portfolio .content_area .ability .education .list li .year {
+              float: left;
+              margin-right: 10px;
+              width: 30%; }
+            .portfolio .content_area .ability .education .list li .desc {
+              float: left;
+              width: 60%;
+              color: #000; }
+      .portfolio .content_area .ability .skill .tit {
+        font-size: 22px;
+        line-height: 40px;
+        color: #2c2d3a;
+        border-bottom: 1px solid; }
+      .portfolio .content_area .ability .skill .list {
+        margin: 15px 0; }
+        .portfolio .content_area .ability .skill .list li {
+          overflow: hidden;
+          margin-bottom: 15px;
+          font-size: 12px; }
+          .portfolio .content_area .ability .skill .list li .lang {
+            float: left;
+            margin-right: 10px;
+            width: 30%; }
+          .portfolio .content_area .ability .skill .list li .gauge {
+            float: left;
+            width: 40%;
+            height: 18px;
+            background: #2c2d3a; }
+            .portfolio .content_area .ability .skill .list li .gauge .peosent {
+              height: 18px;
+              background: #828efd; }

@@ -3,8 +3,8 @@
     <div class="container is-fluid">
       <div class="navbar-brand">
         <div class="logo-area">
-          <a class="navbar-item logo" href="/" ></a>
-          <h1 class="logo-text">짜몽 개발 연구소</h1>
+          <a class="navbar-item logo" href="/" >
+          <a href="/" ><h1 class="logo-text">짜몽 개발 연구소</h1></a>
         </div>
         <span class="navbar-burger burger" data-target="navbarMenu">
           <span></span>
@@ -14,15 +14,15 @@
       </div>
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
+          {{ $menu := index (split .Permalink "/") 3 }}
           <span class="navbar-item">
-            <a href="javascript:alert('comming soon')">PORTFOLIO</a>
+            <a href="/" {{ if eq $menu "" }}class="is-active"{{ end }}>PORTFOLIO</a>
           </span>
           <!-- <span class="navbar-item">
             <a href="javascript:alert('comming soon')">BLOG</a>
           </span> -->
           <span class="navbar-item">
-            {{ $menu := index (split .Permalink "/") 3 }}
-            <a href="/docs/front/react/" {{ if eq $menu "docs" }}class="is-active"{{ end }}>DOCS</a>
+            <a href="/docs" {{ if eq $menu "docs" }}class="is-active"{{ end }}>DOCS</a>
           </span>
           <!-- <span class="navbar-item">
             <a href="javascript:alert('comming soon')" {{ if eq $menu "study" }}class="is-active"{{ end }}>STUDY</a>
