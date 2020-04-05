@@ -10,7 +10,7 @@
         margin: 0 auto
         width: 360px
         background: #181824
-        height: 1812px
+        //height: 1812px
 
         .profile
             position: fixed
@@ -123,6 +123,19 @@
                                 background: #828efd
 
 
+@media screen and (min-width: 1525px )
+    .profile_area
+        height: 1812px
+@media screen and (min-width: 1025px ) and (max-width: 1524px)
+    .profile_area
+        height: 2028px
+@media screen and (min-width: 721px ) and (max-width: 1024px)
+    .profile_area
+        height: 3321px
+@media screen and (min-width: 641px ) and (max-width: 720px)
+    .profile_area
+        height: 4095px
+
 @media screen and (max-width: 640px)
 
     .portfolio
@@ -147,10 +160,17 @@
                         
         .content_area
 
-            .activity, .ability
+            .activity
                 float: none
                 width: 100%
                 padding: 20px
-        
+                border-right: 0 solid #828efd
+                border-right-style: none
+
+            .ability
+                float: none
+                width: 100%
+                padding: 0 20px 20px
+
             .list
                 display: block
