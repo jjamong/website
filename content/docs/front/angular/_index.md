@@ -2,6 +2,7 @@
 title: Angular
 section_main: true
 date: 2019-12-01
+weight: 3
 ---
 
 ## 앵귤러 시작
