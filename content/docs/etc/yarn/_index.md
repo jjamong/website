@@ -12,8 +12,19 @@ date: 2019-12-24
 `url` : [https://yarnpkg.com](https://yarnpkg.com)
 
 
-## yarn eject
+## 설치
 
+npm 설치
+```
+$ npm install -g yarn
+```
+
+```
+$ yarn --version
+```
+
+
+## 시작
 프로젝트 환경설정 파일들을 프로젝트 루트로 설정한다.
 eject 명령어가 성공하면 config 폴더가 생성된다.
 
@@ -63,4 +74,23 @@ add를 해주고 커밋을 해주면 정상적으로 eject가 동작한다.
 ```
 $ git add .
 $ git commit -m "commit text"
+```
+
+## 사용법
+
+### global  
+
+글로벌 패키지 추가
+```
+$ yarn global add [package]
+```
+
+글로벌fh 설치된 패키지 리스트
+```
+$ yarn global list
+```
+
+### 패키지 추가
+```
+$ yarn add [package]
 ```
