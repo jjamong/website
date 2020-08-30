@@ -38,7 +38,6 @@ $tabs-toggle-link-active-color: $link-invert !default
   overflow-x: auto
   white-space: nowrap
   .tabs-li
-    margin-left: 10px
     &:first-child
       margin-left: 0
   .tabs-a
@@ -62,10 +61,11 @@ $tabs-toggle-link-active-color: $link-invert !default
         border-bottom-color: $tabs-link-active-border-bottom-color
         color: $tabs-link-active-color
   ul
-    align-items: center
+    //align-items: center
     //border-bottom-color: $tabs-border-bottom-color
     //border-bottom-style: $tabs-border-bottom-style
     //border-bottom-width: $tabs-border-bottom-width
+    align-items: flex-end
     display: flex
     flex-grow: 1
     flex-shrink: 0
@@ -159,7 +159,7 @@ $tabs-toggle-link-active-color: $link-invert !default
     display: block
     visibility: hidden
     position: absolute
-    top: 70px
+    top: 50px
     background: #fff
     z-index: 100
     opacity: 0
