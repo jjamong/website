@@ -1,18 +1,14 @@
 entries:
 
-- title: React
-
-  sections:
-
-  - title: React
-    subsections:
+  - title: 리액트 시작
+    sections:
     - title: React
       url: /docs/front/react/
     - title: Sass
       url: /docs/front/react/setting/sass/
 
   - title: 플러그인
-    subsections:
+    sections:
     - title: axios
       url: /docs/front/react/plugin/axios/
     - title: slick
@@ -22,7 +18,7 @@ entries:
     url: /docs/front/react/jsx/
     
   - title: Component(컴포넌트)
-    subsections:
+    sections:
     - title: 컴포넌트 생성
       url: /docs/front/react/component/component/
     - title: props

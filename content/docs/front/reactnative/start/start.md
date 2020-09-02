@@ -69,13 +69,13 @@ ISO
 $ react-native run-android
 ```
 
-## 구조
+## 설정
 
-`SafeAreaView`
-아이폰 X와 같은 노치 디자인(Notch Design)에서 상단에 상태 바와 하단에 홈 버튼의 영역을 제외한 영역에 콘텐츠를 표시할 때 사용하는 컴포넌트
+#### 타입스크립트
 
+루트경로에 파일 추가 후 작성
 
-`tsconfig.json`
+tsconfig.json
 ```
 {
   "compilerOptions": {
@@ -93,3 +93,54 @@ $ react-native run-android
   ]
 }
 ```
+
+#### CSS
+
+###### StyleSheet 
+```
+ import React from "react";
+ import { ActivityIndicator, View, StyleSheet } from "react-native";
+ import { TINT_COLOR, BG_COLOR } from "../constants/Colors";
+ ​
+ ​
+ const styled = StyleSheet.create.create({
+   container: {
+     backgroundColor: "black",
+     flex: 1,
+     justifyContent:"space-around"
+  }
+ });
+ ​
+ export default () => (
+   <View style={styled.container}>
+     <ActivityIndicator color={TINT_COLOR} />
+   </View>
+ );
+```
+
+###### styled-components
+
+```
+ import React from "react";
+ import { ActivityIndicator } from "react-native";
+ import { TINT_COLOR, BG_COLOR } from "../constants/Colors";
+ import styled from "styled-components";
+ ​
+ const Container = styled.View`
+   flex: 1;
+   background-color: ${BG_COLOR};
+   justify-content: center;
+ `;
+ ​
+ export default () => (
+   <Container>
+     <ActivityIndicator color={TINT_COLOR} />
+   </Container>
+ );
+```
+
+## 구조
+
+`SafeAreaView`
+아이폰 X와 같은 노치 디자인(Notch Design)에서 상단에 상태 바와 하단에 홈 버튼의 영역을 제외한 영역에 콘텐츠를 표시할 때 사용하는 컴포넌트
+

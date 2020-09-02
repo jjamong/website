@@ -69,23 +69,3 @@ package.json - script
 ```
 import App from 'components/App';
 ```
-
-## 플러그인
-
-### axios 설정
-프로미스 기반 REST API 웹 요청 라이브러리
-```
-$ yarn add axios
-```
-
-### slick 설정
-
-슬라이드 라이브러리 [공식](http://kenwheeler.github.io/slick/)
-
-```
-$ yarn add react-slick
-```
-
-```
-import slick from 'react-slick'
-```
