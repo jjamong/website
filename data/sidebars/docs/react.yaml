@@ -1,14 +1,20 @@
 entries:
 
-  - title: 리액트 시작
-    sections:
-    - title: React
-      url: /docs/front/react/
+- title: React
+
+  sections:
+
+  - title: 리액트
+    subsections:
+    - title: 리액트 시작
+      url: /docs/front/react/react/start
+    - title: 라이프 사이클
+      url: /docs/front/react/react/lifecycle
     - title: Sass
       url: /docs/front/react/setting/sass/
 
   - title: 플러그인
-    sections:
+    subsections:
     - title: axios
       url: /docs/front/react/plugin/axios/
     - title: slick
@@ -18,7 +24,7 @@ entries:
     url: /docs/front/react/jsx/
     
   - title: Component(컴포넌트)
-    sections:
+    subsections:
     - title: 컴포넌트 생성
       url: /docs/front/react/component/component/
     - title: props
