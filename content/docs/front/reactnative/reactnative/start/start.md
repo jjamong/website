@@ -34,11 +34,11 @@ toc: true
 
 ###### 4.ANDROID_SDK_ROOT 환경 변수 설정
 
-![ANDROID_SDK_ROOT](/docs/front/reactnative/start/01.png)
+![ANDROID_SDK_ROOT](/docs/front/reactnative/reactnative/start/01.png)
 
 ###### 5. adb 환경 변수 설정
 
-![adb](/docs/front/reactnative/start/02.png)
+![adb](/docs/front/reactnative/reactnative/start/02.png)
 
 
 ### 리액트 네이티브 설치
@@ -57,42 +57,20 @@ $ react-native init <프로젝트명>
 
 #### 애뮬레이터 실행
 
-안드로이드
-
 ```
+// 캐시 삭제 후 실행
+$ yarn start --reset-cache //
+
+// 안드로이드
+$ yarn start android
+$ react-native run-android
+
+// IOS
+$ yarn start ios
 $ react-native run-ios
 ```
 
-ISO 
-
-```
-$ react-native run-android
-```
-
 ## 설정
-
-#### 타입스크립트
-
-루트경로에 파일 추가 후 작성
-
-tsconfig.json
-```
-{
-  "compilerOptions": {
-    "target": "es6", //빌드 결과물을 es6 방식을 한다는 뜻
-    "module": "commonjs", // 빌과의 모듈 방식을 commonjs 방식을 한다는 뜻
-    "moduleResolution": "node",//모듈 해석 방식은 node 처럼 한다는 뜻
-    "sourceMap": true, // .map.js 파일도 함께 생성한다는 뜻
-    "emitDecoratorMetadata": true, /* Enables experimental support for ES7 decorators. */
-    "experimentalDecorators": true,  /* Enables experimental support for emitting type metadata for decorators. */
-    "removeComments": false, /* Do not emit comments to output. */
-    "noImplicitAny": false // 암시적으로 선언되었는데 any로 추론되면 에러를 알려준다.
-  },
-  "exclude": [ // npm 으로 설치한 모듈들을 import 가능하도록 설정
-    "node_modules"
-  ]
-}
-```
 
 #### CSS
 
