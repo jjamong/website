@@ -1,6 +1,6 @@
 ---
-weight: 1
 date: 2020-09-03
+slug: index
 title: "styled-components"
 description: "리액트 네이티브(React Native)에 styled-components 플러그인에 대한 가이드"
 toc: true

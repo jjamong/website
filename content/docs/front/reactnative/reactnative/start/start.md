@@ -1,5 +1,6 @@
 ---
 weight: 1
+slug: index
 date: 2020-08-28
 title: "React Native 시작"
 description: "리액트 네이티브(React Native)에 대해 설치 부터 실행하는 가이드"

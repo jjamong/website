@@ -1,5 +1,5 @@
 ---
-weight: 1
+slug: index
 date: 2020-09-02
 title: "geolocation"
 description: "리액트 네이티브(React Native)에 geolocation 플러그인에 대한 가이드"

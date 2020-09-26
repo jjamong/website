@@ -1,5 +1,5 @@
 ---
-weight: 1
+slug: index
 date: 2020-09-02
 title: "AsyncStorage"
 description: "리액트 네이티브(React Native)에 AsyncStorage 플러그인에 대한 가이드"
@@ -13,9 +13,13 @@ AsyncStorage는 앱 내에서 간단하게 데이터를 저장할 수 있는 저
 
 ### 설치
 
-npm
+
 ```
-$ npm install -save @react-native-community/async-storage
+// yarn
+$ yarn add @react-native-community/async-storage
+
+// npm
+$ npm install @react-native-community/async-storage
 ```
 
 ## 사용

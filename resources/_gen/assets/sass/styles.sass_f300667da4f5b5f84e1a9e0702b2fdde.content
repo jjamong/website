@@ -4516,10 +4516,8 @@ a.navbar-item,
   overflow-x: auto;
   white-space: nowrap;
   /* 수정 영역 */ }
-  .tabs .tabs-li {
-    margin-left: 10px; }
-    .tabs .tabs-li:first-child {
-      margin-left: 0; }
+  .tabs .tabs-li:first-child {
+    margin-left: 0; }
   .tabs .tabs-a {
     align-items: center;
     color: #fff;
@@ -4536,7 +4534,7 @@ a.navbar-item,
       border-bottom-color: #3273dc;
       color: #3273dc; }
   .tabs ul {
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
@@ -4613,7 +4611,7 @@ a.navbar-item,
     display: block;
     visibility: hidden;
     position: absolute;
-    top: 70px;
+    top: 50px;
     background: #fff;
     z-index: 100;
     opacity: 0;
@@ -4652,11 +4650,26 @@ a.navbar-item,
           .tabs .sub-menu ul li.React:hover a, .tabs .sub-menu ul li.React.is-active a {
             background: url(images/icon_react_on.png) 18px center no-repeat;
             background-size: 25px 22px; }
+        .tabs .sub-menu ul li.ReactNative:hover, .tabs .sub-menu ul li.ReactNative.is-active {
+          background: #f7f8fa; }
+          .tabs .sub-menu ul li.ReactNative:hover a, .tabs .sub-menu ul li.ReactNative.is-active a {
+            background: url(images/icon_react_on.png) 18px center no-repeat;
+            background-size: 25px 22px; }
+        .tabs .sub-menu ul li.Angular:hover, .tabs .sub-menu ul li.Angular.is-active {
+          background: #f7f8fa; }
+          .tabs .sub-menu ul li.Angular:hover a, .tabs .sub-menu ul li.Angular.is-active a {
+            background: url(images/icon_angular_on.png) 18px center no-repeat;
+            background-size: 25px 25px; }
         .tabs .sub-menu ul li.AWS:hover, .tabs .sub-menu ul li.AWS.is-active {
           background: #f7f8fa; }
           .tabs .sub-menu ul li.AWS:hover a, .tabs .sub-menu ul li.AWS.is-active a {
             background: url(images/icon_aws_on.png) 18px center no-repeat;
             background-size: 25px 25px; }
+        .tabs .sub-menu ul li.Hugo:hover, .tabs .sub-menu ul li.Hugo.is-active {
+          background: #f7f8fa; }
+          .tabs .sub-menu ul li.Hugo:hover a, .tabs .sub-menu ul li.Hugo.is-active a {
+            background: url(images/icon_hugo_on.png) 16px center no-repeat;
+            background-size: 25px 28px; }
         .tabs .sub-menu ul li.Yarn:hover, .tabs .sub-menu ul li.Yarn.is-active {
           background: #f7f8fa; }
           .tabs .sub-menu ul li.Yarn:hover a, .tabs .sub-menu ul li.Yarn.is-active a {
@@ -6537,7 +6550,7 @@ html, body {
   .top-menu .tabs {
     max-width: 95%;
     width: 95%;
-    height: 70px;
+    height: 50px;
     margin: 0 auto 0 4rem; }
     .top-menu .tabs a {
       transition: all .3s ease; }
@@ -6645,7 +6658,7 @@ html, body {
     font-size: 14px;
     line-height: 24px;
     padding: 6px 20px;
-    margin: 10px 0; }
+    margin: 4px 0; }
   .nav .subsections a {
     padding-right: 36px; }
 
