@@ -6,5 +6,5 @@ weight: 2
 ---
 
 <script>
-    location.href = "reactnative/start/start"
+    location.href = "reactnative/start"
 </script>

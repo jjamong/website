@@ -1,10 +1,12 @@
 ---
-date: 2020-09-08
 slug: index
-title: "react-navigation(내비게이션)"
-description: "리액트 네이티브(React Native)의 react-navigation(내비게이션) 플러그인에 대한 가이드"
+date: 2020-09-02
+title: "react-native-make(앱 아이콘/스플래쉬)"
+description: "리액트 네이티브(React Native)의 react-native-make(앱 아이콘/스플래쉬) 플러그인에 대한 가이드"
 toc: true
 ---
+
+react-native-make로 앱의 아이콘/스플래쉬 화면을 설정 할 수 있다.
 
 ## 설치 및 설정
 
@@ -14,12 +16,10 @@ toc: true
 
 ```
 // yarn
-$ yarn add @react-navigation/native
-$ yarn add @react-navigation/stack
+$ yarn add -D @bam.tech/react-native-make
 
 // npm
-$ npm install @react-navigation/native
-$ npm install @react-navigation/stack
+$ npm i -D @bam.tech/react-native-make
 ```
 
 ### set-icon(아이콘 설정)

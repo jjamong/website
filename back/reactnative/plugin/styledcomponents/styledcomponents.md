@@ -12,7 +12,7 @@ toc: true
 
 yarn
 ```
-yarn add styled-components --dev
+$ yarn add styled-components --dev
 ```
 
 npm

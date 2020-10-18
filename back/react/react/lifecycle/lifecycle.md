@@ -1,8 +1,8 @@
 ---
-weight: 2
+slug: index
 date: 2020-09-02
 title: "라이프 사이클"
-description: "리액트 라이프 사이클 함수 가이드"
+description: "리액트(React) 라이프 사이클 함수 가이드"
 toc: true
 ---
 

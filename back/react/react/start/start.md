@@ -1,5 +1,5 @@
 ---
-weight: 1
+slug: index
 date: 2019-11-10
 title: "React 시작"
 description: "리액트(React)에 대해 설치 부터 실행하는 가이드"
@@ -70,3 +70,6 @@ package.json - script
 ```
 import App from 'components/App';
 ```
+
+## 리액트 문서
+https://ko.reactjs.org/docs/hooks-reference.html
