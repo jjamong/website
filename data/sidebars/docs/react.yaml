@@ -45,6 +45,9 @@ entries:
       
     - title: webView(웹뷰)
       url: /docs/front/react/reactnative/reactnative/webview/
+
+    - title: notification(알림)
+      url: /docs/front/react/reactnative/reactnative/notification/local/
     
   - title: 플러그인
     subsections:

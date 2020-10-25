@@ -108,3 +108,39 @@ export default App;
 
 웹에서 postMessage를 통해 앱으로 data를 전달하며,
 앱에선 onMessage 통해 데이터를 전달 받는다.
+
+## 뒤로가기 버튼 앱종료 방지(android)
+
+### 예제
+
+안드로이드의 경우 wevView에서 뒤로가기 버튼 클릭 시 앱이 종료되는 현상이 발생한다.
+따라서 아래의 코드로 뒤로가기를 방지할 수 있다.
+```
+const webview = useRef<WebView>(null);
+  
+  const onAndroidBackPress = (): boolean => {
+    if (webview.current) {
+      webview.current.goBack();
+      return true; // prevent default behavior (exit app)
+    }
+    return false;
+  };
+
+  useEffect((): (() => void) => {
+    BackHandler.addEventListener('hardwareBackPress', onAndroidBackPress);
+    return (): void => {
+      BackHandler.removeEventListener('hardwareBackPress', onAndroidBackPress);
+    };
+  }, []); // Never re-run this effect
+
+  return (
+    <>
+      <WebView
+        source={{
+          uri: 'http://10.0.2.2/login'
+        }}
+        ref={webview}
+      />
+    </>
+  );
+```
