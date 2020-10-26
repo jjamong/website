@@ -1,5 +1,6 @@
 ---
 weight: 1
+slug: index
 date: 2020-10-25
 title: "로컬 알림(푸쉬)"
 description: "리액트 네이티브(React Native) 로컬 알림(푸쉬) 가이드"
@@ -101,6 +102,8 @@ android/app/src/main/AndroidManifest.xml
 
 ### 예제
 
+작성 및 실행 한 후 알림텍스트를 클릭 하면 알림이 출력된다.
+
 app.js
 ```
 import React, {Component} from 'react';
@@ -111,7 +114,7 @@ class App extends Component{
     notify(){
       PushNotification.localNotificationSchedule({
         message: "notified",
-        date: new Date(Date.now() + (0 * 1000))
+        date: new Date(Date.now() + 60 * 1000), // in 60 secs
       });
     }
     

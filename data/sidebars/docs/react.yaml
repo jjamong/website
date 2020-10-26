@@ -47,7 +47,10 @@ entries:
       url: /docs/front/react/reactnative/reactnative/webview/
 
     - title: notification(알림)
-      url: /docs/front/react/reactnative/reactnative/notification/local/
+      url: /docs/front/react/reactnative/reactnative/notification/
+
+    - title: firebase Messag
+      url: /docs/front/react/reactnative/reactnative/firebasemessag/
     
   - title: 플러그인
     subsections:
