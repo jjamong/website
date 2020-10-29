@@ -41,19 +41,25 @@ entries:
   - title: 리액트 네이티브
     subsections:
     - title: 리액트 네이티브 시작
-      url: /docs/front/react/reactnative/reactnative/start/
-      
-    - title: webView(웹뷰)
-      url: /docs/front/react/reactnative/reactnative/webview/
+      url: /docs/front/react/reactnative/start/
 
-    - title: notification(알림)
-      url: /docs/front/react/reactnative/reactnative/notification/
+    - title: 아이콘/스플래쉬(icon/splash)
+      url: /docs/front/react/reactnative/make/
+      
+    - title: 웹뷰(webView)
+      url: /docs/front/react/reactnative/webview/
+
+    - title: 알림(notification)
+      url: /docs/front/react/reactnative/notification/
+      
+    - title: 파이어베이스(firebase)
+      url: /docs/front/react/reactnative/firebase/
+
+    - title: 광고(advert)
+      url: /docs/front/react/reactnative/advert/
 
     - title: firebase Messag
-      url: /docs/front/react/reactnative/reactnative/firebasemessag/
-    
-  - title: 플러그인
-    subsections:
+      url: /docs/front/react/reactnative/firebasemessag/
 
     - title: styled-components
       url: /docs/front/react/reactnative/plugin/styledcomponents/
@@ -64,8 +70,6 @@ entries:
     - title: async-storage
       url: /docs/front/react/reactnative/plugin/asyncstorage/
 
-    - title: react-native-make
-      url: /docs/front/react/reactnative/plugin/make/
 
     - title: navigation
       url: /docs/front/react/reactnative/plugin/navigation/

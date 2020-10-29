@@ -2,7 +2,7 @@
 weight: 1
 slug: index
 date: 2020-10-25
-title: "로컬 알림(푸쉬)"
+title: "알림(notification)"
 description: "리액트 네이티브(React Native) 로컬 알림(푸쉬) 가이드"
 toc: true
 ---

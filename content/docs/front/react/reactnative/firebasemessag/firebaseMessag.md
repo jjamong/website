@@ -15,7 +15,7 @@ toc: true
 ###### 1. 프로젝트 생성
 https://console.firebase.google.com/ 로 접속하여 프로젝트를 생성한다.
 
-![프로젝트 생성](/docs/front/react/reactnative/reactnative/firebasemessag/01.png)
+![프로젝트 생성](/docs/front/react/reactnative/firebasemessag/01.png)
 
 <br>
 ###### 2. Android 앱 등록 및 검토
@@ -23,7 +23,7 @@ https://console.firebase.google.com/ 로 접속하여 프로젝트를 생성한�
 Ansdroid 앱 등록 시 순차적으로 가이드를 따라하고
 설치확인을 완료한다.
 
-![Android 앱 생성](/docs/front/react/reactnative/reactnative/firebasemessag/02.png)
+![Android 앱 생성](/docs/front/react/reactnative/firebasemessag/02.png)
 
 ### 설치
 
@@ -76,22 +76,22 @@ export default App;
 코드 작성 및 앱을 실행하고 firebase에서 메시지를 보낸다.
 
 1.알림
-![메시지 보내기](/docs/front/react/reactnative/reactnative/firebasemessag/03.png)
+![메시지 보내기](/docs/front/react/reactnative/firebasemessag/03.png)
 
 2.타겟
-![메시지 보내기](/docs/front/react/reactnative/reactnative/firebasemessag/04.png)
+![메시지 보내기](/docs/front/react/reactnative/firebasemessag/04.png)
 
 3.예약
-![메시지 보내기](/docs/front/react/reactnative/reactnative/firebasemessag/05.png)
+![메시지 보내기](/docs/front/react/reactnative/firebasemessag/05.png)
 
 4.게시
-![메시지 보내기](/docs/front/react/reactnative/reactnative/firebasemessag/06.png)
+![메시지 보내기](/docs/front/react/reactnative/firebasemessag/06.png)
 
 
 ### 결과
 
 앱 실행시킨 상태로 메시지를 보내면 아래와 같은 로그가 발생하고,
-![로그](/docs/front/react/reactnative/reactnative/firebasemessag/07.png)
+![로그](/docs/front/react/reactnative/firebasemessag/07.png)
 
 앱 백그라운드 상태나, 종료후 메시지를 보내면 아래와 같은 로그가 발생한다.
-![로그](/docs/front/react/reactnative/reactnative/firebasemessag/08.png)
+![로그](/docs/front/react/reactnative/firebasemessag/08.png)

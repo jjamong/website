@@ -9,10 +9,7 @@ toc: true
 
 ## 개발 환경 설정
 
-### IOS
--
-
-### 윈도우
+### Window(윈도우)
 윈도우에서 리액트 네이티브를 개발하기 위해선
 노드(Node), 파이썬(Python), 안드로이드 스튜디오 등을 설치해야 한다.
 
@@ -23,31 +20,97 @@ toc: true
 
 ###### 1. 안드로이드 스튜디오 설치
 
+<br>
+
 ###### 2. 안드로이드 SDK 설치
 - - 2.1 Tools > SDK Manager.
 - - 2.2 SDK Platforms 탭에서 원하는 플랫폼 선택 후 설치
 - - 2.3 SDK Tools 탭에서 Google Play Licensing Library 설치
+
+<br>
 
 ###### 3. Viturl Device 설치
  버추얼 디바이스를 사용하여 개발 할 경우 설치
 
 - - 2.1 Tools > AVD Manager.
 
+<br>
+
 ###### 4.ANDROID_SDK_ROOT 환경 변수 설정
 
-![ANDROID_SDK_ROOT](/docs/front/react/reactnative/reactnative/start/01.png)
+![ANDROID_SDK_ROOT](/docs/front/react/reactnative/start/01.png)
+
+<br>
+
+<br>
 
 ###### 5. adb 환경 변수 설정
 
-![adb](/docs/front/react/reactnative/reactnative/start/02.png)
+![adb](/docs/front/react/reactnative/start/02.png)
 
+<br>
 
-### 리액트 네이티브 설치
+###### 6. 리액트 네이티브 설치
 
 ```
 $ yarn global add react-native-cli
 ```
 
+- - -
+
+### MAC(맥)
+
+#### IOS
+
+##### 1.Xcode 설치
+
+Xcode > Preferences > Locations 로 이동해서 아래와 같이 Command Line Tools의 설정을 확인한다.
+
+![Xcode](/docs/front/react/reactnative/start/03.png)
+
+<br>
+
+##### 2.Cocoapods 설치
+
+Cocoapods는 iOS 개발에 사용되는 의존성 관리자이다.
+
+```
+$ sudo gem install cocoapods
+...
+// 설치 완료 후 
+$ pod --version
+```
+
+###### 3. 리액트 네이티브 설치
+
+```
+$ yarn global add react-native-cli
+```
+
+#### 안드로이드
+
+###### 1. 안드로이드 스튜디오 설치
+
+###### 2. 안드로이드 환경변수 설정
+
+~/.bash_profile 파일을 아래와 같이 수정한다.
+```
+export ANDROID_HOME=안드로이드SDK/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+alias 적용
+```
+source ~/.bash_profile
+```
+
+테스트
+```
+adb version
+```
 
 ## 프로젝트 생성 및 실행
 
@@ -70,6 +133,7 @@ $ react-native run-android
 $ yarn start ios
 $ react-native run-ios
 ```
+
 
 ## 설정
 

@@ -2,7 +2,7 @@
 weight: 1
 slug: index
 date: 2020-10-22
-title: "webView"
+title: "웹뷰(webView)"
 description: "리액트 네이티브(React Native) webView 가이드"
 toc: true
 ---
