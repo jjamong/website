@@ -93,7 +93,24 @@ android {
 
 - - -
 
-### 2. 샘플 코드
+### 2. firebase.json 파일 추가
+
+<'root-project'>/firebase.json
+```
+{
+    "react-native": {
+      "admob_android_app_id": "ca-app-pub-7477469941918445~3939300344",
+      "admob_ios_app_id": "ca-app-pub-7477469941918445~3939300344"
+    }
+}
+```
+
+firebase.json파일이 추가되어 있지 않을 경우 앱 실행 시
+비정상적으로 앱이 종료된다.
+
+- - -
+
+### 3. 샘플 코드
 
 app.js
 ```

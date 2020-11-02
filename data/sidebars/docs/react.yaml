@@ -58,18 +58,17 @@ entries:
     - title: 광고(advert)
       url: /docs/front/react/reactnative/advert/
 
+    - title: 절대 경로 설정
+      url: /docs/front/react/reactnative/moduleresolver/
+
+    - title: 스타일 설정
+      url: /docs/front/react/reactnative/styledcomponents/
+
     - title: firebase Messag
       url: /docs/front/react/reactnative/firebasemessag/
 
-    - title: styled-components
-      url: /docs/front/react/reactnative/plugin/styledcomponents/
-
-    - title: babel-plugin-module-resolver
-      url: /docs/front/react/reactnative/plugin/moduleresolver/
-
     - title: async-storage
       url: /docs/front/react/reactnative/plugin/asyncstorage/
-
 
     - title: navigation
       url: /docs/front/react/reactnative/plugin/navigation/

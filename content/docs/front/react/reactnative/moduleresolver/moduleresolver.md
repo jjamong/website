@@ -1,8 +1,8 @@
 ---
 slug: index
 date: 2020-09-02
-title: "babel-plugin-module-resolver"
-description: "리액트 네이티브(React Native)에 babel-plugin-root-import 플러그인에 대한 가이드"
+title: "절대 경로 설정"
+description: "리액트 네이티브(React Native)에 절대 경로 설정에 대한 가이드"
 toc: true
 ---
 
