@@ -9,7 +9,6 @@ toc: true
 
 ## 시작하기 (Android)
 
-
 ### 설치
 
 ```
