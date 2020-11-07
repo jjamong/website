@@ -17,8 +17,9 @@
             <div class="list-title"><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></div>
               <p class="list-desc">
                 <a href="{{ .RelPermalink }}">
-                {{ .Summary | plainify | safeHTML }}
-                {{ if .Truncated }}…{{ end }}
+                <!-- {{ .Summary | plainify | safeHTML }} -->
+                <!-- {{ if .Truncated }}…{{ end }} -->
+                {{ .Description | safeHTML }}
                 </a>
               </p>
           </li>
