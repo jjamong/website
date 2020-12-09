@@ -1,4 +1,5 @@
 ---
+weight: 1
 slug: index
 date: 2020-10-29
 title: "광고(advert)"

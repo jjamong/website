@@ -40,6 +40,18 @@ export default App;
 
 ### 1. APP -> WEB 값 전달
 
+webview 사용시 android, ios의 브라우저에 따라 message이벤트를 가지고 있는 객체가 다르다.
+
+|디바이스 | 객체 |
+|---|-----|
+|android|document|
+|ios|window|
+
+디바이스 userAgent를 체크(android, ios)하여 분기하여
+실행 하도록 코드를 작성하자.
+
+<br>
+
 (APP) app.js
 ```
 import React from 'react';
@@ -66,9 +78,15 @@ export default App;
 (WEB) test.html
 ```
 <script>
-	document.addEventListener("message", function(data) {
-		alert(data.data)
-	})
+  // android
+  document.addEventListener("message", function(data) {
+    alert(data.data)
+  })
+
+  // ios
+  window.addEventListener("message", function(data) {
+    alert(data.data)
+  })
 </script>
 ```
 
@@ -109,38 +127,66 @@ export default App;
 웹에서 postMessage를 통해 앱으로 data를 전달하며,
 앱에선 onMessage 통해 데이터를 전달 받는다.
 
-## 뒤로가기 버튼 앱종료 방지(android)
+<br>
 
+## 로드 표시기(스피너)
+
+webview를 android, ios에서 모두 사용 시에
+디폴트로 android는 스피너가 없지만, ios는 스피너가 존재한다.
+
+따라서, 아래와 같이 적용할 경우 android, ios 모두 동일한 스피너가 적용된다.
+
+- - -
 ### 예제
 
-안드로이드의 경우 wevView에서 뒤로가기 버튼 클릭 시 앱이 종료되는 현상이 발생한다.
-따라서 아래의 코드로 뒤로가기를 방지할 수 있다.
+Loading 컴포넌트
 ```
-const webview = useRef<WebView>(null);
-  
-  const onAndroidBackPress = (): boolean => {
-    if (webview.current) {
-      webview.current.goBack();
-      return true; // prevent default behavior (exit app)
-    }
-    return false;
-  };
+import React from 'react';
+import Styled from 'styled-components/native';
 
-  useEffect((): (() => void) => {
-    BackHandler.addEventListener('hardwareBackPress', onAndroidBackPress);
-    return (): void => {
-      BackHandler.removeEventListener('hardwareBackPress', onAndroidBackPress);
-    };
-  }, []); // Never re-run this effect
+const Container = Styled.View`
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  marginLeft: -40px;
+  marginTop: -40px;
+`;
+const Image = Styled.Image`
+    width: 80px;
+    height: 80px;
+`;
 
+const Loading = () => {
   return (
-    <>
-      <WebView
-        source={{
-          uri: 'http://10.0.2.2/login'
-        }}
-        ref={webview}
-      />
-    </>
+    <Container>
+        <Image source={require('~/Assets/Images/spinner.gif')}/>
+    </Container>
   );
+};
+
+export default Loading;
 ```
+
+webview 
+```
+<WebView
+    ...
+    startInLoadingState={true}
+    renderLoading={() => <Loading />}
+/>
+```
+
+###### startInLoadingState
+`renderLoading`를 사용하기 위해선 true로 값을 설정해야 한다.
+
+###### renderLoading
+로딩 표시기를 불러온다.
+
+
+### 결과
+
+![스피너 결과](/docs/front/react/reactnative/webview/01.png)
+
+
