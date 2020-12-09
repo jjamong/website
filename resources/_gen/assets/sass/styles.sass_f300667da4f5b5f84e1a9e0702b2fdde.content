@@ -2004,7 +2004,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .content table td,
   .content table th {
     border: 1px solid #dbdbdb;
-    border-width: 0 0 1px;
+    border-width: 1px;
     padding: 0.5em 0.75em;
     vertical-align: top; }
   .content table th {
@@ -2012,15 +2012,16 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     text-align: left; }
   .content table thead td,
   .content table thead th {
-    border-width: 0 0 2px;
-    color: #363636; }
+    border-width: 1px;
+    color: #363636;
+    background: #f3f3f3; }
   .content table tfoot td,
   .content table tfoot th {
-    border-width: 2px 0 0;
+    border-width: 1px;
     color: #363636; }
   .content table tbody tr:last-child td,
   .content table tbody tr:last-child th {
-    border-bottom-width: 0; }
+    border-bottom-width: 1px; }
 
 .content.is-small {
   font-size: 0.75rem; }
