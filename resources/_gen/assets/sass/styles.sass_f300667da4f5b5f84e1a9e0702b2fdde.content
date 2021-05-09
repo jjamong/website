@@ -6368,7 +6368,8 @@ html, body {
   padding-bottom: 2rem;
   padding-left: 2rem; }
   .toc-container .scrollbar-outer {
-    max-height: 600px; }
+    max-height: 600px;
+    margin-bottom: 40px; }
 
 .toc-main {
   padding-top: 1.5rem;
