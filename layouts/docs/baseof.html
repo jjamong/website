@@ -12,6 +12,19 @@
         {{ partial "docs/sidebar.html" . }}
         <div class="content-container column is-three-fifths-desktop is-two-thirds-tablet">
           <div class="content-main content">
+            <div class="content-ads">
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- DOCS_CONTENT_수평광고 -->
+              <ins class="adsbygoogle"
+                  style="display:block"
+                  data-ad-client="ca-pub-3588286886332636"
+                  data-ad-slot="4509829062"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
             {{ partial "breadcrumb.html" . }}
             <h1 class="title">{{ .Title }}</h1>
             {{ block "main" . }}{{ end }}
