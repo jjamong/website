@@ -12,6 +12,9 @@
         {{ partial "docs/sidebar.html" . }}
         <div class="content-container column is-three-fifths-desktop is-two-thirds-tablet">
           <div class="content-main content">
+            {{ partial "breadcrumb.html" . }}
+            <h1 class="title">{{ .Title }}</h1>
+
             <div class="content-ads">
               <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- DOCS_CONTENT_수평광고 -->
@@ -25,8 +28,7 @@
                   (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
             </div>
-            {{ partial "breadcrumb.html" . }}
-            <h1 class="title">{{ .Title }}</h1>
+            
             {{ block "main" . }}{{ end }}
           </div>
           {{ partialCached "license-footer.html" . }}
