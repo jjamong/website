@@ -29,6 +29,8 @@ entries:
     subsections:
     - title: Next.js
       url: /docs/front/react/plugin/nextjs/
+    - title: routing(라우팅)
+      url: /docs/front/react/plugin/nextjs/routing/
 
   - title: axios
     url: /docs/front/react/plugin/axios/
