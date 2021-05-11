@@ -6652,7 +6652,8 @@ html, body {
   .nav > li.open ul li.active > a {
     background-color: #f7f8fa;
     color: #374afb;
-    border-radius: 2px; }
+    border-radius: 2px;
+    font-weight: bold; }
   .nav > li.open ul li.active.subsections > a {
     background: #fff;
     color: #646464; }
