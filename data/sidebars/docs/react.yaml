@@ -22,15 +22,22 @@ entries:
   - title: Context
     url: /docs/front/react/react/context/
 
+- title: Next.js
+  sections:
+  - title: Basic Features
+    subsections:
+    - title: Next.js 시작하기
+      url: /docs/front/react/nextjs/
+    - title: routing(라우팅)
+      url: /docs/front/react/nextjs/routing/
+  - title: API Reference
+    subsections:
+    - title: next.config.js
+      url: /docs/front/react/nextjs/configjs/
+
 - title: plugin(리액트 플러그인)
   
   sections:
-  - title: Next.js
-    subsections:
-    - title: Next.js
-      url: /docs/front/react/plugin/nextjs/
-    - title: routing(라우팅)
-      url: /docs/front/react/plugin/nextjs/routing/
 
   - title: axios
     url: /docs/front/react/plugin/axios/
