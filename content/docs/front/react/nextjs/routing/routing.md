@@ -132,20 +132,20 @@ export default Test2;
 
 url : `/`
 
-![라우트01](/docs/front/react/plugin/nextjs/routing/01.png)
+![라우트01](/docs/front/react/nextjs/routing/01.png)
 
 <br>
 
 url : `/test1`
 
-![라우트02](/docs/front/react/plugin/nextjs/routing/02.png)
+![라우트02](/docs/front/react/nextjs/routing/02.png)
 
 <br>
 
 url : `/test2`
 
 `/test2` url로 접속 했지만, 실제 보여지는 url은 `/test3`입니다.
-![라우트03](/docs/front/react/plugin/nextjs/routing/03.png)
+![라우트03](/docs/front/react/nextjs/routing/03.png)
 
 <!--
 https://nextjs.org/docs/routing/introduction#nested-routes
