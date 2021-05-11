@@ -187,6 +187,6 @@ webview
 
 ### 결과
 
-![스피너 결과](/docs/front/react/reactnative/webview/01.png)
+![스피너 결과](/docs/front/reactnative/webview/01.png)
 
 
