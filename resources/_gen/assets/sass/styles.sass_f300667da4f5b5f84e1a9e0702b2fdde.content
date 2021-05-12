@@ -1920,19 +1920,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-size: 2em;
   margin-bottom: 0.5em; }
   .content h1:not(:first-child) {
-    margin-top: 1em; }
+    margin-top: 2em; }
 
 .content h2 {
   font-size: 1.75em;
-  margin-bottom: 0.5714em; }
+  margin-bottom: 1.5em; }
   .content h2:not(:first-child) {
-    margin-top: 1.1428em; }
+    margin-top: 1.8em; }
 
 .content h3 {
   font-size: 1.5em;
-  margin-bottom: 0.6666em; }
+  margin-bottom: 1.2em; }
   .content h3:not(:first-child) {
-    margin-top: 1.3333em; }
+    margin-top: 1.5em; }
 
 .content h4 {
   font-size: 1.25em;
@@ -6322,8 +6322,6 @@ html, body {
     .sidebar-container .sidebar-title.dis-hidden-mobile {
       margin-bottom: 1.5rem; }
   .sidebar-container .sidebar-main {
-    position: fixed;
-    top: 170px;
     transition-property: top;
     transition-duration: .5s; }
     .sidebar-container .sidebar-main.is-affixed {
@@ -7622,8 +7620,6 @@ body {
 @media screen and (min-width: 1281px) {
   .sidebar-container {
     width: 20%; }
-    .sidebar-container .sidebar-main {
-      width: 18%; }
   .is-hidden-touch {
     width: 20%;
     display: block; }
@@ -7638,10 +7634,8 @@ body {
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .sidebar-container {
     width: 26%; }
-    .sidebar-container .sidebar-main {
-      width: 24%; }
-      .sidebar-container .sidebar-main .dis-hidden-mobile {
-        margin-bottom: 0.5rem; }
+    .sidebar-container .sidebar-main .dis-hidden-mobile {
+      margin-bottom: 0.5rem; }
   .is-hidden-touch {
     display: none; }
   .is-two-thirds-tablet {
@@ -7712,11 +7706,8 @@ body {
       .sidebar-container .sidebar-title.dis-hidden-mobile {
         margin-bottom: 0.5rem; }
     .sidebar-container .sidebar-main {
-      position: fixed;
-      top: 170px;
       transition-property: top;
-      transition-duration: .5s;
-      width: 28%; }
+      transition-duration: .5s; }
       .sidebar-container .sidebar-main.is-affixed {
         top: 80px;
         transition-property: top;
