@@ -36,7 +36,7 @@ package.json 파일에 아래 내용을 추가합니다.
 
 루트 경로에 pages 폴더를 추가하고 폴더 경로에 index.js파일을 추가합니다.
 ```
-// index.js
+// pages/index.js
 
 const Index = () => (
     <div>

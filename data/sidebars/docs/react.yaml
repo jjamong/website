@@ -34,6 +34,11 @@ entries:
     subsections:
     - title: next.config.js
       url: /docs/front/react/nextjs/configjs/
+    - title: next/head
+      url: /docs/front/react/nextjs/head/
+    - title: next/image
+      url: /docs/front/react/nextjs/image/
+      
 
 - title: plugin(리액트 플러그인)
   
