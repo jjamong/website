@@ -1,0 +1,11 @@
+entries:
+
+- title: ETC
+
+  sections:
+
+  #- title: mybatis
+  #  url: /docs/etc/etc/mybatis/
+
+  - title: vscode
+    url: /docs/etc/etc/vscode/
