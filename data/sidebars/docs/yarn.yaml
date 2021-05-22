@@ -1,11 +1,4 @@
 entries:
 
-- title: Common
-
-  sections:
-
-  - title: VS Code
-    url: /docs/etc/vscode/
-
   - title: Yarn
-    url: /docs/etc/yarn/
+    url: /docs/front/yarn/

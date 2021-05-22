@@ -48,3 +48,5 @@ entries:
     url: /docs/front/react/plugin/axios/
   - title: slick
     url: /docs/front/react/plugin/slick/
+  - title: aos
+    url: /docs/front/react/plugin/aos/
