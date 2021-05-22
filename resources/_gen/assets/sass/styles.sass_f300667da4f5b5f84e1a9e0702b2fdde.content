@@ -4656,6 +4656,11 @@ a.navbar-item,
           .tabs .sub-menu ul li.ReactNative:hover a, .tabs .sub-menu ul li.ReactNative.is-active a {
             background: url(images/icon_react_on.png) 18px center no-repeat;
             background-size: 25px 22px; }
+        .tabs .sub-menu ul li.NodeJS:hover, .tabs .sub-menu ul li.NodeJS.is-active {
+          background: #f7f8fa; }
+          .tabs .sub-menu ul li.NodeJS:hover a, .tabs .sub-menu ul li.NodeJS.is-active a {
+            background: url(images/icon_nodejs_on.png) 18px center no-repeat;
+            background-size: 25px 25px; }
         .tabs .sub-menu ul li.Angular:hover, .tabs .sub-menu ul li.Angular.is-active {
           background: #f7f8fa; }
           .tabs .sub-menu ul li.Angular:hover a, .tabs .sub-menu ul li.Angular.is-active a {
