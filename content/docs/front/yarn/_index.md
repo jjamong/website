@@ -11,7 +11,6 @@ date: 2019-12-24
 
 `url` : [https://yarnpkg.com](https://yarnpkg.com)
 
-
 ## 설치
 
 npm 설치
@@ -25,6 +24,44 @@ $ yarn --version
 
 
 ## 시작
+
+### init
+
+```
+$ yarn init
+
+yarn init v1.19.1
+question name (sasscss):
+question version (1.0.0):
+question description:
+question entry point (index.js):
+question repository url:
+question author:
+question license (MIT):
+question private:
+success Saved package.json
+Done in 10.55s.
+```
+
+명령어를 입력하면 `package.json`이 생성됩니다.
+
+```
+// package.json
+{
+  "name": "sasscss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
+```
+
+
+
+
+
+
+### eject
+
 프로젝트 환경설정 파일들을 프로젝트 루트로 설정한다.
 eject 명령어가 성공하면 config 폴더가 생성된다.
 
