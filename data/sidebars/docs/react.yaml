@@ -38,6 +38,10 @@ entries:
       url: /docs/front/react/nextjs/head/
     - title: next/image
       url: /docs/front/react/nextjs/image/
+  - title: Plugin
+    subsections:
+    - title: sass & css
+      url: /docs/front/react/nextjs/sasscss/
       
 
 - title: plugin(리액트 플러그인)
