@@ -1,8 +1,8 @@
 ---
 slug: index
 date: 2020-05-22
-title: "vscode(Visual Studio Code)"
-description: "vscode"
+title: "VSCode(Visual Studio Code)"
+description: "VSCode 가이드"
 toc: true
 ---
 
@@ -29,8 +29,7 @@ terminal.integrated.shell.windows
 ![gitbash](/docs/etc/etc/vscode/gitbash.png)
 
 
-
-
+### JDK 설정
 
 
 
@@ -40,4 +39,26 @@ terminal.integrated.shell.windows
 
 `korea`를 검색하여 설치하고 재실행 하면 됩니다.
 
+- - 한글 언어 지원
+
 ![korea](/docs/etc/etc/vscode/korea.png)
+
+### JAVA
+
+`Java Extension Pack`를 검색하고 설치합니다.
+
+- - JAVA 언어 지원
+- - 디버그
+- - 테스트 실행
+- - Maven 관리
+
+![Java_Extension_Pack](/docs/etc/etc/vscode/Java_Extension_Pack.png)
+
+
+### Spring Boot
+
+`Spring Boot Extension Pack`를 검색하고 설치합니다.
+
+- - Spring 프레임워크 관련
+
+![Spring_Boot_Extension_Pack](/docs/etc/etc/vscode/Spring_Boot_Extension_Pack.png)

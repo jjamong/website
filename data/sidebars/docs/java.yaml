@@ -1,0 +1,21 @@
+entries:
+
+# - title: Java
+
+#   sections:
+
+  #- title: mybatis
+  #  url: /docs/etc/etc/mybatis/
+
+  # - title: vscode
+  #   url: /docs/etc/etc/vscode/
+  
+- title: Spring
+
+  # sections:
+  # - title: mybatis
+  #   url: /docs/etc/etc/mybatis/
+
+  sections:
+  - title: VSCode & Spring Boot 개발환경
+    url: /docs/back/java/vsbootsetting/
