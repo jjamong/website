@@ -13,7 +13,7 @@
   background: $main-color
   .container
     .navbar-brand
-      padding-left: 0
+      padding-left: 22px
       .logo-area
         display: flex
         .logo-text
@@ -52,8 +52,8 @@
     .navbar-end
       .navbar-item
         padding: 0.5rem 2.5rem
-        &:last-child
-          padding: 0.5rem 0 0.5rem 2.5rem
+        // &:last-child
+        //   padding: 0.5rem 0 0.5rem 2.5rem
     a
       color: #fff
       &:hover
@@ -102,10 +102,12 @@
   z-index: 5
   //background-color: #eff3f4
   .tabs
-    max-width: 95%
-    width: 95%
+    //max-width: 95%
+    //width: 95%
     height: 50px
-    margin: 0 auto 0 4rem
+    width: 1600px
+    margin: 0 auto
+    padding-left: 26px
     a
       //margin-left: 4px
       transition: all .3s ease
@@ -154,34 +156,34 @@
 // sidebar
 /* 수정 영역 */
 .slider-menu-wrap
-  background: #fff
+  // background: #fff
   
 /* 수정 영역 // */
 .nav
   $sidebar-bg-color: #fff
   list-style: none
   margin: 0
-  box-shadow: 0 0 13px 0 rgba(82,63,105,.05)
+  //box-shadow: 0 0 13px 0 rgba(82,63,105,.05)
 
   ul, li
     list-style: none
     a
-      padding-left: 20px
+      //padding-left: 20px
     ul
       li
         a
-          padding-left: 20px
+          //padding-left: 20px
           font-size: 13px
         ul
           li
             a
-              padding-left: 30px
+              //padding-left: 30px
   ul
     padding: 0
-    margin: 0
+    margin: 0 0 0 10px
 
   ul li a
-    background-color: $sidebar-bg-color
+    //background-color: $sidebar-bg-color
 
   a
     color: #646464
@@ -193,7 +195,7 @@
     //background-color: rgba(39, 49, 64, 0.1)
     //color: #868585
     //color: rgba($point-color, .6)
-    background-color:  #f7f8fa
+    //background-color:  #f7f8fa
     color: $point-color
     border-radius: 2px
   li
@@ -202,8 +204,8 @@
       font-size: 12px
       line-height: 20px
       //padding: 4.5px 10px
-      padding: 6px 10px
-      background-color: $sidebar-bg-color
+      padding: 8px 0 8px 10px
+      //background-color: $sidebar-bg-color
     > a
       color: #464646
       > span
@@ -223,7 +225,7 @@
       > a
         // background-color: rgba(64, 49, 39, 0.2)
         // color: $point-color !important
-        background-color: #f7f8fa
+        background-color: #fff
         color: $point-color
         border-radius: 2px
     &.thirdlevel > a
@@ -237,7 +239,7 @@
         > a
           //background: rgba(180, 22, 28, 0.5)
           //color: #fff
-          background-color: #f7f8fa
+          background-color: #fff
           color: $point-color
           border-radius: 2px
           font-weight: bold
@@ -249,12 +251,12 @@
   > li > a
     font-size: 14px
     line-height: 24px
-    padding: 6px 20px
     margin: 4px 0
+    //width: 220px
 
   .subsections
     a
-      padding-right: 36px
+      //padding-right: 36px
 
 .sidebar-title
   display: inline-block
@@ -265,6 +267,7 @@
 .sidebar-menu
   ul
     border-radius: 0
+    //margin-left: 14px
   .nav
     ul
       //background-color: #FAFAFA
@@ -274,7 +277,7 @@
   padding-top: .5rem
 .columns
   margin: 0
-  padding: 2.5rem 0
+  padding: 0
 
 // switch
 .switch
@@ -337,14 +340,6 @@ input:checked + .slider:before
 
 // TOC
 .toc-main
-  position: fixed
-  transition: all .5s ease
-  top: 170px
-  &.is-position-fixed
-    top: 170px
-    transition: all .5s ease
-  &.is-affixed
-    top: 80px
     
 .toc-menu
   position: relative
