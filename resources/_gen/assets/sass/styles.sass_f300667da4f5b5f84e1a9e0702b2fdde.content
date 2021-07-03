@@ -4688,6 +4688,9 @@ a.navbar-item,
 
 .column {
   display: block;
+  min-width: 280px;
+  max-width: 1200px;
+  width: 1000px;
   flex-shrink: 1; }
   .columns.is-mobile > .column.is-narrow {
     flex: none; }
@@ -6315,7 +6318,6 @@ html, body {
 .sidebar-container {
   position: relative;
   width: 280px;
-  padding-left: 20px;
   margin-top: 50px;
   background: #EFF3F4; }
   .sidebar-container.is-flipped {
@@ -6328,14 +6330,14 @@ html, body {
     .sidebar-container .sidebar-title.dis-hidden-mobile {
       margin-bottom: 5px; }
   .sidebar-container .sidebar-main {
-    width: 260px;
+    width: 280px;
     transition-property: top;
     transition-duration: .5s; }
     .sidebar-container .sidebar-main.is-affixed {
       top: 80px;
       transition: all .5s ease; }
     .sidebar-container .sidebar-main .sidebar-inner {
-      width: 260px; }
+      width: 280px; }
       .sidebar-container .sidebar-main .sidebar-inner.is-flipped {
         position: fixed; }
 
@@ -6761,7 +6763,6 @@ body {
 .content h1.title {
   color: #363636;
   font-size: 30px;
-  font-weight: 700;
   margin-bottom: 2.5rem; }
 
 .content h2 {
@@ -7611,7 +7612,7 @@ body {
     margin-right: 0px; }
     .is-fluid .columns {
       padding-top: 60px;
-      width: 1600px;
+      width: 1560px;
       margin: 0 auto 0; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -7770,6 +7771,8 @@ body {
   .is-fluid .columns {
     padding: 0;
     margin-top: 60px; }
+  .content-main {
+    padding: 20px; }
   .sidebar-container {
     width: 100%;
     padding-top: 8px;
