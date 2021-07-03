@@ -7,10 +7,13 @@
     {{ partial "header.html" . }}
     {{ partial "docs/top-menu.html" . }}
     <div class="container main">
-      <div class="content-main content">
+      <div class="content-main content-list">
         {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
+
+        
+        
         {{ if gt $paginator.TotalPages 0 }}
-        <ul class="content-list">
+        <ul class="ul">
           {{- range $paginator.Pages -}}
           <li>
             <span class="list-date">{{- .Date.Format "2006-01-02" -}}</span>
