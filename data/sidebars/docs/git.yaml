@@ -1,0 +1,11 @@
+entries:
+
+- title: GIT
+
+  sections:
+
+  - title: 개발 환경 구성
+    url: /docs/etc/git/devsetting/
+  
+  #- title: Cherry Pick (체리 픽)
+  #  url: /docs/etc/git/cherrypick/
