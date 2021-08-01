@@ -4,5 +4,5 @@ entries:
 
   sections:
 
-  - title: 시작하기
-    url: /docs/front/nodejs/start/
+  - title: 설정(.env)
+    url: /docs/front/nodejs/env/
