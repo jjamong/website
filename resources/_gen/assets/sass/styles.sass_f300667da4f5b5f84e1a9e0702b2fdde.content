@@ -1930,9 +1930,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .content h3 {
   font-size: 1.5em;
-  margin-bottom: 1.2em; }
-  .content h3:not(:first-child) {
-    margin-top: 1.5em; }
+  margin: 50px 0 30px; }
 
 .content h4 {
   font-size: 1.25em;
@@ -6346,7 +6344,7 @@ html, body {
 
 .content-main {
   background-color: #FFF;
-  padding: 50px;
+  padding: 50px 50px 150px;
   margin: 0 auto;
   border-left: 1px solid #E6ECF1;
   border-left-width: 1px;
@@ -6652,7 +6650,7 @@ html, body {
     background-color: #fff;
     color: #374afb;
     border-radius: 2px;
-    font-weight: bold; }
+    font-weight: 600; }
   .nav > li.open ul li.active.subsections > a {
     background: #fff;
     color: #646464; }
@@ -6763,6 +6761,7 @@ body {
 .content h1.title {
   color: #363636;
   font-size: 30px;
+  font-weight: 300;
   margin-bottom: 2.5rem; }
 
 .content h2 {
@@ -6775,12 +6774,12 @@ body {
 .content h3 {
   color: #3f3933;
   font-size: 22px;
-  font-weight: 400; }
+  font-weight: 600; }
 
 .content h4 {
   color: #3f3933;
-  font-size: 20px;
-  font-weight: 700; }
+  font-size: 18px;
+  font-weight: 400; }
   .content h4:not(:first-child) {
     margin-top: 1.5em; }
 
@@ -7067,7 +7066,6 @@ body {
       .section-02 .features-wrap .list .list-title {
         margin-top: 3.125rem;
         font-size: 1.25rem;
-        font-weight: 700;
         color: rgba(0, 0, 0, 0.8);
         letter-spacing: -1.5px; }
       .section-02 .features-wrap .list .list-txt {
@@ -7541,26 +7539,30 @@ body {
   margin-top: 60px; }
   .container.main .content-main {
     margin: 0;
-    padding: 2rem; }
-  .container.main .content-list li {
+    padding: 50px; }
+    .container.main .content-main.content-list {
+      margin: 0 auto;
+      width: 1560px;
+      padding: 0;
+      border: 0; }
+  .container.main .ul li {
     list-style: none;
-    padding: 30px 0;
+    padding: 30px;
     border-bottom: 1px solid #dddddd; }
-    .container.main .content-list li a {
+    .container.main .ul li a {
       color: black;
       text-decoration: none; }
-  .container.main .content-list .list-date {
+  .container.main .ul .list-date {
     color: #262626;
     font-size: 15px;
     font-weight: 500; }
-  .container.main .content-list .list-title {
+  .container.main .ul .list-title {
     display: block;
     font-size: 2em;
-    font-weight: 700;
     margin-top: 10px;
     line-height: 1.5;
     color: #212121; }
-  .container.main .content-list .list-desc {
+  .container.main .ul .list-desc {
     font-size: 1em;
     font-weight: 300;
     color: #424242; }
@@ -7571,11 +7573,11 @@ body {
   .container.study .content-main {
     margin: 0;
     padding: 2rem; }
-  .container.study .content-list {
+  .container.study .ul {
     overflow: hidden;
     width: 1280px;
     margin: 0 auto; }
-    .container.study .content-list .content-li {
+    .container.study .ul .content-li {
       float: left;
       list-style: none;
       margin-left: 35px;
@@ -7583,23 +7585,23 @@ body {
       width: 400px;
       height: 360px;
       box-shadow: 0 0 13px 0 rgba(82, 63, 105, 0.05); }
-      .container.study .content-list .content-li:nth-child(3n-2) {
+      .container.study .ul .content-li:nth-child(3n-2) {
         margin-left: 5px; }
-      .container.study .content-list .content-li a {
+      .container.study .ul .content-li a {
         color: #48465b;
         text-decoration: none; }
-    .container.study .content-list .list-title {
+    .container.study .ul .list-title {
       padding: 25px;
       display: block;
       font-size: 1.3rem;
       font-weight: 600; }
-    .container.study .content-list .list-desc {
+    .container.study .ul .list-desc {
       padding: 25px;
       height: 205px;
       font-size: 13px;
       color: #595d6e;
       font-weight: 500; }
-    .container.study .content-list .list-date {
+    .container.study .ul .list-date {
       text-align: right;
       padding: 25px;
       border-top: 1px solid #ebedf2; }

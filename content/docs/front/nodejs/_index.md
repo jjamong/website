@@ -6,6 +6,5 @@ weight: 3
 ---
 
 <script>
-    //location.href = "node/start"
-    location.href = "env"
+    location.href = "start"
 </script>
