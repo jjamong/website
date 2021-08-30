@@ -30,6 +30,10 @@ entries:
       url: /docs/front/react/nextjs/
     - title: routing(라우팅)
       url: /docs/front/react/nextjs/routing/
+    - title: 커스텀 App (_app.js)
+      url: /docs/front/react/nextjs/_app/
+    - title: 커스텀 Document (_document.js)
+      url: /docs/front/react/nextjs/_document/
   - title: API Reference
     subsections:
     - title: next.config.js

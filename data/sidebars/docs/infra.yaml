@@ -6,13 +6,12 @@ entries:
 
   - title: 서버 아키텍처
     url: /docs/infra/aws/ec2/architecture/
-
   - title: 인스턴스 생성/접속
     url: /docs/infra/aws/ec2/instancecreate/
-
-  - title: 웹서버
-    url: /docs/infra/aws/ec2/webserver/
-
+  - title: 아파치 apache
+    url: /docs/infra/aws/ec2/apache/
+  - title: PHP
+    url: /docs/infra/aws/ec2/php/
   - title: 보안그룹
     url: /docs/infra/aws/ec2/securitygroup/
     
