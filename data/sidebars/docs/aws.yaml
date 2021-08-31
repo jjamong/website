@@ -9,13 +9,13 @@ entries:
 
   - title: 인스턴스 생성/접속
     url: /docs/infra/aws/ec2/instancecreate/
-
-  - title: 웹서버
-    url: /docs/infra/aws/ec2/webserver/
-
+    
   - title: 보안그룹
     url: /docs/infra/aws/ec2/securitygroup/
-    
+
+  - title: 탄력적 IP
+    url: /docs/infra/aws/ec2/resilientip/
+  
   - title: Auto Scaling(오토 스케일링)
     subsections:
     - title: 서버 구성
@@ -24,14 +24,14 @@ entries:
       url: /docs/infra/aws/ec2/autoscaling/groupcreate/
     - title: stress 명령어 테스트
       url: /docs/infra/aws/ec2/autoscaling/test/
-      
+  
   - title: Elastic Load Balancing(ELB 로드 밸런싱)
     subsections:
     - title: ELB 생성
       url: /docs/infra/aws/ec2/elb/elbcreate/
     - title: ELB 테스트
       url: /docs/infra/aws/ec2/elb/test/
-      
+  
 - title: AWS Route 53
 
   sections:
@@ -42,4 +42,13 @@ entries:
   - title: 도메인 등록
     url: /docs/infra/aws/route53/domainrigster/
 
-- title: 배포 구성
+- title: 서버&DB
+
+  sections:
+
+  - title: 아파치 apache
+    url: /docs/infra/aws/ec2/apache/
+  - title: PHP
+    url: /docs/infra/aws/ec2/php/
+  - title: Maria
+    url: /docs/infra/aws/ec2/maria/

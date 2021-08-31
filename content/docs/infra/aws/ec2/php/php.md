@@ -12,7 +12,7 @@ toc: true
 ### 설치
 
 ```
-$ sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+$ sudo amazon-linux-extras install -y php7.2
 ```
 
 ### 확인
