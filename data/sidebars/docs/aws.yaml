@@ -42,6 +42,9 @@ entries:
   - title: 도메인 등록
     url: /docs/infra/aws/route53/domainrigster/
 
+  - title: 호스팅 영역
+    url: /docs/infra/aws/route53/hosting/
+
 - title: 서버&DB
 
   sections:
