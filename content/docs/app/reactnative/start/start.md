@@ -38,7 +38,7 @@ toc: true
 
 ###### 4.ANDROID_SDK_ROOT 환경 변수 설정
 
-![ANDROID_SDK_ROOT](/docs/front/reactnative/start/01.png)
+![ANDROID_SDK_ROOT](/docs/app/reactnative/start/01.png)
 
 <br>
 
@@ -46,7 +46,7 @@ toc: true
 
 ###### 5. adb 환경 변수 설정
 
-![adb](/docs/front/reactnative/start/02.png)
+![adb](/docs/app/reactnative/start/02.png)
 
 <br>
 
@@ -66,7 +66,7 @@ $ yarn global add react-native-cli
 
 Xcode > Preferences > Locations 로 이동해서 아래와 같이 Command Line Tools의 설정을 확인한다.
 
-![Xcode](/docs/front/reactnative/start/03.png)
+![Xcode](/docs/app/reactnative/start/03.png)
 
 <br>
 

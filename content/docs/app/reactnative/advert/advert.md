@@ -9,7 +9,7 @@ toc: true
 
 firebase 프로젝트 생성 및 App 설정을 선행해야 한다.
 
-[파이어베이스(firebase)](/docs/front/reactnative/firebase/) 
+[파이어베이스(firebase)](/docs/app/reactnative/firebase/) 
 
 ## 광고 생성
 
@@ -19,33 +19,33 @@ firebase 프로젝트 생성 및 App 설정을 선행해야 한다.
 
 프로젝트 생성 후 아래 AdMob 선택한다.
 
-![광고 생성01](/docs/front/reactnative/advert/01.png)
+![광고 생성01](/docs/app/reactnative/advert/01.png)
 
 <br>
 
 AdMob 가입 후 계정에 카드연결 등 완료하면 아래와 같은 화면이 나온다.
 AdMob에서 앱 연결을 선택한다.
-![광고 생성02](/docs/front/reactnative/advert/02.png)
+![광고 생성02](/docs/app/reactnative/advert/02.png)
 
 <br>
 
 앱 추가 버튼을 선택한다.
-![광고 생성03](/docs/front/reactnative/advert/03.png)
+![광고 생성03](/docs/app/reactnative/advert/03.png)
 
 <br>
 
 앱 상태 확인 후 선택.
-![광고 생성04](/docs/front/reactnative/advert/04.png)
+![광고 생성04](/docs/app/reactnative/advert/04.png)
 
 <br>
 
 패키지 앱 명을 입력한다.
-![광고 생성05](/docs/front/reactnative/advert/05.png)
+![광고 생성05](/docs/app/reactnative/advert/05.png)
 
 <br>
 
 광고 앱이 생성되었다. 이제 광고를 생성하기 위해 버튼을 선택한다.
-![광고 생성06](/docs/front/reactnative/advert/06.png)
+![광고 생성06](/docs/app/reactnative/advert/06.png)
 - - -
 
 ### 2. 광고 생성
@@ -53,17 +53,17 @@ AdMob에서 앱 연결을 선택한다.
 <br>
 
 배너광고를 선택한다.
-![광고 생성07](/docs/front/reactnative/advert/07.png)
+![광고 생성07](/docs/app/reactnative/advert/07.png)
 
 <br>
 
 광고이름을 입력하고 만들기를 선택한다.
-![광고 생성08](/docs/front/reactnative/advert/08.png)
+![광고 생성08](/docs/app/reactnative/advert/08.png)
 
 <br>
 
 광고 생성 완료.
-![광고 생성09](/docs/front/reactnative/advert/09.png)
+![광고 생성09](/docs/app/reactnative/advert/09.png)
 
 ## 광고 게재
 
@@ -77,7 +77,7 @@ yarn add @react-native-firebase/admob
 @react-native-firebase/admob 를 설치 하고 앱을 실행하면
 아래와 같은 에러가 발생한다.
 
-![광고 게재10](/docs/front/reactnative/advert/10.png)
+![광고 게재10](/docs/app/reactnative/advert/10.png)
 
 해결법은 아래 코드를 적용한다.
 
@@ -151,4 +151,4 @@ export default App
 
 광고 게재 완료
 
-![광고 게재11](/docs/front/reactnative/advert/11.png)
+![광고 게재11](/docs/app/reactnative/advert/11.png)

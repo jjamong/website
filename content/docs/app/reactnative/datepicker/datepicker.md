@@ -77,7 +77,7 @@ export default App;
 ### 결과
 
 android
-![결과_01](/docs/front/reactnative/datepicker/01.png)
+![결과_01](/docs/app/reactnative/datepicker/01.png)
 
 ios
-![결과_02](/docs/front/reactnative/datepicker/02.png)
+![결과_02](/docs/app/reactnative/datepicker/02.png)

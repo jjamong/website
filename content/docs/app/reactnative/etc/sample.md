@@ -9,15 +9,15 @@ toc: true
 
 버튼 클릭 시 숫자를 더하고 뺴는 기능을 구현
 
-[Counter.zip](/docs/front/reactnative/etc/Counter.zip)
+[Counter.zip](/docs/app/reactnative/etc/Counter.zip)
 
-![counter](/docs/front/reactnative/etc/01.png)
+![counter](/docs/app/reactnative/etc/01.png)
 
 
 ## 할 일 관리 앱
 
 할 일을 추가하거나, 삭제하는 등 관리하는 기능을 구현
 
-[TodoList.zip](/docs/front/reactnative/etc/TodoList.zip)
+[TodoList.zip](/docs/app/reactnative/etc/TodoList.zip)
 
-![TodoList](/docs/front/reactnative/etc/02.png)
+![TodoList](/docs/app/reactnative/etc/02.png)
