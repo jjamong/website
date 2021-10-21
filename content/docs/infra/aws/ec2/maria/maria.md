@@ -1,7 +1,7 @@
 ---
 weight: 1
 slug: index
-date: 2021-08-31
+date: 2021-10-21
 title: "Maria"
 description: "Maria"
 toc: true
@@ -13,6 +13,7 @@ toc: true
 
 ```
 $ sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2
+$ sudo yum install -y httpd mariadb-server
 ```
 
 ### 시작/종료/재시작
