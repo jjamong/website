@@ -10,7 +10,7 @@ entries:
   # - title: vscode
   #   url: /docs/etc/etc/vscode/
   
-- title: Spring
+- title: Spring Boot
 
   # sections:
   # - title: mybatis
@@ -18,4 +18,7 @@ entries:
 
   sections:
   - title: VSCode & Spring Boot 개발환경
-    url: /docs/back/java/vsbootsetting/
+    url: /docs/back/java/springboot/vsbootsetting/
+
+  - title: Gradle 설정
+    url: /docs/back/java/springboot/gradle/

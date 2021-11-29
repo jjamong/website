@@ -6,5 +6,5 @@ weight: 1
 ---
 
 <script>
-    location.href = "vsbootsetting"
+    location.href = "springboot/vsbootsetting"
 </script>
