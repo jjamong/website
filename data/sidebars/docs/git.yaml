@@ -9,3 +9,6 @@ entries:
   
   #- title: Cherry Pick (체리 픽)
   #  url: /docs/etc/git/cherrypick/
+
+  - title: 이슈 관리
+    url: /docs/etc/git/issue/
