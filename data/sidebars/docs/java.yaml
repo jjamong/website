@@ -1,14 +1,17 @@
 entries:
 
-# - title: Java
+- title: JAVA
 
-#   sections:
+  sections :
+  - title : REST API
+    url: /docs/back/java/java/restapi/
 
-  #- title: mybatis
-  #  url: /docs/etc/etc/mybatis/
+    
+- title: Spring
 
-  # - title: vscode
-  #   url: /docs/etc/etc/vscode/
+  sections :
+  - title : Rest Template
+    url: /docs/back/java/spring/resttemplate/
   
 - title: Spring Boot
 

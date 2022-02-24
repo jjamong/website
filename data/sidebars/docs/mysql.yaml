@@ -6,3 +6,6 @@ entries:
 
   - title: Mysql
     url: /docs/db/mysql/start
+
+  - title: 쿼리
+    url: /docs/db/mysql/query
