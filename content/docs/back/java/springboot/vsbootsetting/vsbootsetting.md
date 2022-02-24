@@ -99,7 +99,7 @@ public class IndexController {
 ```
 
 ```
-// /src/resources/webapp/WEB-INF/jsp/test.jsp
+// /src/webapp/WEB-INF/jsp/test.jsp
 
 spring boot test
 ```
