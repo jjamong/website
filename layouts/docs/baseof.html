@@ -9,7 +9,37 @@
     {{ partial "docs/top-menu.html" . }}
     <div class="container is-fluid">
       <div class="columns verticals">
-        {{ partial "docs/sidebar.html" . }}
+
+        {{ $menuDepth := index (split .Permalink "/") 4 }}
+
+        <!-- Front -->
+        {{ if eq $menuDepth "front" }}
+          {{ partial "docs/front/sidebar.html" . }}
+        
+        <!-- Back -->
+        {{ else if eq $menuDepth "back" }}
+          {{ partial "docs/back/sidebar.html" . }}
+          
+        <!-- DB -->
+        {{ else if eq $menuDepth "db" }}
+          {{ partial "docs/db/sidebar.html" . }}
+
+        <!-- App -->
+        {{ else if eq $menuDepth "app" }}
+          {{ partial "docs/app/sidebar.html" . }}
+
+        <!-- Infra -->
+        {{ else if eq $menuDepth "infra" }}
+          {{ partial "docs/infra/sidebar.html" . }}
+        
+        <!-- ETC -->
+        {{ else if eq $menuDepth "etc" }}
+          {{ partial "docs/etc/sidebar.html" . }}
+        
+        {{ else }}
+          {{ partial "docs/front/sidebar.html" . }}
+        {{ end }}
+
         <div class="content-container column is-three-fifths-desktop is-two-thirds-tablet">
           <div class="content-main content">
             {{ partial "breadcrumb.html" . }}

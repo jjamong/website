@@ -4,7 +4,7 @@
 {{ $menuTitle := delimit (slice "/docs/" ($menuDepth)) "" }}
 {{ $docs := .Site.GetPage (string $menuTitle) }}
 {{ $menuSections := (where $docs.Sections ".Params.section_main" true) }}
-{{ $.Scratch.Set "sectionName" "react" }}
+{{ $.Scratch.Set "sectionName" "mysql" }}
 {{ range $menuSections }}
   {{ $isDescendant := $p.IsDescendant . }}
   {{ if $isDescendant }}
@@ -12,7 +12,7 @@
   {{ end }}
 {{ end }}
 
-{{ $sidebar := (index .Site.Data.sidebars.docs  ($.Scratch.Get "sectionName") ) }}
+{{ $sidebar := (index .Site.Data.sidebars.docs.db ($.Scratch.Get "sectionName") ) }}
 {{ $entries := index $sidebar "entries" }}
 
 <!-- build menu tree (as UL list) to implement sidebar menu based on Navgoco (https://plugins.jquery.com/navgoco/) -->
