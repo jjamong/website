@@ -5,6 +5,7 @@
 <div class="container top-menu">
   <div class="docs-top-menu tabs">
     <ul>
+      <!-- Front -->
       <li class="tabs-li">
         {{ $front := .Site.GetPage "/docs/front" }}
         <a class="tabs-a">{{ $front.Params.title }}</a>
@@ -16,34 +17,39 @@
           </ul>
         </div>
       </li>
+      
+      <!-- Back -->
       <li class="tabs-li">
-        {{ $front := .Site.GetPage "/docs/back" }}
-        <a class="tabs-a">{{ $front.Params.title }}</a>
+        {{ $back := .Site.GetPage "/docs/back" }}
+        <a class="tabs-a">{{ $back.Params.title }}</a>
         <div class="sub-menu">
           <ul>
-            {{ range $front.Sections }}
+            {{ range $back.Sections }}
             <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
             {{ end }}
           </ul>
         </div>
       </li>
+
+      <!-- DB -->
       <li class="tabs-li">
-        {{ $front := .Site.GetPage "/docs/db" }}
-        <a class="tabs-a">{{ $front.Params.title }}</a>
+        {{ $db := .Site.GetPage "/docs/db" }}
+        <a class="tabs-a">{{ $db.Params.title }}</a>
         <div class="sub-menu">
           <ul>
-            {{ range $front.Sections }}
+            {{ range $db.Sections }}
             <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
             {{ end }}
           </ul>
         </div>
       </li>
+
       <li class="tabs-li">
-        {{ $front := .Site.GetPage "/docs/app" }}
-        <a class="tabs-a">{{ $front.Params.title }}</a>
+        {{ $app := .Site.GetPage "/docs/app" }}
+        <a class="tabs-a">{{ $app.Params.title }}</a>
         <div class="sub-menu">
           <ul>
-            {{ range $front.Sections }}
+            {{ range $app.Sections }}
             <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
             {{ end }}
           </ul>
