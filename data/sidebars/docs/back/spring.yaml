@@ -19,3 +19,10 @@ entries:
 
   - title: batch
     url: /docs/back/spring/batch/batch/
+
+- title: Spring Security(시큐리티)
+
+  sections:
+
+  - title: security
+    url: /docs/back/spring/security/security/
