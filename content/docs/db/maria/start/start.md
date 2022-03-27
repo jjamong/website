@@ -2,8 +2,8 @@
 weight: 1
 slug: index
 date: 2022-01-06
-title: "MYSQL"
-description: "MYSQL 가이드"
+title: "MARIA"
+description: "MARIA 가이드"
 toc: true
 ---
 

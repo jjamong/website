@@ -1,7 +1,21 @@
 entries:
 
-- title: Spring(스프링)
+
+#- title: Spring(스프링)
+#  sections:
+#  - title: vscode 셋팅
+#    url: /docs/back/spring/spring/vscodesetting/
+
+- title: Spring Boot(부트)
 
   sections:
-  - title: 배치
-    url: /docs/back/spring/batch/
+  
+  - title: vscode 셋팅
+    url: /docs/back/spring/boot/vscodesetting/
+
+- title: Spring Batch(배치)
+
+  sections:
+
+  - title: batch
+    url: /docs/back/spring/batch/batch/

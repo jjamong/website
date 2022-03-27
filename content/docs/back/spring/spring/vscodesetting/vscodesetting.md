@@ -1,16 +1,15 @@
 ---
 weight: 1
 slug: index
-date: 2021-05-29
-title: "VSCode & Spring Boot 개발환경"
-description: "VSCode & Spring Boot 개발환경 가이드"
+date: 2022-03-26
+title: "VSCode & Spring 개발환경"
+description: "VSCode & Spring 개발환경 가이드"
 toc: true
 ---
 
 ## VScode 플러그인 설치
 
 - -[Java Extension Pack](/docs/etc/etc/vscode/#java)
-- -[Spring Boot](/docs/etc/etc/vscode/#spring-boot)
 - -[JAVA 환경 변수 설정](/docs/infra/os/window/#java)
 
 
@@ -20,9 +19,9 @@ toc: true
 
 보기(View) > 명령 팔레트(Command Pallette)를 선택합니다. (`Ctrl + Shift + P`)
 
-`Spring Initializr`를 검색하고 스프링 프로젝트를 선택합니다.
+`Create Java Project`를 검색하고 스프링 프로젝트를 선택합니다.
 
-![gradle_select](/docs/back/java/vsbootsetting/gradle_select.png)
+![gradle_select](/docs/back/spring/boot/vscodesetting/gradle_select.png)
 
 이어서 아래와 같이합니다.
 
@@ -51,7 +50,7 @@ $ ./gradlew
 ```
 $ ./gradlew bootRun
 ```
-![gradle_select](/docs/back/java/vsbootsetting/start.png)
+![gradle_select](/docs/back/spring/boot/vscodesetting/start.png)
 
 
 ### controller 와 jsp 연결
@@ -103,4 +102,4 @@ public class IndexController {
 
 spring boot test
 ```
-![jsp](/docs/back/java/vsbootsetting/jsp.png)
+![jsp](/docs/back/spring/boot/vscodesetting/jsp.png)
