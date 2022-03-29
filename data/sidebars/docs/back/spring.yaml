@@ -19,6 +19,8 @@ entries:
 
   - title: batch
     url: /docs/back/spring/batch/batch/
+  - title: cron
+    url: /docs/back/spring/batch/cron/
 
 - title: Spring Security(시큐리티)
 
