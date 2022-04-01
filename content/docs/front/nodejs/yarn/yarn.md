@@ -1,8 +1,10 @@
 ---
-title: Yarn
-description: 얀(Yarn)은 패키지 매니저 프로그램이다. 가장 유명한 패치키 매니저 npm의 단점들을 보안하고자 페이스북, Exponent, 구글, Tilde의 엔지니어들이 함께 만든 패키지 매니저가 바로 yarn이다.
-section_main: true
+weight: 1
+slug: index
 date: 2019-12-24
+title: "Yarn"
+description: "얀(Yarn)은 패키지 매니저 프로그램이다. 가장 유명한 패치키 매니저 npm의 단점들을 보안하고자 페이스북, Exponent, 구글, Tilde의 엔지니어들이 함께 만든 패키지 매니저가 바로 yarn이다."
+toc: true
 ---
 
 얀(Yarn)은 패키지 매니저 프로그램이다.
