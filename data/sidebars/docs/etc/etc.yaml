@@ -4,8 +4,8 @@ entries:
 
   sections:
 
-  #- title: mybatis
-  #  url: /docs/etc/etc/mybatis/
+  - title: MSA(Microservices Architecture)
+    url: /docs/etc/etc/msa/
 
   - title: VSCode
     url: /docs/etc/etc/vscode/

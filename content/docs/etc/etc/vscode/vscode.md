@@ -1,4 +1,5 @@
 ---
+weight: 2
 slug: index
 date: 2020-05-22
 title: "VSCode(Visual Studio Code)"
