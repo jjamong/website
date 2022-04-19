@@ -1,30 +1,29 @@
 entries:
 
-
-#- title: Spring(스프링)
-#  sections:
-#  - title: vscode 셋팅
-#    url: /docs/back/spring/spring/vscodesetting/
-
 - title: Spring Boot(부트)
-
   sections:
-  
+
   - title: vscode 셋팅
     url: /docs/back/spring/boot/vscodesetting/
+    
+  - title: Spring Mybatis(마이바티스)
+    subsections:
+    - title: mybatis
+      url: /docs/back/spring/mybatis/
 
-- title: Spring Batch(배치)
+  - title: Spring Batch(배치)
+    subsections:
+    - title: batch
+      url: /docs/back/spring/batch/batch/
+    - title: cron
+      url: /docs/back/spring/batch/cron/
 
-  sections:
+  - title: Spring Security(시큐리티)
+    subsections:
+    - title: security
+      url: /docs/back/spring/security/security/
 
-  - title: batch
-    url: /docs/back/spring/batch/batch/
-  - title: cron
-    url: /docs/back/spring/batch/cron/
-
-- title: Spring Security(시큐리티)
-
-  sections:
-
-  - title: security
-    url: /docs/back/spring/security/security/
+  - title: Spring Cache(캐시)
+    subsections:
+    - title: cache
+      url: /docs/back/spring/cache/
