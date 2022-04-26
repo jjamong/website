@@ -6,5 +6,5 @@ weight: 1
 ---
 
 <script>
-    location.href = "boot/vscodesetting"
+    location.href = "boot/start"
 </script>

@@ -3,13 +3,14 @@ entries:
 - title: Spring Boot(부트)
   sections:
 
-  - title: vscode 셋팅
-    url: /docs/back/spring/boot/vscodesetting/
+  - title: Spring Boot 시작하기
+    url: /docs/back/spring/boot/start/
     
-  - title: Spring Mybatis(마이바티스)
-    subsections:
-    - title: mybatis
-      url: /docs/back/spring/mybatis/
+  - title: mybtis(마이바티스)
+    url: /docs/back/spring/boot/mybatis/
+
+  - title: cache(캐시)
+    url: /docs/back/spring/boot/cache/
 
   - title: Spring Batch(배치)
     subsections:
@@ -22,8 +23,3 @@ entries:
     subsections:
     - title: security
       url: /docs/back/spring/security/security/
-
-  - title: Spring Cache(캐시)
-    subsections:
-    - title: cache
-      url: /docs/back/spring/cache/
