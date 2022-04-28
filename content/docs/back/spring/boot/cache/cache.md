@@ -2,8 +2,8 @@
 weight: 1
 slug: index
 date: 2022-04-12
-title: "Spring Cache(스프링 캐시)"
-description: "Spring Cache(스프링 캐시)"
+title: "cache(캐시)"
+description: "cache(캐시)"
 toc: true
 ---
 

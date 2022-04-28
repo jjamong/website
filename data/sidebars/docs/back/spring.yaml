@@ -1,5 +1,12 @@
 entries:
 
+- title: Spring(스프링)
+  sections:
+
+  - title: pattern(패턴)
+    url: /docs/back/spring/spring/pattern/
+
+
 - title: Spring Boot(부트)
   sections:
 
@@ -15,11 +22,9 @@ entries:
   - title: Spring Batch(배치)
     subsections:
     - title: batch
-      url: /docs/back/spring/batch/batch/
+      url: /docs/back/spring/boot/batch/batch/
     - title: cron
-      url: /docs/back/spring/batch/cron/
+      url: /docs/back/spring/boot/batch/cron/
 
-  - title: Spring Security(시큐리티)
-    subsections:
-    - title: security
-      url: /docs/back/spring/security/security/
+  - title: security(시큐리티)
+    url: /docs/back/spring/boot/security/
