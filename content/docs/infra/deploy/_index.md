@@ -6,5 +6,5 @@ weight: 2
 ---
 
 <script>
-    location.href = "method"
+    location.href = "jenkins"
 </script>

@@ -4,5 +4,8 @@ entries:
 
   sections:
 
+  - title: 젠킨스
+    url: /docs/infra/deploy/jenkins/
+
   - title: 배포 방법
     url: /docs/infra/deploy/method/

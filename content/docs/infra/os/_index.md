@@ -6,5 +6,5 @@ weight: 3
 ---
 
 <script>
-    location.href = "linux"
+    location.href = "window"
 </script>

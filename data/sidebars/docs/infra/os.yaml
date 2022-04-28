@@ -4,8 +4,8 @@ entries:
 
   sections:
   
-  - title: Linux
-    url: /docs/infra/os/linux/
+  # - title: Linux
+  #   url: /docs/infra/os/linux/
     
   - title: Window
     url: /docs/infra/os/window/
