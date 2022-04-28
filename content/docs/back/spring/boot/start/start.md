@@ -53,9 +53,7 @@ dependencies 까지 선택 후 프로젝트 폴더를 선택해서 프로젝트�
 ```
 package com.jjamong.web;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -68,9 +66,9 @@ public class IndexController {
     @RequestMapping("/") 
     public ResponseEntity index() {
 
-        List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
-
-        return new ResponseEntity(list, HttpStatus.OK);
+        HashMap<String, Object> data = new HashMap<String, Object>();
+        
+        return new ResponseEntity(data, HttpStatus.OK);
     }
 }
 ```
