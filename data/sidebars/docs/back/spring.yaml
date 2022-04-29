@@ -12,6 +12,9 @@ entries:
 
   - title: Spring Boot 시작하기
     url: /docs/back/spring/boot/start/
+
+  - title: lombok(롬복)
+    url: /docs/back/spring/boot/lombok/
     
   - title: mybtis(마이바티스)
     url: /docs/back/spring/boot/mybatis/
