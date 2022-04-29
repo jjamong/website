@@ -31,3 +31,6 @@ entries:
 
   - title: security(시큐리티)
     url: /docs/back/spring/boot/security/
+
+  - title: swagger(스웨거)
+    url: /docs/back/spring/boot/swagger/
