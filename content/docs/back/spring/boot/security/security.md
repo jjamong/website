@@ -2,10 +2,43 @@
 weight: 1
 slug: index
 date: 2022-02-26
-title: "Spring Security(스프링 시큐리티)"
-description: "Spring Security 스프링 시큐리티 가이드"
+title: "Security(시큐리티)"
+description: "Security(시큐리티)"
 toc: true
 ---
+
+## 시작하기
+
+### 의존성 모듈 설정
+
+```
+implementation 'org.springframework.boot:spring-boot-starter-security'
+```
+
+### Security Config 설정
+
+```
+// src/main/java/com/jjamong/secrity/config/WebSecurityConfig.java
+
+@Configuration
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Override
+    public void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/**").permitAll();
+    }
+}
+```
+
+
+
+
+
+
+
+
 
 ## 시작하기
 
@@ -28,10 +61,11 @@ public class TestController {
 }
 ```
 
+
 API 호출 시 결과 
 
-![success200](/docs/back/spring/security/security/success200.png)
-/docs/back/spring/security/security/
+![success200](/docs/back/spring/boot/security/success200.png)
+/docs/back/spring/boot/security/
 
 ### greadle 추가
 
@@ -45,7 +79,7 @@ dependencies {
 
 security를 설치하고 톰캣 실행 후에 api를 재 호출하면 아래와 같이 오류가 발생합니다.
 
-![fail403](/docs/back/spring/security/security/fail403.png)
+![fail403](/docs/back/spring/boot/security/fail403.png)
 
 ### security 추가
 
@@ -66,7 +100,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 시큐리티 코드를 추가하고,  API를 재 호출하면 아래와 같이 다시 정상적으로 출력됩니다.
 
-![success200](/docs/back/spring/security/security/success200.png)
+![success200](/docs/back/spring/boot/security/success200.png)
 
 ## HttpSecurity
 
@@ -88,7 +122,7 @@ public void configure(HttpSecurity webSecurity) throws Exception {
 }
 ```
 
-![fail403](/docs/back/spring/security/security/fail403.png)
+![fail403](/docs/back/spring/boot/security/fail403.png)
 
 
 ### denyAll()
@@ -106,7 +140,7 @@ public void configure(HttpSecurity webSecurity) throws Exception {
 }
 ```
 
-![fail403](/docs/back/spring/security/security/fail403.png)
+![fail403](/docs/back/spring/boot/security/fail403.png)
 
 
 ### ignore()
@@ -133,7 +167,7 @@ public void configure(WebSecurity webSecurity) throws Exception {
 }
 ```
 
-![success200](/docs/back/spring/security/security/success200.png)
+![success200](/docs/back/spring/boot/security/success200.png)
 
 ### anyRequest
 

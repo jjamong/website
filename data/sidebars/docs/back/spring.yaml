@@ -13,6 +13,12 @@ entries:
   - title: Spring Boot 시작하기
     url: /docs/back/spring/boot/start/
 
+  - title: JSP(Java Server Page)
+    url: /docs/back/spring/boot/jsp/
+
+  - title: Security(시큐리티)
+    url: /docs/back/spring/boot/security/
+
   - title: lombok(롬복)
     url: /docs/back/spring/boot/lombok/
     
@@ -28,9 +34,5 @@ entries:
       url: /docs/back/spring/boot/batch/batch/
     - title: cron
       url: /docs/back/spring/boot/batch/cron/
-
-  - title: security(시큐리티)
-    url: /docs/back/spring/boot/security/
-
   - title: swagger(스웨거)
     url: /docs/back/spring/boot/swagger/
