@@ -1,22 +1,14 @@
 entries:
 
-- title: NodeJS
+- title: Nodejs(노드JS)
 
   sections:
 
-  - title: 설정(.env)
-    url: /docs/front/nodejs/env/
-
-- title: NPM
-
-  sections:
+  - title: Node.js(노드JS)
+    url: /docs/front/nodejs/nodejs/
 
   - title: npm
     url: /docs/front/nodejs/npm/
-
-- title: Yarn
-
-  sections:
 
   - title: yarn
     url: /docs/front/nodejs/yarn/
