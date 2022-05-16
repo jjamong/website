@@ -3,8 +3,8 @@ entries:
 - title: React(리액트)
 
   sections:
-  - title: 리액트 시작
-    url: /docs/front/react/react/start/
+  - title: React(리액트)
+    url: /docs/front/react/react/react/
   - title: 라이프 사이클
     url: /docs/front/react/react/lifecycle/
   - title: Sass

@@ -6,5 +6,5 @@ weight: 1
 ---
 
 <script>
-    location.href = "react/start"
+    location.href = "react/react"
 </script>
