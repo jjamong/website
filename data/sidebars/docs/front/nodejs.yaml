@@ -12,3 +12,6 @@ entries:
 
   - title: yarn
     url: /docs/front/nodejs/yarn/
+
+  - title: babel(바벨)
+    url: /docs/front/nodejs/babel/
