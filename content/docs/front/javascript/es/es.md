@@ -21,7 +21,26 @@ ES5는 jquery와 함께 사용되었던 var, function등을 사용한 javascript
 
 ## 문법
 
-### const / let
+### const, let
+
+ES5까지 변수는 var를 사용했었습니다. var는 편리했지만 단점들이 크게 존재합니다.
+<br>var의 단점으로는
+
+함수 레벨 스코프(Function-level scope)로 함수의 코드 블록만 스코프로 인정합니다.
+전역 함수 외에 생성한 모든 변수는 전역으로 선언됩니다.
+<br>이 문제는 전역 변수를 남발할 가능성이 높습니다. 그리고 전역변수가 많이 생기는 만큼 변수 중복 선언이 될 가능성이 높아집니다.
+
+for 문의 변수 선언문에서 선언한 변수를 for 문의 코드 블록 외부에서 참조할 수 있습니다.
+<br>블록 단위로 스코프가 인정되지 않아 발생하는 케이스입니다.
+
+변수 호이스팅 문제가 있습니다.
+<br> 호이스팅이란 var 로 선언한 표현식나 함수 등을 실행 단계에서 해당 스코프의 맨 위로 옮기는 것을 말합니다.
+
+<br>
+
+ES6에서는 var의 이런 단점들을 보안한 let과 const가 존재합니다.
+
+<br>
 
 - -const : 변경이 불가능한 변수로 상수로 사용됩니다.
 - -let : 새로운 값도 선언될 수 있고, 재할당도 가능합니다.(var의 hoisting현상을 피하기 위함)
@@ -40,8 +59,30 @@ var test = 'test';
 var test2 = 'test2';
 ```
 
-
 ### Arrow functions(화살표 함수)
+
+```
+// es6
+
+const test = () => {
+	return 'test'
+}
+console.log(test());
+
+// test
+```
+
+```
+// es5
+
+var test = function test() {
+	return 'test';
+};
+console.log(test());
+
+// test
+```
+
 ### Template Literals(템플릿 리터럴)
 ### Default parameters(기본 매개 변수)
 ### Array and object destructing(배열 및 객체 비구조화)
