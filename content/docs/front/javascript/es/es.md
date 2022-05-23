@@ -84,6 +84,27 @@ console.log(test());
 ```
 
 ### Template Literals(템플릿 리터럴)
+
+```
+// es6
+
+let test = 'test';
+
+console.log(`테스트 입니다. ${first}`);
+
+// 테스트 입니다. test
+```
+
+```
+// es6
+
+let test = 'test';
+
+console.log('테스트 입니다. ' + test);
+
+// 테스트 입니다. test
+```
+
 ### Default parameters(기본 매개 변수)
 ### Array and object destructing(배열 및 객체 비구조화)
 ### Import and export(가져오기 및 내보내기)
