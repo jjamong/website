@@ -106,7 +106,25 @@ console.log('테스트 입니다. ' + test);
 ```
 
 ### Default parameters(기본 매개 변수)
+
+함수에 전달된 파라미터의 값이 undefined일 때, 초기화 설정된 값을 말합니다.
+
+```
+function test(test='테스트') { 
+	return test;
+}
+
+console.log(test('테스트 입니다.'))
+// 테스트 입니다.
+
+console.log(test())
+// 테스트
+```
+
+
 ### Array and object destructing(배열 및 객체 비구조화)
+
+
 ### Import and export(가져오기 및 내보내기)
 ### Promises(프로미스)
 ### Rest parameter and Spread operator(나머지 매개 변수 및 확산 연산자)
