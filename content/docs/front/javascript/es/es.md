@@ -2,14 +2,14 @@
 weight: 1
 slug: index
 date: 2022-05-19
-title: "ES(ECMAScript, 에크마스크립트)"
-description: ""
+title: "ES(ECMAScript)"
+description: "ES(ECMAScript, 에크마스크립트)는 2009년 표준화 된 ES5 이후로 2015년 ES6로 업데이트 되어 현재 JavaScript에서 ES6를 많이 사용 중에 있습니다. ES5는 jquery와 함께 사용되었던 var, function등을 사용한 javascript 버전이라고 할 수 있고, ES6는 현재 많이 사용되는 Node, React 등에 사용되는 버전이라고 할 수 있습니다."
 toc: true
 ---
 
 ## 이해하기
 
-ES(ECMAScript)는 2009년 표준화 된 ES5 이후로 2015년 ES6로 업데이트 되어 현재 JavaScript에서 
+ES(ECMAScript, 에크마스크립트)는 2009년 표준화 된 ES5 이후로 2015년 ES6로 업데이트 되어 현재 JavaScript에서 
 ES6를 많이 사용 중에 있습니다.
 
 ES5는 jquery와 함께 사용되었던 var, function등을 사용한 javascript 버전이라고 할 수 있고,
@@ -213,4 +213,4 @@ class classTest {
     this.test = test;
   }
 }
-``
+```
