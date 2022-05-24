@@ -122,10 +122,95 @@ console.log(test())
 ```
 
 
-### Array and object destructing(배열 및 객체 비구조화)
+### Destructuring Assignment(비구조화 할당)
 
+배열이나 객체의 속성을 해체하여 그 값을 각 변수에 선언할 수 있게 하는 표현식(expression)입니다.
+
+
+```
+// es6
+
+let array = ['test1', 'test2'];
+let [test1, test2, test3='test3] = array;
+
+console.log(test1) // test1
+console.log(test2) // test2
+console.log(test3) // test3
+
+```
 
 ### Import and export(가져오기 및 내보내기)
+
+```
+// 배열 
+export let array = ['test1', 'test2', 'test3'];
+
+// 상수
+export const TEST = 'test';
+
+// 함수
+export function functionTest(test) {
+  console.log(test);
+} 
+
+// 클래스
+export class classTest {
+  constructor(test) {
+    this.test = test;
+  }
+}
+```
+
+```
+import {functionTest} from './functionTest.js';
+
+functionTest('test'); // test
+```
+
 ### Promises(프로미스)
-### Rest parameter and Spread operator(나머지 매개 변수 및 확산 연산자)
+
+```
+// Promise 객체의 생성
+const promise = new Promise((resolve, reject) => {
+  // 비동기 작업을 수행한다.
+
+  if (/* 비동기 작업 수행 성공 */) {
+    resolve('result');
+  }
+  else { /* 비동기 작업 수행 실패 */
+    reject('failure reason');
+  }
+});
+```
+
+
+### Spread Operator(확산 연산자)
+
+```
+var arr1 = [1, 2, 3]; 
+var arr2 = [...arr1, 4, 5, 6]; 
+console.log(arr2); // [ 1, 2, 3, 4, 5, 6 ]
+
+var str1 = 'test test'; 
+var str2 = [...str1]; 
+console.log(str2); // [ "t", "e", "s", "t", " ", "t", "e", "s", "t" ]
+```
+
+### Rest parameter(나머지 매개 변수)
+```
+function test(test1, test2, ...testArray) {
+    console.log(testArray)
+}
+test(1,2,3,4,5) // [3, 4, 5]
+```
+
+
 ### Classes(클래스)
+
+```
+class classTest {
+  constructor(test) {
+    this.test = test;
+  }
+}
+``
