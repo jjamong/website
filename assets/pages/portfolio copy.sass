@@ -1,0 +1,95 @@
+$point-color: #374afb !default
+$line-color: #c2c2c2 !default
+
+.portfolio
+    padding: 40px 100px
+    font-size: 13px
+    font-weight: 400
+
+    .division-section
+        padding: 40px 0px
+        overflow: hidden
+        border-bottom: 2px solid $line-color
+    
+    .profile-section
+        .left-section
+            border-right: 2px solid $line-color
+        .right-section
+            padding: 65px 0
+
+        .left-section, .right-section
+            float: left
+            width: 50%
+        
+            >.profile, .about
+                margin: 0 auto
+                width: 300px
+
+            .profile
+                .profile-name
+                    font-size: 15px
+                    .name
+                        color: $point-color
+                        font-weight: 600
+                    .nickname
+                        margin-top: 6px
+                        font-size: 32px
+                        line-height: 24px
+                        color: $point-color
+                        font-weight: 600
+
+                .profile-img
+                    margin: 30px 0
+                    text-align: center
+
+                    .img
+                        height: 200px
+                        img
+                            width: 200px
+                            height: 200px
+                            border-radius: 50%
+                .desc
+                    font-size: 12px
+
+            .about
+                .info-section
+                    dl
+                        overflow: hidden
+                        margin-top: 10px
+                        &:first-child
+                            margin-top: 0
+                        dt
+                            float: left
+                            width: 50%
+                            font-weight: 600
+                        dd 
+                            float: left
+                            width: 50%
+                .education
+                    margin-top: 20px
+                    .tit
+                        font-weight: 600
+                        
+                    .list
+                        margin: 15px 0
+                    li
+                        overflow: hidden
+                        margin-bottom: 15px
+                        font-size: 12px
+                        .year
+                            float: left
+                            width: 50%
+                        .desc
+                            float: left
+                            width: 50%
+                            color: #000
+                    
+    .career-section
+        .career
+            white-space: nowrap
+            overflow-x: auto
+
+            li
+                display: inline-block
+                padding: 10px 20px
+                margin-right: 10px
