@@ -1,95 +1,176 @@
-$point-color: #374afb !default
-$line-color: #c2c2c2 !default
-
 .portfolio
-    padding: 40px 100px
+    overflow: hidden
     font-size: 13px
     font-weight: 400
-
-    .division-section
-        padding: 40px 0px
-        overflow: hidden
-        border-bottom: 2px solid $line-color
+    //background: #EFF3F4
     
-    .profile-section
-        .left-section
-            border-right: 2px solid $line-color
-        .right-section
-            padding: 65px 0
+    .profile_area
+        float: left
+        padding: 30px 20px
+        margin: 0 auto
+        width: 360px
+        background: #181824
+        //height: 1812px
 
-        .left-section, .right-section
+        .profile
+            position: fixed
+
+            .profile_img
+                margin-bottom: 20px
+                .img img
+                    width: 320px
+            
+            .profile_txt
+                .tit
+                    font-size: 24px
+                    color: #828efd
+                    font-weight: bold
+                    border-bottom: 2px solid
+                .txt_area
+                    margin: 20px 0
+                    dl
+                        margin: 15px 0
+                        dt
+                            margin-bottom: 5px
+                            color: #828efd
+                            font-size: 16px
+                        dd
+                            color: #fff
+                            font-size: 12px
+
+    .content_area
+        overflow: hidden
+
+        .activity
             float: left
             width: 50%
-        
-            >.profile, .about
-                margin: 0 auto
-                width: 300px
+            padding: 20px 2.5%
+            border-right: 2px solid #828efd
+            border-right-style: dashed
 
-            .profile
-                .profile-name
-                    font-size: 15px
-                    .name
-                        color: $point-color
-                        font-weight: 600
-                    .nickname
-                        margin-top: 6px
-                        font-size: 32px
-                        line-height: 24px
-                        color: $point-color
-                        font-weight: 600
-
-                .profile-img
-                    margin: 30px 0
-                    text-align: center
-
-                    .img
-                        height: 200px
-                        img
-                            width: 200px
-                            height: 200px
-                            border-radius: 50%
-                .desc
-                    font-size: 12px
-
-            .about
-                .info-section
-                    dl
-                        overflow: hidden
-                        margin-top: 10px
-                        &:first-child
-                            margin-top: 0
-                        dt
-                            float: left
-                            width: 50%
-                            font-weight: 600
-                        dd 
-                            float: left
-                            width: 50%
-                .education
-                    margin-top: 20px
-                    .tit
-                        font-weight: 600
-                        
-                    .list
-                        margin: 15px 0
+            .career
+                .tit
+                    font-size: 22px
+                    line-height: 40px
+                    color: #2c2d3a
+                    border-bottom: 1px solid
+                .list
+                    margin: 15px 0
                     li
                         overflow: hidden
                         margin-bottom: 15px
                         font-size: 12px
                         .year
                             float: left
-                            width: 50%
+                            margin-right: 10px
+                            width: 30%
                         .desc
                             float: left
-                            width: 50%
+                            width: 60%
                             color: #000
-                    
-    .career-section
-        .career
-            white-space: nowrap
-            overflow-x: auto
 
-            li
-                display: inline-block
-                padding: 10px 20px
-                margin-right: 10px
+        .ability
+            float: left
+            width: 50%
+            padding: 20px 2.5%
+        
+            .education
+                margin-bottom: 40px
+                .tit
+                    font-size: 22px
+                    line-height: 40px
+                    color: #2c2d3a
+                    border-bottom: 1px solid
+                .list
+                    margin: 15px 0
+                    li
+                        overflow: hidden
+                        margin-bottom: 15px
+                        font-size: 12px
+                        .year
+                            float: left
+                            margin-right: 10px
+                            width: 30%
+                        .desc
+                            float: left
+                            width: 60%
+                            color: #000
+
+            .skill
+                .tit
+                    font-size: 22px
+                    line-height: 40px
+                    color: #2c2d3a
+                    border-bottom: 1px solid
+                .list
+                    margin: 15px 0
+                    li
+                        overflow: hidden
+                        margin-bottom: 15px
+                        font-size: 12px
+                        .lang
+                            float: left
+                            margin-right: 10px
+                            width: 30%
+                        .gauge
+                            float: left
+                            width: 40%
+                            height: 18px
+                            background: #2c2d3a
+                            
+                            .peosent
+                                height: 18px
+                                background: #828efd
+
+
+@media screen and (min-width: 1525px )
+    .profile_area
+        height: 1812px
+@media screen and (min-width: 1025px ) and (max-width: 1524px)
+    .profile_area
+        height: 2028px
+@media screen and (min-width: 721px ) and (max-width: 1024px)
+    .profile_area
+        height: 3321px
+@media screen and (min-width: 641px ) and (max-width: 720px)
+    .profile_area
+        height: 4095px
+
+@media screen and (max-width: 640px)
+
+    .portfolio
+        
+        .profile_area
+            float: none
+            padding: 20px
+            width: 100%
+            height: 100%
+
+            .profile
+                position: relative
+
+                .profile_img
+                    .img img
+                        width: 100%
+                        position: absolute
+                        left: 50%
+                        transform: translate(-50%, 0)
+            .profile_txt
+                padding-top: 80%
+                        
+        .content_area
+
+            .activity
+                float: none
+                width: 100%
+                padding: 20px
+                border-right: 0 solid #828efd
+                border-right-style: none
+
+            .ability
+                float: none
+                width: 100%
+                padding: 0 20px 20px
+
+            .list
+                display: block

@@ -1,8 +1,13 @@
 <script src="{{ "js/burger-menu.js" | relURL }}"></script>
 <script src="{{ "js/jquery-3.3.1.min.js" | relURL }}"></script>
+
 {{ if .IsHome }}
 <script src="{{ "js/landing-scripts.js" | relURL }}"></script>
+<script src="{{ "js/portfolio/chart.min.js" | relURL }}"></script>
+<script src="{{ "js/portfolio/hammer.min.js" | relURL }}"></script>
+<script src="{{ "js/portfolio/timeline.js" | relURL }}"></script>
 {{ end }}
+
 <script src="{{ "js/common.js" | relURL }}"></script>
 {{ if .Params.blog_main }}
 <script src="{{ "js/list.min.js" | relURL }}"></script>

@@ -1,176 +1,247 @@
+$point-color: #374afb !default
+$line-color: #c2c2c2 !default
+
 .portfolio
-    overflow: hidden
+    padding: 40px 100px
     font-size: 13px
     font-weight: 400
-    //background: #EFF3F4
-    
-    .profile_area
-        float: left
-        padding: 30px 20px
-        margin: 0 auto
-        width: 360px
-        background: #181824
-        //height: 1812px
 
-        .profile
-            position: fixed
-
-            .profile_img
-                margin-bottom: 20px
-                .img img
-                    width: 320px
-            
-            .profile_txt
-                .tit
-                    font-size: 24px
-                    color: #828efd
-                    font-weight: bold
-                    border-bottom: 2px solid
-                .txt_area
-                    margin: 20px 0
-                    dl
-                        margin: 15px 0
-                        dt
-                            margin-bottom: 5px
-                            color: #828efd
-                            font-size: 16px
-                        dd
-                            color: #fff
-                            font-size: 12px
-
-    .content_area
+    .division-section
+        padding: 40px 0px
         overflow: hidden
-
-        .activity
+        border-bottom: 2px solid $line-color
+        &:last-child
+            border-bottom: 0px
+            
+    .first-section
+        .profile-section
             float: left
-            width: 50%
-            padding: 20px 2.5%
-            border-right: 2px solid #828efd
-            border-right-style: dashed
-
-            .career
-                .tit
-                    font-size: 22px
-                    line-height: 40px
-                    color: #2c2d3a
-                    border-bottom: 1px solid
-                .list
-                    margin: 15px 0
-                    li
-                        overflow: hidden
-                        margin-bottom: 15px
-                        font-size: 12px
-                        .year
-                            float: left
-                            margin-right: 10px
-                            width: 30%
-                        .desc
-                            float: left
-                            width: 60%
-                            color: #000
-
-        .ability
-            float: left
-            width: 50%
-            padding: 20px 2.5%
-        
-            .education
-                margin-bottom: 40px
-                .tit
-                    font-size: 22px
-                    line-height: 40px
-                    color: #2c2d3a
-                    border-bottom: 1px solid
-                .list
-                    margin: 15px 0
-                    li
-                        overflow: hidden
-                        margin-bottom: 15px
-                        font-size: 12px
-                        .year
-                            float: left
-                            margin-right: 10px
-                            width: 30%
-                        .desc
-                            float: left
-                            width: 60%
-                            color: #000
-
-            .skill
-                .tit
-                    font-size: 22px
-                    line-height: 40px
-                    color: #2c2d3a
-                    border-bottom: 1px solid
-                .list
-                    margin: 15px 0
-                    li
-                        overflow: hidden
-                        margin-bottom: 15px
-                        font-size: 12px
-                        .lang
-                            float: left
-                            margin-right: 10px
-                            width: 30%
-                        .gauge
-                            float: left
-                            width: 40%
-                            height: 18px
-                            background: #2c2d3a
-                            
-                            .peosent
-                                height: 18px
-                                background: #828efd
-
-
-@media screen and (min-width: 1525px )
-    .profile_area
-        height: 1812px
-@media screen and (min-width: 1025px ) and (max-width: 1524px)
-    .profile_area
-        height: 2028px
-@media screen and (min-width: 721px ) and (max-width: 1024px)
-    .profile_area
-        height: 3321px
-@media screen and (min-width: 641px ) and (max-width: 720px)
-    .profile_area
-        height: 4095px
-
-@media screen and (max-width: 640px)
-
-    .portfolio
-        
-        .profile_area
-            float: none
-            padding: 20px
-            width: 100%
-            height: 100%
-
-            .profile
-                position: relative
-
-                .profile_img
-                    .img img
-                        width: 100%
-                        position: absolute
-                        left: 50%
-                        transform: translate(-50%, 0)
-            .profile_txt
-                padding-top: 80%
+            width: 30%
+            height: 386px
+            text-align: center
+            border-right: 2px solid $line-color
+            .profile-name
+                font-size: 15px
+                .name
+                    color: $point-color
+                    font-weight: 600
+                .nickname
+                    margin-top: 6px
+                    font-size: 32px
+                    line-height: 24px
+                    color: $point-color
+                    font-weight: 600
+            .profile-img
+                margin: 30px 0
+                text-align: center
+                .img
+                    height: 200px
+                    img
+                        width: 200px
+                        height: 200px
+                        border-radius: 50%
+            .profile-desc
+                font-size: 12px
+            .profile-privacy
+                overflow: hidden
+                margin-top: 16px
+                >span
+                    border-left: 1px solid #c2c2c2
+                    &:first-child
+                        margin-left: 0
+                        border-left: 0
                         
-        .content_area
+                    display: inline-block
+                    padding: 0 10px
+                    font-size: 14px
+                    font-weight: 400
+        .skill-section
+            float: left
+            overflow: hidden
+            padding: 0 60px
+            width: 70%
+            height: 386px
+            .title
+                margin-bottom: 30px
+                text-align: center
+                font-size: 22px
+                line-height: 20px
+                font-weight: 600
+            .skill-cate-section
+                float: left
+                overflow: hidden
+                width: 60%
+                .skill-cate
+                    float: left
+                    li
+                        width: 100px
+                        height: 48px
+                        line-height: 48px
+                        text-align: center
+                        &:last-child
+                            border-bottom: 0px
+                        &.active
+                            color: #374afb
+                            font-weight: 600
+                .skill-model-section
+                    float: left
+                    .front-section
+                        margin-left: 40px
+                        #skillChart
+                            width: 330px
+            .skill-desc-section
+                float: left
+                width: 40%
+                .desc-section
+                    display: none
+                    &.active
+                        display: block
+                    .item
+                        margin-top: 20px
+                        &:first-child
+                            margin-top: 0px
 
-            .activity
-                float: none
-                width: 100%
-                padding: 20px
-                border-right: 0 solid #828efd
-                border-right-style: none
+                        .tit
+                            margin-bottom: 10px
+                            font-size: 14px
+                            line-height: 14px
+                            font-weight: 600
+                        li
+                            font-weight: 300
+                            font-size: 12px
+                            line-height: 22px
+                    
+    .second-section
+        position: relative
+        height: 640px
+        .title
+            margin-bottom: 30px
+            text-align: center
+            font-size: 22px
+            line-height: 20px
+            font-weight: 600
 
-            .ability
-                float: none
-                width: 100%
-                padding: 0 20px 20px
+        .timeline
+            white-space: nowrap
+            overflow-x: hidden
+            width: calc(100% - 80px)
+            margin: 0 auto
+            .arrow
+                position: absolute
+                top: 271px
+                width: 40px
+                font-size: 30px
+                line-height: 40px
+                background: none
+                color: #828efd
+                z-index: 10
+                padding: 0
+                border: none
+                &.arrow__prev
+                    left: 0
+                    border-top-left-radius: 20px
+                    border-bottom-left-radius: 20px
+                &.arrow__next
+                    right: 0
+                    border-top-right-radius: 20px
+                    border-bottom-right-radius: 20px
+                &.disabled
+                    color: #c2c2c2
+            ol
+                font-size: 0
+                padding: 200px 0
+                transition: all 1s
+                > li
+                    position: relative
+                    display: inline-block
+                    width: 240px
+                    height: 2px
+                    background: #828efd
+                    
+                    &:nth-child(odd) 
+                        i
+                            border-top: 12px solid rgba(130, 142, 253, 0.2)
+                            border-left: 8px solid transparent
+                            border-right: 8px solid transparent
+                            border-bottom: 0
+                            top: calc(100%)
+                            left: 10px
+                        .content-section
+                            transform: translateY(-100%)
+                            top: -20px
+                    &:nth-child(even)
+                        i
+                            width: 0px
+                            height: 0px
+                            border-top: 0
+                            border-bottom: 12px solid rgba(130, 142, 253, 0.2)
+                            border-right: 8px solid transparent
+                            border-left: 8px solid  transparent
+                            bottom: calc(100%)
+                            left: 10px
+                        .content-section
+                            transform: translateY(100%)
+                            bottom: -20px
+                    i
+                        position: absolute
+                        border-style: inset
+                    .date
+                        position: absolute
+                        top: 12px
+                        height: 16px !important
+                        font-size: 16px
+                        line-height: 16px
+                        font-size: 16px
+                        padding: 0
+                        color: #fff
 
-            .list
-                display: block
+                    .content-section
+                        position: absolute
+                        left: 100px
+                        white-space: normal
+                        color: black
+                        background: rgba(130, 142, 253, 0.2)
+                        &.type1
+                            width: 200px !important
+                            height: 80px !important
+                        &.type2
+                            width: 280px !important
+                            height: 130px !important
+                        .period
+                            margin-bottom: 4px
+                            font-size: 12px
+                        .content
+                            padding: 14px
+                            height: 100%
+                            .desc
+                                .tit
+                                    font-size: 14px
+                                    margin-bottom: 10px
+                                span
+                                    margin-top: 2px
+                                    display: inline-block
+                                    font-size: 8px
+                                    line-height: 12px
+                                    font-weight: 300
+                                    &:first-child
+                                        margin-top: 0
+                        .skill-section
+                            position: absolute
+                            bottom: 14px
+                            .skill
+                                display: inline-block
+                                margin-left: 2px
+                                padding: 0 4px
+                                color: #fff
+                                border-radius: 8px
+                                font-size: 12px
+                                &:first-child
+                                    margin-left: 0
+                            .frontend
+                            .backend
+                                background: #FFB1C1
+                            .db
+                                background: #A5DFDF
+                            .serveros
+                                background: #FFCF9F
+                                
