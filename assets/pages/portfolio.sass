@@ -91,6 +91,7 @@ $line-color: #c2c2c2 !default
                             width: 330px
             .skill-desc-section
                 float: left
+                padding: 15px
                 width: 40%
                 .desc-section
                     display: none
@@ -128,7 +129,7 @@ $line-color: #c2c2c2 !default
             margin: 0 auto
             .arrow
                 position: absolute
-                top: 271px
+                top: 312px
                 width: 40px
                 font-size: 30px
                 line-height: 40px
@@ -149,7 +150,7 @@ $line-color: #c2c2c2 !default
                     color: #c2c2c2
             ol
                 font-size: 0
-                padding: 200px 0
+                padding: 240px 0
                 transition: all 1s
                 > li
                     position: relative
@@ -159,18 +160,20 @@ $line-color: #c2c2c2 !default
                     background: #828efd
                     
                     &:nth-child(odd) 
-                        i
+                        .triangle
                             border-top: 12px solid rgba(130, 142, 253, 0.2)
                             border-left: 8px solid transparent
                             border-right: 8px solid transparent
                             border-bottom: 0
                             top: calc(100%)
                             left: 10px
+                        .circle
+                            bottom: -28px
                         .content-section
                             transform: translateY(-100%)
                             top: -20px
                     &:nth-child(even)
-                        i
+                        .triangle
                             width: 0px
                             height: 0px
                             border-top: 0
@@ -179,12 +182,22 @@ $line-color: #c2c2c2 !default
                             border-left: 8px solid  transparent
                             bottom: calc(100%)
                             left: 10px
+                        .circle
+                            top: -28px
                         .content-section
                             transform: translateY(100%)
                             bottom: -20px
-                    i
+                    .triangle
                         position: absolute
                         border-style: inset
+                    .circle
+                        position: absolute
+                        left: 11px
+                        width: 14px
+                        height: 14px
+                        border-radius: 50%
+                        border: 2px solid #828efd
+                        background: #fff
                     .date
                         position: absolute
                         top: 12px
@@ -207,20 +220,26 @@ $line-color: #c2c2c2 !default
                         &.type2
                             width: 280px !important
                             height: 130px !important
+                        &.type3
+                            width: 300px !important
+                            height: 160px !important
+                        &.type4
+                            width: 320px !important
+                            height: 200px !important
                         .period
                             margin-bottom: 4px
                             font-size: 12px
                         .content
-                            padding: 14px
+                            padding: 12px
                             height: 100%
                             .desc
                                 .tit
                                     font-size: 14px
                                     margin-bottom: 10px
                                 span
-                                    margin-top: 2px
-                                    display: inline-block
-                                    font-size: 8px
+                                    margin-top: 4px
+                                    display: block
+                                    font-size: 11px
                                     line-height: 12px
                                     font-weight: 300
                                     &:first-child
@@ -228,20 +247,32 @@ $line-color: #c2c2c2 !default
                         .skill-section
                             position: absolute
                             bottom: 14px
-                            .skill
-                                display: inline-block
-                                margin-left: 2px
-                                padding: 0 4px
-                                color: #fff
-                                border-radius: 8px
-                                font-size: 12px
-                                &:first-child
-                                    margin-left: 0
-                            .frontend
-                            .backend
-                                background: #FFB1C1
-                            .db
-                                background: #A5DFDF
-                            .serveros
-                                background: #FFCF9F
+                            .li
+                                margin-bottom: 4px
+                                &:last-child
+                                    margin-bottom: 0
+                                .skill
+                                    display: inline-block
+                                    margin-left: 2px
+                                    padding: 0 4px
+                                    color: #fff
+                                    border-radius: 8px
+                                    font-size: 12px
+                                    &:first-child
+                                        margin-left: 0
+                                .frontend
+                                    background: #9AD0F5
+                                .backend
+                                    background: #FFB1C1
+                                .db
+                                    background: #A5DFDF
+                                .serveros
+                                    background: #FFCF9F
+                                .devops
+                                    background: #C3FFAA
+                                .app
+                                    background: #FAFFA3
+                                .etc
+                                    background: #D6AAFF
+                                    
                                 
