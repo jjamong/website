@@ -1,118 +1,176 @@
 $point-color: #374afb !default
-$line-color: #c2c2c2 !default
+$division-color: #c2c2c2 !default
+$line-color: #2c2d3a !default
 
 .portfolio
     padding: 40px 100px
-    font-size: 13px
+    font-size: 12px
     font-weight: 400
+
+    .title-section
+        margin-bottom: 20px
+        font-size: 18px
+        font-weight: 600
+        .nickname
+            font-size: 24px
+            color: $point-color
 
     .division-section
         padding: 40px 0px
         overflow: hidden
-        border-bottom: 2px solid $line-color
+        border-bottom: 2px solid $division-color
         &:last-child
             border-bottom: 0px
-            
-    .first-section
-        .profile-section
-            float: left
-            width: 30%
-            height: 386px
-            text-align: center
-            border-right: 2px solid $line-color
-            .profile-name
-                font-size: 15px
-                .name
-                    color: $point-color
-                    font-weight: 600
-                .nickname
-                    margin-top: 6px
-                    font-size: 32px
-                    line-height: 24px
-                    color: $point-color
-                    font-weight: 600
-            .profile-img
-                margin: 30px 0
-                text-align: center
-                .img
-                    height: 200px
-                    img
-                        width: 200px
-                        height: 200px
-                        border-radius: 50%
-            .profile-desc
-                font-size: 12px
-            .profile-privacy
-                overflow: hidden
-                margin-top: 16px
-                >span
-                    border-left: 1px solid #c2c2c2
-                    &:first-child
-                        margin-left: 0
-                        border-left: 0
-                        
-                    display: inline-block
-                    padding: 0 10px
-                    font-size: 14px
-                    font-weight: 400
-        .skill-section
-            float: left
-            overflow: hidden
-            padding: 0 60px
-            width: 70%
-            height: 386px
+        
+        .area-section
             .title
-                margin-bottom: 30px
+                margin-bottom: 50px
                 text-align: center
                 font-size: 22px
                 line-height: 20px
                 font-weight: 600
+            
+    .first-section
+        .area-section
+            float: left
+            padding: 0 40px
+            height: 232px
+            border-left: 2px solid $division-color
+            &:first-child
+                padding: 0 80px
+                border-left: 0
+        .profile-section
+            overflow: hidden
+            width: 55%
+
+            .left-section
+                float: left
+                width: 50%
+                text-align: center
+                .profile-img
+                    .img
+                        height: 160px
+                        img
+                            width: 160px
+                            height: 160px
+                            border-radius: 50%
+                            box-shadow: 0 0 5px $division-color
+            .right-section
+                float: left
+                width: 50%
+                .profile-desc
+                    margin-top: 10px
+                    margin-left: 10px
+                    font-size: 14px
+                    line-height: 26px
+
+                .profile-privacy
+                    overflow: hidden
+                    margin-top: 20px
+                    margin-left: 10px
+                    >span
+                        float: left
+                        border-left: 1px solid #c2c2c2
+                        display: inline-block
+                        padding: 0 10px
+                        font-size: 12px
+                        font-weight: 400
+
+                        &:first-child
+                            padding: 0 10px 0 0
+                            margin-left: 0
+                            border-left: 0
+        
+        .company-section
+            width: 25%
+            ul
+                li
+                    margin-top: 20px
+                    font-size: 14px
+                    .date
+                        display: inline-block
+                        width: 120px
+                    .text
+                        display: inline-block
+                        margin-left: 40px
+
+                    &:first-child
+                        margin-top: 0
+
+        .education-section
+            width: 20%
+            text-align: center
+            ul
+                li
+                    margin-top: 25px
+                    font-size: 14px
+                    .date
+                        display: block
+                    .text
+                        display: block
+                        margin-top: 6px
+
+                    &:first-child
+                        margin-top: 0
+                        
+    .second-section
+        .skill-content-section
+            overflow: hidden
+
             .skill-cate-section
                 float: left
-                overflow: hidden
-                width: 60%
+                width: 25%
                 .skill-cate
-                    float: left
                     li
-                        width: 100px
-                        height: 48px
-                        line-height: 48px
-                        text-align: center
+                        margin: 0 auto
+                        width: 120px
+                        height: 50px
+                        font-size: 16px
+                        line-height: 50px
                         &:last-child
                             border-bottom: 0px
                         &.active
                             color: #374afb
                             font-weight: 600
-                .skill-model-section
-                    float: left
-                    .front-section
-                        margin-left: 40px
-                        #skillChart
-                            width: 330px
+                            span
+                                padding-bottom: 4px
+                                border-bottom: 2px solid #374afb         
+            .skill-chart-section
+                float: left
+                width: 35%
+                .chart-section
+                    margin: 0 auto
+                    width: 350px
+                    #skillChart
             .skill-desc-section
                 float: left
-                padding: 15px
+                margin-top: 20px
                 width: 40%
                 .desc-section
                     display: none
+                    margin: 0 auto
+                    width: 350px
                     &.active
                         display: block
                     .item
-                        margin-top: 20px
+                        margin-top: 30px
                         &:first-child
                             margin-top: 0px
 
                         .tit
                             margin-bottom: 10px
-                            font-size: 14px
+                            font-size: 16px
                             line-height: 14px
                             font-weight: 600
                         li
+                            margin-top: 6px
                             font-weight: 300
-                            font-size: 12px
-                            line-height: 22px
-                    
-    .second-section
+                            font-size: 14px
+                            line-height: 20px
+                            &:first-child
+                                margin-top: 0
+   
+    .third-section                   
         position: relative
         height: 640px
         .title
@@ -125,16 +183,16 @@ $line-color: #c2c2c2 !default
         .timeline
             white-space: nowrap
             overflow-x: hidden
-            width: calc(100% - 80px)
+            width: calc(100% - 60px)
             margin: 0 auto
             .arrow
                 position: absolute
-                top: 312px
-                width: 40px
-                font-size: 30px
+                top: 331px
+                width: 30px
+                font-size: 20px
                 line-height: 40px
                 background: none
-                color: #828efd
+                color: $line-color
                 z-index: 10
                 padding: 0
                 border: none
@@ -156,47 +214,66 @@ $line-color: #c2c2c2 !default
                     position: relative
                     display: inline-block
                     width: 240px
-                    height: 2px
-                    background: #828efd
-                    
+                    height: 1px
+                    background: $line-color
+                    box-shadow: 6px 3px 6px $division-color
                     &:nth-child(odd) 
                         .triangle
-                            border-top: 12px solid rgba(130, 142, 253, 0.2)
+                            border-top: 12px solid rgba(194, 194, 194, 0.4)
                             border-left: 8px solid transparent
                             border-right: 8px solid transparent
                             border-bottom: 0
                             top: calc(100%)
                             left: 10px
+                            &::before
+                                left: -6px
+                                top: -12px
+                                border-top: 10px solid #fff
+                                border-left: 6px solid transparent
+                                border-right: 6px solid transparent
                         .circle
-                            bottom: -28px
+                            bottom: -30px
                         .content-section
                             transform: translateY(-100%)
-                            top: -20px
+                            top: -25px
                     &:nth-child(even)
                         .triangle
                             width: 0px
                             height: 0px
                             border-top: 0
-                            border-bottom: 12px solid rgba(130, 142, 253, 0.2)
+                            border-bottom: 12px solid rgba(194, 194, 194, 0.4)
                             border-right: 8px solid transparent
                             border-left: 8px solid  transparent
                             bottom: calc(100%)
                             left: 10px
+                            &::before
+                                left: -6px
+                                top: 0
+                                border-bottom: 10px solid #fff
+                                border-right: 6px solid transparent
+                                border-left: 6px solid transparent
                         .circle
-                            top: -28px
+                            top: -30px
                         .content-section
                             transform: translateY(100%)
-                            bottom: -20px
+                            bottom: -25px
                     .triangle
                         position: absolute
                         border-style: inset
+                        &::before
+                            content: ""
+                            width: 0
+                            height: 0
+                            border: solid transparent
+                            position: absolute
+                            pointer-events: none
                     .circle
                         position: absolute
-                        left: 11px
-                        width: 14px
-                        height: 14px
+                        left: 12.5px
+                        width: 10px
+                        height: 10px
                         border-radius: 50%
-                        border: 2px solid #828efd
+                        border: 1.5px solid $line-color
                         background: #fff
                     .date
                         position: absolute
@@ -213,18 +290,19 @@ $line-color: #c2c2c2 !default
                         left: 100px
                         white-space: normal
                         color: black
-                        background: rgba(130, 142, 253, 0.2)
+                        box-shadow: 0px 0px 6px $division-color
+                        border-radius: 10px
                         &.type1
                             width: 200px !important
                             height: 80px !important
                         &.type2
-                            width: 280px !important
-                            height: 130px !important
+                            width: 290px !important
+                            height: 135px !important
                         &.type3
                             width: 300px !important
                             height: 160px !important
                         &.type4
-                            width: 320px !important
+                            width: 310px !important
                             height: 200px !important
                         .period
                             margin-bottom: 4px
@@ -235,6 +313,7 @@ $line-color: #c2c2c2 !default
                             .desc
                                 .tit
                                     font-size: 14px
+                                    font-weight: 600
                                     margin-bottom: 10px
                                 span
                                     margin-top: 4px
@@ -261,18 +340,18 @@ $line-color: #c2c2c2 !default
                                     &:first-child
                                         margin-left: 0
                                 .frontend
-                                    background: #9AD0F5
+                                    background: #0097ff
                                 .backend
-                                    background: #FFB1C1
+                                    background: #ff4e73
                                 .db
-                                    background: #A5DFDF
+                                    background: #00bbbb
                                 .serveros
-                                    background: #FFCF9F
+                                    background: #ffa245
                                 .devops
-                                    background: #C3FFAA
+                                    background: #45e900
                                 .app
-                                    background: #FAFFA3
+                                    background: #d3df00
                                 .etc
-                                    background: #D6AAFF
+                                    background: #b464ff
                                     
                                 
