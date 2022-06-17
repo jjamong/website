@@ -3,355 +3,535 @@ $division-color: #c2c2c2 !default
 $line-color: #2c2d3a !default
 
 .portfolio
-    padding: 40px 100px
     font-size: 12px
     font-weight: 400
 
     .title-section
-        margin-bottom: 20px
+        padding: 40px 100px 20px
         font-size: 18px
         font-weight: 600
+        transition: 0.5s
         .nickname
             font-size: 24px
             color: $point-color
+            
+    .portfolio-content-section
+        padding: 0 100px
+        transition: 0.5s
 
-    .division-section
-        padding: 40px 0px
-        overflow: hidden
-        border-bottom: 2px solid $division-color
-        &:last-child
-            border-bottom: 0px
-        
-        .area-section
+        .division-section
+            padding: 40px 0px
+            overflow: hidden
+            border-bottom: 2px solid $division-color
+            transition: 0.5s
+            &:last-child
+                border-bottom: 0px
+            
+            .area-section
+                .title
+                    margin-bottom: 50px
+                    text-align: center
+                    font-size: 22px
+                    line-height: 20px
+                    font-weight: 600
+                
+        .first-section
+            .area-section
+                float: left
+                padding: 0 40px
+                border-left: 2px solid $division-color
+                &:first-child
+                    padding: 0 40px
+                    border-left: 0
+            .profile-section
+                overflow: hidden
+                width: 55%
+
+                .content-section
+                    margin: 0 auto
+                    width: 625px
+                    height: 160px
+                    transition: 0.5s
+
+                    .left-section
+                        float: left
+                        text-align: center
+                        .profile-img
+                            .img
+                                width: 160px
+                                height: 160px
+                                img
+                                    width: 160px
+                                    height: 160px
+                                    border-radius: 50%
+                                    box-shadow: 0 0 5px $division-color
+                    .right-section
+                        float: left
+                        margin-left: 120px
+                        transition: 0.5s
+                        .profile-desc
+                            margin-top: 10px
+                            margin-left: 10px
+                            font-size: 14px
+                            line-height: 26px
+
+                        .profile-privacy
+                            overflow: hidden
+                            margin-top: 20px
+                            margin-left: 10px
+                            >span
+                                float: left
+                                border-left: 1px solid #c2c2c2
+                                display: inline-block
+                                padding: 0 10px
+                                font-size: 12px
+                                font-weight: 400
+
+                                &:first-child
+                                    padding: 0 10px 0 0
+                                    margin-left: 0
+                                    border-left: 0
+            
+            .company-section
+                width: 25%
+                height: 214px
+                transition: 0.5s
+                ul
+                    margin: 0 auto
+                    width: 235px
+                    li
+                        margin-top: 20px
+                        font-size: 14px
+                        .date
+                            display: inline-block
+                            width: 120px
+                            transition: 0.5s
+                        .text
+                            display: inline-block
+                            margin-left: 40px
+                            transition: 0.5s
+
+                        &:first-child
+                            margin-top: 0
+
+            .education-section
+                width: 20%
+                height: 214px
+                text-align: center
+                transition: 0.5s
+                ul
+                    li
+                        margin-top: 25px
+                        font-size: 14px
+                        .date
+                            display: block
+                        .text
+                            display: block
+                            margin-top: 6px
+
+                        &:first-child
+                            margin-top: 0
+                            
+        .second-section
+            .skill-content-section
+                overflow: hidden
+
+                .skill-cate-section
+                    float: left
+                    width: 25%
+                    .skill-cate
+                        li
+                            margin: 0 auto
+                            width: 120px
+                            height: 50px
+                            font-size: 16px
+                            line-height: 50px
+                            &:last-child
+                                border-bottom: 0px
+                            &.active
+                                color: #374afb
+                                font-weight: 600
+                                span
+                                    padding-bottom: 4px
+                                    border-bottom: 2px solid #374afb         
+                .skill-chart-section
+                    float: left
+                    width: 35%
+                    .chart-section
+                        margin: 0 auto
+                        width: 350px
+                        #skillChart
+                .skill-desc-section
+                    float: left
+                    margin-top: 20px
+                    width: 40%
+                    .desc-section
+                        display: none
+                        margin: 0 auto
+                        width: 350px
+                        &.active
+                            display: block
+                        .item
+                            margin-top: 30px
+                            &:first-child
+                                margin-top: 0px
+
+                            .tit
+                                margin-bottom: 10px
+                                font-size: 16px
+                                line-height: 14px
+                                font-weight: 600
+                            li
+                                margin-top: 6px
+                                font-weight: 300
+                                font-size: 14px
+                                line-height: 20px
+                                &:first-child
+                                    margin-top: 0
+    
+        .third-section                   
+            position: relative
+            height: 640px
             .title
-                margin-bottom: 50px
+                margin-bottom: 30px
                 text-align: center
                 font-size: 22px
                 line-height: 20px
                 font-weight: 600
-            
-    .first-section
-        .area-section
-            float: left
-            padding: 0 40px
-            height: 232px
-            border-left: 2px solid $division-color
-            &:first-child
-                padding: 0 80px
-                border-left: 0
-        .profile-section
-            overflow: hidden
-            width: 55%
 
-            .left-section
-                float: left
-                width: 50%
-                text-align: center
-                .profile-img
-                    .img
-                        height: 160px
-                        img
-                            width: 160px
-                            height: 160px
-                            border-radius: 50%
-                            box-shadow: 0 0 5px $division-color
-            .right-section
-                float: left
-                width: 50%
-                .profile-desc
-                    margin-top: 10px
-                    margin-left: 10px
-                    font-size: 14px
-                    line-height: 26px
-
-                .profile-privacy
-                    overflow: hidden
-                    margin-top: 20px
-                    margin-left: 10px
-                    >span
-                        float: left
-                        border-left: 1px solid #c2c2c2
+            .timeline
+                white-space: nowrap
+                overflow-x: hidden
+                width: calc(100% - 60px)
+                margin: 0 auto
+                .arrow
+                    position: absolute
+                    top: 331px
+                    width: 30px
+                    font-size: 20px
+                    line-height: 40px
+                    background: none
+                    color: $line-color
+                    z-index: 10
+                    padding: 0
+                    border: none
+                    &.arrow__prev
+                        left: 0
+                        border-top-left-radius: 20px
+                        border-bottom-left-radius: 20px
+                    &.arrow__next
+                        right: 0
+                        border-top-right-radius: 20px
+                        border-bottom-right-radius: 20px
+                    &.disabled
+                        color: #c2c2c2
+                ol
+                    font-size: 0
+                    padding: 240px 0
+                    transition: all 1s
+                    > li
+                        position: relative
                         display: inline-block
-                        padding: 0 10px
-                        font-size: 12px
-                        font-weight: 400
-
-                        &:first-child
-                            padding: 0 10px 0 0
-                            margin-left: 0
-                            border-left: 0
-        
-        .company-section
-            width: 25%
-            ul
-                li
-                    margin-top: 20px
-                    font-size: 14px
-                    .date
-                        display: inline-block
-                        width: 120px
-                    .text
-                        display: inline-block
-                        margin-left: 40px
-
-                    &:first-child
-                        margin-top: 0
-
-        .education-section
-            width: 20%
-            text-align: center
-            ul
-                li
-                    margin-top: 25px
-                    font-size: 14px
-                    .date
-                        display: block
-                    .text
-                        display: block
-                        margin-top: 6px
-
-                    &:first-child
-                        margin-top: 0
-                        
-    .second-section
-        .skill-content-section
-            overflow: hidden
-
-            .skill-cate-section
-                float: left
-                width: 25%
-                .skill-cate
-                    li
-                        margin: 0 auto
-                        width: 120px
-                        height: 50px
-                        font-size: 16px
-                        line-height: 50px
-                        &:last-child
-                            border-bottom: 0px
-                        &.active
-                            color: #374afb
-                            font-weight: 600
-                            span
-                                padding-bottom: 4px
-                                border-bottom: 2px solid #374afb         
-            .skill-chart-section
-                float: left
-                width: 35%
-                .chart-section
-                    margin: 0 auto
-                    width: 350px
-                    #skillChart
-            .skill-desc-section
-                float: left
-                margin-top: 20px
-                width: 40%
-                .desc-section
-                    display: none
-                    margin: 0 auto
-                    width: 350px
-                    &.active
-                        display: block
-                    .item
-                        margin-top: 30px
-                        &:first-child
-                            margin-top: 0px
-
-                        .tit
-                            margin-bottom: 10px
-                            font-size: 16px
-                            line-height: 14px
-                            font-weight: 600
-                        li
-                            margin-top: 6px
-                            font-weight: 300
-                            font-size: 14px
-                            line-height: 20px
-                            &:first-child
-                                margin-top: 0
-   
-    .third-section                   
-        position: relative
-        height: 640px
-        .title
-            margin-bottom: 30px
-            text-align: center
-            font-size: 22px
-            line-height: 20px
-            font-weight: 600
-
-        .timeline
-            white-space: nowrap
-            overflow-x: hidden
-            width: calc(100% - 60px)
-            margin: 0 auto
-            .arrow
-                position: absolute
-                top: 331px
-                width: 30px
-                font-size: 20px
-                line-height: 40px
-                background: none
-                color: $line-color
-                z-index: 10
-                padding: 0
-                border: none
-                &.arrow__prev
-                    left: 0
-                    border-top-left-radius: 20px
-                    border-bottom-left-radius: 20px
-                &.arrow__next
-                    right: 0
-                    border-top-right-radius: 20px
-                    border-bottom-right-radius: 20px
-                &.disabled
-                    color: #c2c2c2
-            ol
-                font-size: 0
-                padding: 240px 0
-                transition: all 1s
-                > li
-                    position: relative
-                    display: inline-block
-                    width: 240px
-                    height: 1px
-                    background: $line-color
-                    box-shadow: 6px 3px 6px $division-color
-                    &:nth-child(odd) 
+                        width: 240px
+                        height: 1px
+                        background: $line-color
+                        box-shadow: 6px 3px 6px $division-color
+                        &:nth-child(odd) 
+                            .triangle
+                                border-top: 12px solid rgba(194, 194, 194, 0.4)
+                                border-left: 8px solid transparent
+                                border-right: 8px solid transparent
+                                border-bottom: 0
+                                top: calc(100%)
+                                left: 10px
+                                &::before
+                                    left: -6px
+                                    top: -12px
+                                    border-top: 10px solid #fff
+                                    border-left: 6px solid transparent
+                                    border-right: 6px solid transparent
+                            .circle
+                                bottom: -30px
+                            .content-section
+                                transform: translateY(-100%)
+                                top: -25px
+                        &:nth-child(even)
+                            .triangle
+                                width: 0px
+                                height: 0px
+                                border-top: 0
+                                border-bottom: 12px solid rgba(194, 194, 194, 0.4)
+                                border-right: 8px solid transparent
+                                border-left: 8px solid  transparent
+                                bottom: calc(100%)
+                                left: 10px
+                                &::before
+                                    left: -6px
+                                    top: 0
+                                    border-bottom: 10px solid #fff
+                                    border-right: 6px solid transparent
+                                    border-left: 6px solid transparent
+                            .circle
+                                top: -30px
+                            .content-section
+                                transform: translateY(100%)
+                                bottom: -25px
                         .triangle
-                            border-top: 12px solid rgba(194, 194, 194, 0.4)
-                            border-left: 8px solid transparent
-                            border-right: 8px solid transparent
-                            border-bottom: 0
-                            top: calc(100%)
-                            left: 10px
-                            &::before
-                                left: -6px
-                                top: -12px
-                                border-top: 10px solid #fff
-                                border-left: 6px solid transparent
-                                border-right: 6px solid transparent
-                        .circle
-                            bottom: -30px
-                        .content-section
-                            transform: translateY(-100%)
-                            top: -25px
-                    &:nth-child(even)
-                        .triangle
-                            width: 0px
-                            height: 0px
-                            border-top: 0
-                            border-bottom: 12px solid rgba(194, 194, 194, 0.4)
-                            border-right: 8px solid transparent
-                            border-left: 8px solid  transparent
-                            bottom: calc(100%)
-                            left: 10px
-                            &::before
-                                left: -6px
-                                top: 0
-                                border-bottom: 10px solid #fff
-                                border-right: 6px solid transparent
-                                border-left: 6px solid transparent
-                        .circle
-                            top: -30px
-                        .content-section
-                            transform: translateY(100%)
-                            bottom: -25px
-                    .triangle
-                        position: absolute
-                        border-style: inset
-                        &::before
-                            content: ""
-                            width: 0
-                            height: 0
-                            border: solid transparent
                             position: absolute
-                            pointer-events: none
-                    .circle
-                        position: absolute
-                        left: 12.5px
-                        width: 10px
-                        height: 10px
-                        border-radius: 50%
-                        border: 1.5px solid $line-color
-                        background: #fff
-                    .date
-                        position: absolute
-                        top: 12px
-                        height: 16px !important
-                        font-size: 16px
-                        line-height: 16px
-                        font-size: 16px
-                        padding: 0
-                        color: #fff
+                            border-style: inset
+                            &::before
+                                content: ""
+                                width: 0
+                                height: 0
+                                border: solid transparent
+                                position: absolute
+                                pointer-events: none
+                        .circle
+                            position: absolute
+                            left: 12.5px
+                            width: 10px
+                            height: 10px
+                            border-radius: 50%
+                            border: 1.5px solid $line-color
+                            background: #fff
+                        .date
+                            position: absolute
+                            top: 12px
+                            height: 16px !important
+                            font-size: 16px
+                            line-height: 16px
+                            font-size: 16px
+                            padding: 0
+                            color: #fff
 
+                        .content-section
+                            position: absolute
+                            left: 100px
+                            white-space: normal
+                            color: black
+                            box-shadow: 0px 0px 6px $division-color
+                            border-radius: 10px
+                            &.type1
+                                width: 200px !important
+                                height: 80px !important
+                            &.type2
+                                width: 290px !important
+                                height: 135px !important
+                            &.type3
+                                width: 300px !important
+                                height: 160px !important
+                            &.type4
+                                width: 310px !important
+                                height: 200px !important
+                            .period
+                                margin-bottom: 4px
+                                font-size: 12px
+                            .content
+                                padding: 12px
+                                height: 100%
+                                .desc
+                                    .tit
+                                        font-size: 14px
+                                        font-weight: 600
+                                        margin-bottom: 10px
+                                    span
+                                        margin-top: 4px
+                                        display: block
+                                        font-size: 11px
+                                        line-height: 12px
+                                        font-weight: 300
+                                        &:first-child
+                                            margin-top: 0
+                            .skill-section
+                                position: absolute
+                                bottom: 14px
+                                .li
+                                    margin-bottom: 4px
+                                    &:last-child
+                                        margin-bottom: 0
+                                    .skill
+                                        display: inline-block
+                                        margin-left: 2px
+                                        padding: 0 4px
+                                        color: #fff
+                                        border-radius: 8px
+                                        font-size: 12px
+                                        &:first-child
+                                            margin-left: 0
+                                    .frontend
+                                        background: #0097ff
+                                    .backend
+                                        background: #ff4e73
+                                    .db
+                                        background: #00bbbb
+                                    .serveros
+                                        background: #ffa245
+                                    .devops
+                                        background: #45e900
+                                    .app
+                                        background: #d3df00
+                                    .etc
+                                        background: #b464ff
+                                        
+@media screen and (min-width: 1461px) and (max-width: 1680px)
+    .portfolio
+        .portfolio-content-section
+            padding: 0 60px
+            .first-section
+                .profile-section
                     .content-section
-                        position: absolute
-                        left: 100px
-                        white-space: normal
-                        color: black
-                        box-shadow: 0px 0px 6px $division-color
-                        border-radius: 10px
-                        &.type1
-                            width: 200px !important
-                            height: 80px !important
-                        &.type2
-                            width: 290px !important
-                            height: 135px !important
-                        &.type3
-                            width: 300px !important
-                            height: 160px !important
-                        &.type4
-                            width: 310px !important
-                            height: 200px !important
-                        .period
-                            margin-bottom: 4px
-                            font-size: 12px
-                        .content
-                            padding: 12px
-                            height: 100%
-                            .desc
-                                .tit
-                                    font-size: 14px
+                        margin: 0 auto
+                        width: 555px
+                        .right-section
+                            margin-left: 80px
+@media screen and (min-width: 1091px) and (max-width: 1460px)
+    .portfolio
+        .portfolio-content-section
+            padding: 0 20px
+            .first-section
+                .profile-section
+                    .content-section
+                        margin: 0 auto
+                        width: 505px
+                        .right-section
+                            margin-left: 40px
+                .company-section
+                    height: 322px
+                    text-align: center
+                    ul
+                        width: auto
+                        li
+                            transition: 0.5s
+                            .date
+                                display: block
+                                width: auto
+                            .text
+                                display: block
+                                margin-top: 6px
+                                margin-left: 0
+                .education-section
+                    height: 322px
+
+@media screen and (min-width: 0px) and (max-width: 1090px)
+    .portfolio
+        .portfolio-content-section
+            .division-section
+                &:first-child
+                    padding: 40px 0 0
+            .first-section
+                .area-section
+                    padding: 40px 40px
+                    width: 100%
+                    border-left: 0
+                    border-top: 2px solid $division-color
+                    &:first-child
+                        padding: 40px 40px
+                        border-top: 0
+                .company-section
+                    height: auto
+                .education-section
+                    height: auto
+
+            .second-section
+                .skill-content-section
+                    .skill-cate-section
+                        float: none
+                        margin-bottom: 40px
+                        width: 444px
+                        margin: 0 auto
+                        .skill-cate
+                            overflow: hidden
+                            li
+                                float: left
+                                width: 108px
+                                text-align: center
+                                &:last-child
+                                    border-bottom: 0px
+                                &.active
+                                    color: #374afb
                                     font-weight: 600
+                                    span
+                                        padding-bottom: 4px
+                                        border-bottom: 2px solid #374afb         
+                    .skill-chart-section
+                        float: none
+                        margin-bottom: 40px
+                        width: auto
+                        .chart-section
+                            margin: 0 auto
+                            width: 350px
+                            #skillChart
+                    .skill-desc-section
+                        float: none
+                        margin-top: 20px
+                        width: auto
+                        .desc-section
+                            display: none
+                            margin: 0 auto
+                            width: 350px
+                            &.active
+                                display: block
+                            .item
+                                margin-top: 30px
+                                &:first-child
+                                    margin-top: 0px
+
+                                .tit
                                     margin-bottom: 10px
-                                span
-                                    margin-top: 4px
-                                    display: block
-                                    font-size: 11px
-                                    line-height: 12px
+                                    font-size: 16px
+                                    line-height: 14px
+                                    font-weight: 600
+                                li
+                                    margin-top: 6px
                                     font-weight: 300
+                                    font-size: 14px
+                                    line-height: 20px
                                     &:first-child
                                         margin-top: 0
-                        .skill-section
-                            position: absolute
-                            bottom: 14px
-                            .li
-                                margin-bottom: 4px
-                                &:last-child
-                                    margin-bottom: 0
-                                .skill
-                                    display: inline-block
-                                    margin-left: 2px
-                                    padding: 0 4px
-                                    color: #fff
-                                    border-radius: 8px
-                                    font-size: 12px
-                                    &:first-child
-                                        margin-left: 0
-                                .frontend
-                                    background: #0097ff
-                                .backend
-                                    background: #ff4e73
-                                .db
-                                    background: #00bbbb
-                                .serveros
-                                    background: #ffa245
-                                .devops
-                                    background: #45e900
-                                .app
-                                    background: #d3df00
-                                .etc
-                                    background: #b464ff
-                                    
-                                
+            .third-section
+@media screen and (min-width: 0px) and (max-width: 820px)
+    .portfolio
+        .portfolio-content-section
+            padding: 0 40px
+            .first-section
+                .profile-section
+                    .content-section
+                        .right-section
+                            margin-left: 40px
+@media screen and (min-width: 0px) and (max-width: 640px)  
+    .portfolio
+        .title-section
+            padding: 40px 40px 20px
+            .nickname
+                display: block
+
+        .portfolio-content-section
+            padding: 0 20px
+            .first-section
+                .profile-section
+                    width: 100%
+
+                    .content-section
+                        margin: 0 auto
+                        width: 302px
+                        height: auto
+
+                        .left-section
+                            float: none
+                            margin: 0 auto 40px
+                            width: 160px
+
+                        .right-section
+                            float: none
+                            margin-left: 0
+@media screen and (min-width: 0px) and (max-width: 640px)
+    .portfolio
+        .portfolio-content-section
+            .second-section
+                .skill-content-section
+                    .skill-cate-section
+                        width: 300px
+                        .skill-cate
+                            li
+                                width: 100px
+                                font-size: 14px
