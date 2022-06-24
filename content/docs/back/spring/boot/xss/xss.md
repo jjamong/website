@@ -1,7 +1,7 @@
 ---
 weight: 1
 slug: index
-date: 2022-05-03
+date: 2022-06-24
 title: "XSS(Cross Site Scripting)"
 description: "XSS(Cross Site Scripting)"
 toc: true

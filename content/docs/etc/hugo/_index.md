@@ -15,7 +15,7 @@ https://gohugo.io/
 
 ## 서버 실행
 ```
-$ hugo serve -D
+$ hugo server -D
 ```
 
 ## 빌드

@@ -1,0 +1,8 @@
+entries:
+
+- title: Term
+
+  sections:
+
+  - title: XSS(Cross Site Scripting)
+    url: /docs/etc/term/xss/
