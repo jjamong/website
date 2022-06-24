@@ -34,5 +34,9 @@ entries:
       url: /docs/back/spring/boot/batch/batch/
     - title: cron
       url: /docs/back/spring/boot/batch/cron/
+      
+  - title: XSS(크로스 사이트 스크립팅)
+    url: /docs/back/spring/boot/xss/
+      
   - title: swagger(스웨거)
     url: /docs/back/spring/boot/swagger/
