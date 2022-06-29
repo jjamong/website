@@ -5,19 +5,8 @@ entries:
   sections :
   - title : REST API
     url: /docs/back/java/java/restapi/
-
-    
-- title: Spring
-
-  sections :
-  - title : Rest Template
-    url: /docs/back/java/spring/resttemplate/
   
 - title: Spring Boot
-
-  # sections:
-  # - title: mybatis
-  #   url: /docs/etc/etc/mybatis/
 
   sections:
   - title: VSCode & Spring Boot 개발환경
@@ -25,3 +14,9 @@ entries:
 
   - title: Gradle 설정
     url: /docs/back/java/springboot/gradle/
+
+- title: Mybatis(마이바티스)
+
+  sections :
+  - title : Mybatis 시작하기
+    url: /docs/back/java/mybatis/
