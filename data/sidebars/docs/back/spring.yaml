@@ -6,6 +6,8 @@ entries:
   - title: pattern(패턴)
     url: /docs/back/spring/spring/pattern/
 
+  - title: REST API
+    url: /docs/back/spring/spring/restapi/
 
 - title: Spring Boot(부트)
   sections:
@@ -37,6 +39,12 @@ entries:
       
   - title: XSS(크로스 사이트 스크립팅)
     url: /docs/back/spring/boot/xss/
+    
+  - title: log(로그)
+    url: /docs/back/spring/boot/log/
       
   - title: swagger(스웨거)
     url: /docs/back/spring/boot/swagger/
+
+  - title: Gradle
+    url: /docs/back/spring/boot/gradle/
