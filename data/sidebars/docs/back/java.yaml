@@ -3,6 +3,9 @@ entries:
 - title: JAVA
 
   sections :
+  - title : Collection(자료구조)
+    url: /docs/back/java/java/collection/
+
   - title : REST API
     url: /docs/back/java/java/restapi/
   
