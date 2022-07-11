@@ -6,15 +6,12 @@ entries:
   - title : Collection(자료구조)
     url: /docs/back/java/java/collection/
 
+  - title : Thread(스레드)
+    url: /docs/back/java/java/thread/
+
   - title : REST API
     url: /docs/back/java/java/restapi/
   
-- title: Spring Boot
-
-  sections:
-  - title: VSCode & Spring Boot 개발환경
-    url: /docs/back/java/springboot/vsbootsetting/
-
 - title: Mybatis(마이바티스)
 
   sections :

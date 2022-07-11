@@ -27,7 +27,7 @@ entries:
   - title: mybtis(마이바티스)
     url: /docs/back/spring/boot/mybatis/
 
-  - title: cache(캐시)
+  - title: Cache(캐시)
     url: /docs/back/spring/boot/cache/
 
   - title: Spring Batch(배치)
