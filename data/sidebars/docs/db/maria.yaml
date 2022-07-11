@@ -9,3 +9,6 @@ entries:
 
   - title: 쿼리
     url: /docs/db/maria/query/
+
+  - title: Isolation Level(격리 수준)
+    url: /docs/db/maria/isolationlevel/
