@@ -1,0 +1,19 @@
+entries:
+
+- title: Mysql
+
+  sections:
+
+  - title: Mysql
+    url: /docs/db/mysql/start/
+
+  - title: Isolation Level(격리 수준)
+    url: /docs/db/mysql/isolationlevel/
+
+  - title: 쿼리
+    url: /docs/db/mysql/query/
+    
+  - title: Procedure(프로시저)
+    url: /docs/db/mysql/procedure/
+
+    
