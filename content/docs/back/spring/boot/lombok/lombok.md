@@ -46,7 +46,6 @@ public class User {
 }
 ```
 
-
 ### Controller
 
 ```
@@ -84,4 +83,16 @@ public class IndexController {
 
 ```
 {"user":"testId"}
+```
+
+## eclipse(이클립스) 설정
+
+`Lombok 설치` [https://projectlombok.org/download](https://projectlombok.org/download)
+
+### java.lang 오류 발생
+
+eclipse.ini 파일을 열어서 아래 라인을 주석처리 합니다.
+
+```
+#plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin
 ```

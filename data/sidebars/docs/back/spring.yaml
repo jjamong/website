@@ -18,14 +18,20 @@ entries:
   - title: JSP(Java Server Page)
     url: /docs/back/spring/boot/jsp/
 
+  - title: WebMvcConfigurer
+    url: /docs/back/spring/boot/webmvcconfigurer/
+
   - title: Security(시큐리티)
     url: /docs/back/spring/boot/security/
 
-  - title: lombok(롬복)
-    url: /docs/back/spring/boot/lombok/
+  - title: AOP(Aspect Orented Programming)
+    url: /docs/back/spring/boot/aop/
     
   - title: mybtis(마이바티스)
     url: /docs/back/spring/boot/mybatis/
+
+  - title: lombok(롬복)
+    url: /docs/back/spring/boot/lombok/
 
   - title: Cache(캐시)
     url: /docs/back/spring/boot/cache/
