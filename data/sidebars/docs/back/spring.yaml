@@ -19,7 +19,11 @@ entries:
     url: /docs/back/spring/boot/jsp/
 
   - title: WebMvcConfigurer
-    url: /docs/back/spring/boot/webmvcconfigurer/
+    subsections:
+    - title: CORS(Cross-Origin Resource Sharing)
+      url: /docs/back/spring/boot/webmvcconfigurer/cors/
+    - title: XSS(Cross Site Scripting)
+      url: /docs/back/spring/boot/webmvcconfigurer/xss/
 
   - title: Security(시큐리티)
     url: /docs/back/spring/boot/security/
@@ -42,9 +46,6 @@ entries:
       url: /docs/back/spring/boot/batch/batch/
     - title: cron
       url: /docs/back/spring/boot/batch/cron/
-      
-  - title: XSS(크로스 사이트 스크립팅)
-    url: /docs/back/spring/boot/xss/
     
   - title: log(로그)
     url: /docs/back/spring/boot/log/

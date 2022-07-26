@@ -2,20 +2,15 @@
 weight: 1
 slug: index
 date: 2022-07-13
-title: "WebMvcConfigurer"
-description: "WebMvcConfigurer"
+title: "CORS(Cross-Origin Resource Sharing)"
+description: "CORS(Cross-Origin Resource Sharing)"
 toc: true
 ---
 
-
-
-### CORS(Cross-Origin Resource Sharing)
-
-
-#### CORS 오류 발생
+## CORS 오류 발생
 
 ```
-// src/main/java/com/jjamong/web/controller/IndexController.java
+// src/main/java/com/jjamong/cors/controller/IndexController.java
 
 @RequestMapping(value = "/", method = RequestMethod.GET)
 public ResponseEntity index() {
@@ -44,13 +39,13 @@ public ResponseEntity index() {
 
 index.html 파일을 열고 network를 확인해 보면 아래와 같이 CORS 오류가 발생합니다.
 
-![01](/docs/back/spring/boot/webmvcconfigurer/01.png)
+![01](/docs/back/spring/boot/webmvcconfigurer/cors/01.png)
 
 
-#### CORS 허용 설정
+## CORS 허용 설정
 
 ````
-package com.jjamong.web.config;
+package com.jjamong.cors.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -73,4 +68,4 @@ public class MvcConfig implements WebMvcConfigurer {
 모든 요청에 대해서 허용하는 설정을 하고 index.html파일을 새로고침하면<br>
 아래와 같이 CORS 오류가 해결된 것을 확인할 수 있습니다.
 
-![02](/docs/back/spring/boot/webmvcconfigurer/02.png)
+![02](/docs/back/spring/boot/webmvcconfigurer/cors/02.png)
