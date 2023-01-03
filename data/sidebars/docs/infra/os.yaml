@@ -1,11 +1,19 @@
 entries:
 
-- title: OS
-
+- title: Windows(윈도우)
   sections:
-  
+    
+  - title: Windows
+    url: /docs/infra/os/windows/windows/
+    
+  - title: Batch Script(배치 스크립트)
+    url: /docs/infra/os/windows/batchscript/
+    
+- title: Linux(리눅스)
+  sections:
+
   # - title: Linux
   #   url: /docs/infra/os/linux/
-    
-  - title: Window
-    url: /docs/infra/os/window/
+
+  # - title: Shell Script(쉘 스크립트)
+  #   url: /docs/infra/os/windows/shellscript/
