@@ -7,6 +7,7 @@ description: "Batch Script(배치 스크립트) 가이드"
 toc: true
 ---
 
+
 Windows 운영체제는 CMD(명령프롬프트)를 통해 프로그램을 할 수 있습니다.<br>
 파일을 생성, 삭제, 읽기, 변경 등이 가능하고 tellnet, ipconfig 등 여러 명렁어를 다룰 수 있습니다.
 
@@ -89,7 +90,7 @@ echo "end"
 ## 기본 명령어
 
 
-### echo
+### echo (출력)
 
 일반적으로 배치 파일 첫줄에 `@echo off`를 설정합니다.<br>
 기본값은 on으로 되어 있음며 배치파일 실행 시 명령줄이 화면에 출력되지 않게 합니다.
@@ -111,4 +112,50 @@ test
 test2
 
 c:\workspace>
+```
+
+### set 변수
+
+매개변수는 `%1`, `%2` 등으로 받을 수 있습니다.<br>
+변수는 `set 변수명=값` 이와 같이 설정 할 수 있고, `%변수명%` 이와 같이 사용 할 수 있습니다.
+
+```
+// test.bat
+
+@echo off
+set var1=%1
+set var2=test
+
+echo %var1%
+echo %var2%
+
+// 결과
+C:\workspace>test.bat var1
+var1
+test
+```
+
+### if 문
+
+```
+// 파일 존재 여부
+if exist C:\workspace\test.bat (
+    echo "file exist"
+)
+
+// 파일 미존재 여부
+if not exist C:\workspace\test.bat (
+    echo "file not exist"
+)
+```
+
+
+### ren (파일명 변경)
+
+`ren 기존파일명 변경할파일명`
+
+```
+// 
+
+ren C:\workspace\test.bat C:\workspace\test2.bat
 ```

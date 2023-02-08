@@ -17,3 +17,9 @@ entries:
   sections :
   - title : Mybatis 시작하기
     url: /docs/back/java/mybatis/
+
+- title: Build(빌드)
+
+  sections :
+  - title : tomcat7-maven-plugin
+    url: /docs/back/java/build/tomcat7/
