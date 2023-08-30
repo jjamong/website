@@ -17,3 +17,25 @@ toc: true
 ```
 SELECT TOP 10 * FROM table
 ```
+
+### JOIN
+
+```
+// ANSI
+SELECT Test1.*, Test2.name
+FROM Test1 LEFT OUTER JOIN Test2
+ON Test1.num = Test2.num
+
+SELECT Test1.*, Test2.name
+FROM Test1 RIGHT OUTER JOIN Test2
+ON Test1.num = Test2.num
+
+// MSSQL
+SELECT Test1.*, Test2.name
+FROM Test1 , Test2
+WHERE Test1.num *= Test2.num
+
+SELECT Test1.*, Test2.name
+FROM Test1 , Test2
+WHERE Test1.num =* Test2.num
+```
