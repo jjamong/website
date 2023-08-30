@@ -108,23 +108,26 @@ $line-color: #2c2d3a !default
                 width: 25%
                 height: 214px
                 transition: 0.5s
-                ul
-                    margin: 0 auto
-                    width: 235px
-                    li
-                        margin-top: 14px
-                        font-size: 12px
-                        .date
-                            display: inline-block
-                            width: 120px
-                            transition: 0.5s
-                        .text
-                            display: inline-block
-                            margin-left: 40px
-                            transition: 0.5s
+                .content
+                    height: 160px
+                    overflow-y: scroll
+                    ul
+                        margin: 0 auto
+                        width: 235px
+                        li
+                            margin-top: 14px
+                            font-size: 12px
+                            .date
+                                display: inline-block
+                                width: 120px
+                                transition: 0.5s
+                            .text
+                                display: inline-block
+                                margin-left: 30px
+                                transition: 0.5s
 
-                        &:first-child
-                            margin-top: 0
+                            &:first-child
+                                margin-top: 0
 
             .education-section
                 width: 20%
