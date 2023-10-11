@@ -5,6 +5,9 @@ entries:
   sections :
   - title : Collection(자료구조)
     url: /docs/back/java/java/collection/
+    
+  - title : Generic(제네릭)
+    url: /docs/back/java/java/generic/
 
   - title : Thread(스레드)
     url: /docs/back/java/java/thread/
