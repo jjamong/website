@@ -14,12 +14,6 @@ entries:
 
   - title : REST API
     url: /docs/back/java/java/restapi/
-  
-- title: Mybatis(마이바티스)
-
-  sections :
-  - title : Mybatis 시작하기
-    url: /docs/back/java/mybatis/
 
 - title: Build(빌드)
 

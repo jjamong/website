@@ -55,3 +55,12 @@ entries:
 
   - title: Gradle
     url: /docs/back/spring/boot/gradle/
+
+- title: ORM(Object Relational Mapping)
+  sections:
+  
+  - title: mybtis(마이바티스)
+    url: /docs/back/spring/orm/mybatis/
+
+  - title: JPA(Java Persistence API)
+    url: /docs/back/spring/orm/jpa/
