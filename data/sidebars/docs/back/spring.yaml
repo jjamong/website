@@ -30,9 +30,6 @@ entries:
 
   - title: AOP(Aspect Orented Programming)
     url: /docs/back/spring/boot/aop/
-    
-  - title: mybtis(마이바티스)
-    url: /docs/back/spring/boot/mybatis/
 
   - title: lombok(롬복)
     url: /docs/back/spring/boot/lombok/
@@ -49,6 +46,9 @@ entries:
     
   - title: log(로그)
     url: /docs/back/spring/boot/log/
+
+  - title: Exception(익셉션)
+    url: /docs/back/spring/boot/exception/
       
   - title: swagger(스웨거)
     url: /docs/back/spring/boot/swagger/

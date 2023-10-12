@@ -1,7 +1,7 @@
 ---
 weight: 1
 slug: index
-date: 2022-04-21
+date: 2023-10-12
 title: "JPA(Java Persistence API)"
 description: "JPA(Java Persistence API) 가이드"
 toc: true
