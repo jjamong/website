@@ -108,7 +108,7 @@ public class IndexController {
     private IndexService indexService;
 
     @GetMapping("/")
-    public ResponseEntity AllUsers() {
+    public ResponseEntity index() {
 
         List<HashMap<String, Object>> list = indexService.gets();
 
