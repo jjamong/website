@@ -15,7 +15,88 @@ toc: true
 implementation 'org.springframework.boot:spring-boot-starter-security'
 ```
 
-### Security Config 설정
+### WebMvcConfigurer
+
+#### WebSecurityConfig
+```
+package com.huray.hormone.common.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig implements WebMvcConfigurer {
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.cors().and().csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/api/user/login").permitAll()
+                .antMatchers("/api/user/login2").denyAll();
+
+        return http.build();
+    }
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowedHeaders("*")
+                .allowedMethods("GET", "POST", "PUT")
+                .maxAge(3000);
+    }
+}
+```
+
+#### controller
+```
+package com.huray.hormone.user.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.huray.hormone.common.response.ResponseCommon;
+
+import com.huray.hormone.user.request.RequestUser;
+
+@RestController
+@RequestMapping(value = "/api/user")
+public class UserController {
+
+        @RequestMapping(value = "/login", method = { RequestMethod.POST })
+        public ResponseEntity<ResponseCommon<Object>> login(@RequestBody RequestUser user) {
+
+                return new ResponseEntity(null, HttpStatus.OK);
+        }
+
+        @RequestMapping(value = "/login2", method = { RequestMethod.POST })
+        public ResponseEntity<ResponseCommon<Object>> login2(@RequestBody RequestUser user) {
+
+                return new ResponseEntity(null, HttpStatus.OK);
+        }
+
+}
+```
+
+### WebSecurityConfigurerAdapter
+
+#### WebSecurityConfig
 
 ```
 // src/main/java/com/jjamong/secrity/config/WebSecurityConfig.java
@@ -32,15 +113,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-
-
-
-
-
-
-
-
-## 시작하기
+#### controller
 
 ```
 @RestController
@@ -67,7 +140,7 @@ API 호출 시 결과
 ![success200](/docs/back/spring/boot/security/success200.png)
 /docs/back/spring/boot/security/
 
-### greadle 추가
+#### greadle 추가
 
 ```
 dependencies {
@@ -81,7 +154,7 @@ security를 설치하고 톰캣 실행 후에 api를 재 호출하면 아래와 
 
 ![fail403](/docs/back/spring/boot/security/fail403.png)
 
-### security 추가
+#### security 추가
 
 ```
 // com/jjamong/backend/spring/security/WebSecurityConfig.java
