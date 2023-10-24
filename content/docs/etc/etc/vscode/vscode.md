@@ -44,6 +44,11 @@ terminal.integrated.shell.windows
 
 ![korea](/docs/etc/etc/vscode/korea.png)
 
+
+### 아이콘 디자인
+
+`Material Theme Icons`를 검색하여 설치하고 재실행 하면 됩니다.
+
 ### JAVA
 
 `Java Extension Pack`를 검색하고 설치합니다.
