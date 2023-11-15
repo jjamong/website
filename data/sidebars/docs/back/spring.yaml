@@ -25,9 +25,6 @@ entries:
     - title: XSS(Cross Site Scripting)
       url: /docs/back/spring/boot/webmvcconfigurer/xss/
 
-  - title: Security(시큐리티)
-    url: /docs/back/spring/boot/security/
-
   - title: AOP(Aspect Orented Programming)
     url: /docs/back/spring/boot/aop/
 
@@ -55,6 +52,17 @@ entries:
 
   - title: Gradle
     url: /docs/back/spring/boot/gradle/
+
+# Security
+- title: Security
+  sections:
+  
+  - title: Security(시큐리티)
+    url: /docs/back/spring/security/security/
+
+  - title: 로그인
+    url: /docs/back/spring/security/login/
+  
 
 - title: ORM(Object Relational Mapping)
   sections:

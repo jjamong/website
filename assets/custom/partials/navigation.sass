@@ -208,8 +208,11 @@
       //padding: 4.5px 10px
       padding: 8px 0 8px 10px
       //background-color: $sidebar-bg-color
+      
     > a
       color: #464646
+      display: flex
+      align-items: center
       > span
         float: right
         display: inline-block
@@ -221,6 +224,21 @@
         height: 7px
         // background: url('/images/arrow_up_down.png') no-repeat
         background-size: cover
+      strong
+        display: block
+        padding-top: 1px
+      &.JWT
+        i
+          width: 25px
+          height: 24px
+          background: url(images/icon_jwt_on.png) no-repeat center center/25px 25px
+          margin-right: 8px
+      &.Redis
+        i
+          width: 25px
+          height: 24px
+          background: url(images/icon_redis_on.png) no-repeat center center/25px 25px
+          margin-right: 8px
     &.open > a > span
       background-position-y: -8px
     &.active
