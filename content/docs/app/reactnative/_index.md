@@ -6,5 +6,5 @@ weight: 1
 ---
 
 <script>
-    location.href = "start"
+    location.href = "project"
 </script>
