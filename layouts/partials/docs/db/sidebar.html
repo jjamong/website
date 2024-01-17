@@ -34,7 +34,7 @@
               {{ if .url }}
               <a href="{{ .url }}"><strong>{{ .title }}</strong></a>
               {{ else }}
-              <a href="#"><strong>{{ .title }}</strong></a>
+              <a href="#" class="{{ .title }}"><i></i><strong>{{ .title }}</strong></a>
               <ul>
                 {{ range .sections }}
                   {{ if .url }}
