@@ -1,0 +1,23 @@
+entries:
+
+- title: LLM
+
+  sections:
+  - title: LLM(Large Language Model)
+    url: /docs/ai/llm/model/
+
+  - title: prompt(프롬프트)
+    url: /docs/ai/llm/prompt/
+
+  - title: embedding(임베딩)
+    url: /docs/ai/llm/embedding/
+
+  - title: vectordb(벡터 DB)
+    url: /docs/ai/llm/vectordb/
+
+
+- title: RAG
+
+  sections:
+  - title: RAG(Retrieva Augmented Generation)
+    url: /docs/ai/llm/rag/

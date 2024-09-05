@@ -28,6 +28,10 @@
         {{ else if eq $menuDepth "app" }}
           {{ partial "docs/app/sidebar.html" . }}
 
+        <!-- AI -->
+        {{ else if eq $menuDepth "ai" }}
+          {{ partial "docs/ai/sidebar.html" . }}
+
         <!-- Infra -->
         {{ else if eq $menuDepth "infra" }}
           {{ partial "docs/infra/sidebar.html" . }}

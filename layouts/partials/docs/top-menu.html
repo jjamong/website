@@ -57,6 +57,19 @@
         </div>
       </li>
 
+      <!-- AI -->
+      <li class="tabs-li">
+        {{ $ai := .Site.GetPage "/docs/ai" }}
+        <a class="tabs-a">{{ $ai.Params.title }}</a>
+        <div class="sub-menu">
+          <ul>
+            {{ range $ai.Sections }}
+            <li class="{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </li>
+
       <!-- Infra -->
       <li class="tabs-li">
         {{ $infra := .Site.GetPage "/docs/infra" }}
