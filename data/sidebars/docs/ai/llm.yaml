@@ -6,6 +6,13 @@ entries:
   - title: LLM(Large Language Model)
     url: /docs/ai/llm/model/
 
+  - title: Loader(로더)
+    subsections:
+    - title: Loader(로더)
+      url: /docs/ai/llm/loader/loader/
+    - title: OCR
+      url: /docs/ai/llm/loader/ocr/
+
   - title: prompt(프롬프트)
     url: /docs/ai/llm/prompt/
 
