@@ -6,5 +6,5 @@ weight: 1
 ---
 
 <script>
-    location.href = "model"
+    location.href = "llm"
 </script>

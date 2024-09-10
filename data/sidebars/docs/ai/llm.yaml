@@ -4,7 +4,7 @@ entries:
 
   sections:
   - title: LLM(Large Language Model)
-    url: /docs/ai/llm/model/
+    url: /docs/ai/llm/llm/
 
   - title: Loader(로더)
     subsections:
