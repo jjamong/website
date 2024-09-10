@@ -8,13 +8,10 @@
     {{ partial "docs/top-menu.html" . }}
     <div class="container main">
       <div class="content-main content-list">
-        {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
-
         
-        
-        {{ if gt $paginator.TotalPages 0 }}
+        <!-- site.RegularPages 직접 출력 -->
         <ul class="ul">
-          {{- range $paginator.Pages -}}
+          {{- range site.RegularPages -}}
           <li>
             <span class="list-date">{{- .Date.Format "2006-01-02" -}}</span>
             <div class="list-title"><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></div>
@@ -28,7 +25,7 @@
           </li>
           {{- end -}}
         </ul>
-        {{ end }}
+
     </div>
 
     {{ partial "scripts-footer.html" . }}
