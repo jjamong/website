@@ -31,3 +31,6 @@ entries:
   sections:
   - title: RAG(Retrieva Augmented Generation)
     url: /docs/ai/llm/rag/
+
+  - title: 챗봇샘플
+    url: /docs/ai/llm/rag/sample/

@@ -13,6 +13,7 @@ toc: true
 
 LLM은 머신 러닝, 특히 트랜스포머 모델이라고 하는 일종의 신경망을 기반으로 합니다.
 
+참고 https://wikidocs.net/book/14314
 
 
 ### LLM 모델 경험
