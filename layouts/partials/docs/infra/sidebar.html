@@ -4,7 +4,7 @@
 {{ $menuTitle := delimit (slice "/docs/" ($menuDepth)) "" }}
 {{ $docs := .Site.GetPage (string $menuTitle) }}
 {{ $menuSections := (where $docs.Sections ".Params.section_main" true) }}
-{{ $.Scratch.Set "sectionName" "aws" }}
+{{ $.Scratch.Set "sectionName" "deploy" }}
 {{ range $menuSections }}
   {{ $isDescendant := $p.IsDescendant . }}
   {{ if $isDescendant }}

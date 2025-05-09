@@ -1,0 +1,30 @@
+entries:
+
+- title: Azure
+  sections:
+  - title: Azure 이해하기
+    url: /docs/cloud/ms/azure/start/
+
+  # - title: Microsoft Entra ID
+  #   url: /docs/cloud/ms/azure/entraId
+
+  # - title: App Services
+  #   url: /docs/cloud/ms/azure/appServices
+
+  # - title: Azure Database for MySQL
+  #   url: /docs/cloud/ms/azure/database
+    
+  # - title: storage
+  #   url: /docs/cloud/ms/azure/storage
+    
+  # - title: Azure OpenAI
+  #   url: /docs/cloud/ms/azure/openAI
+    
+  # - title: Azure OpenAI
+  #   url: /docs/cloud/ms/azure/openAI
+    
+  # - title: Search Service
+  #   url: /docs/cloud/ms/azure/aiSearchService
+
+  # - title: Azure AI Project & Azure AI hub
+  #   url: /docs/cloud/ms/azure/aiProject
