@@ -1,4 +1,8 @@
 {
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo"
+  }
 }
