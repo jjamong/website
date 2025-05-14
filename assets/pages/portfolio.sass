@@ -149,15 +149,16 @@ $line-color: #2c2d3a !default
                             
         .second-section
             .skill-content-section
-                overflow: hidden
+                display: flex
+                align-items: center
+                justify-content: space-between
 
                 .skill-cate-section
-                    float: left
-                    width: 10%
+                    padding-left: 20px
                     .skill-cate
                         li
                             margin: 0 auto
-                            width: 120px
+                            width: 150px
                             height: 50px
                             font-size: 16px
                             line-height: 50px
@@ -170,20 +171,15 @@ $line-color: #2c2d3a !default
                                     padding-bottom: 4px
                                     border-bottom: 2px solid #374afb         
                 .skill-chart-section
-                    float: left
-                    width: 30%
                     .chart-section
                         margin: 0 auto
                         width: 350px
                         #skillChart
                 .skill-desc-section
-                    float: left
-                    margin-top: 20px
-                    width: 30%
                     .desc-section
                         display: none
                         margin: 0 auto
-                        width: 350px
+                        width: 400px
                         &.active
                             display: block
                         .item
@@ -205,8 +201,7 @@ $line-color: #2c2d3a !default
                                     margin-top: 0
 
                 .skill-cate-chart-section
-                    float: left
-                    width: 30%
+                    padding-left: 40px
                     border-left: 2px solid $division-color
                     .chart-section
                         margin: 0 auto
@@ -345,6 +340,9 @@ $line-color: #2c2d3a !default
                             &.type4
                                 width: 310px !important
                                 height: 200px !important
+                            &.type5
+                                width: 360px !important
+                                height: 220px !important
                             .period
                                 margin-bottom: 4px
                                 font-size: 12px
