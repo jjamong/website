@@ -208,7 +208,6 @@ $line-color: #2c2d3a !default
                         width: 350px
         .third-section                   
             position: relative
-            height: 640px
             .title
                 margin-bottom: 30px
                 text-align: center
@@ -244,7 +243,7 @@ $line-color: #2c2d3a !default
                         color: #c2c2c2
                 ol
                     font-size: 0
-                    padding: 240px 0
+                    padding: 280px 0
                     transition: all 1s
                     > li
                         position: relative
@@ -328,27 +327,18 @@ $line-color: #2c2d3a !default
                             color: black
                             box-shadow: 0px 0px 6px $division-color
                             border-radius: 10px
+                            &.type
+                                width: 120% !important
+                                height: auto !important
                             &.type1
-                                width: 200px !important
-                                height: 80px !important
+                                width: 140% !important
                             &.type2
-                                width: 290px !important
-                                height: 135px !important
-                            &.type3
-                                width: 300px !important
-                                height: 160px !important
-                            &.type4
-                                width: 310px !important
-                                height: 200px !important
-                            &.type5
-                                width: 360px !important
-                                height: 220px !important
+                                width: 160% !important
                             .period
                                 margin-bottom: 4px
                                 font-size: 12px
                             .content
                                 padding: 12px
-                                height: 100%
                                 .desc
                                     .tit
                                         font-size: 14px
@@ -363,35 +353,32 @@ $line-color: #2c2d3a !default
                                         &:first-child
                                             margin-top: 0
                             .skill-section
-                                position: absolute
-                                bottom: 14px
-                                .li
-                                    margin-bottom: 4px
-                                    &:last-child
-                                        margin-bottom: 0
-                                    .skill
-                                        display: inline-block
-                                        margin-left: 2px
-                                        padding: 0 4px
-                                        color: #fff
-                                        border-radius: 8px
-                                        font-size: 12px
-                                        &:first-child
-                                            margin-left: 0
-                                    .frontend
-                                        background: #0097ff
-                                    .backend
-                                        background: #ff4e73
-                                    .db
-                                        background: #00bbbb
-                                    .serveros
-                                        background: #ffa245
-                                    .devops
-                                        background: #45e900
-                                    .app
-                                        background: #d3df00
-                                    .etc
-                                        background: #b464ff
+                                padding-top: 16px
+                                display: flex
+                                flex-wrap: wrap
+                                gap: 4px 2px
+                                .skill
+                                    display: inline-block
+                                    padding: 0 4px
+                                    color: #fff
+                                    border-radius: 8px
+                                    font-size: 12px
+                                    &:first-child
+                                        margin-left: 0
+                                .frontend
+                                    background: #0097ff
+                                .backend
+                                    background: #ff4e73
+                                .db
+                                    background: #00bbbb
+                                .devops
+                                    background: #ffa245
+                                .serveros
+                                    background: #45e900
+                                .app
+                                    background: #d3df00
+                                .etc
+                                    background: #b464ff
                                         
 @media screen and (min-width: 1461px) and (max-width: 1680px)
     .portfolio
