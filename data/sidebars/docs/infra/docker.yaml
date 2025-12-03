@@ -1,8 +1,11 @@
 entries:
 
-- title: 도커(docker)
+- title: docker(도커)
 
   sections:
 
-  - title: 시작하기
+  - title: docker 시작하기
     url: /docs/infra/docker/start
+
+  - title: swarm(스웜)
+    url: /docs/infra/docker/swarm
