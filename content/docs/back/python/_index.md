@@ -1,8 +1,8 @@
 ---
 title: Python
 section_main: true
-date: 2024-08-20
-weight: 2
+date: 2025-12-02
+weight: 4
 ---
 
 <script>

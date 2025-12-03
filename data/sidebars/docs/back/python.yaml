@@ -1,0 +1,17 @@
+entries:
+
+- title: Python
+
+  # sections :
+  # - title : 
+  #   url: /docs/back/java/java/collection/
+
+
+- title: 문서(Document)
+
+  sections :
+  - title : PDF
+    url: /docs/back/python/document/pdf/
+
+  - title : PDF TO Text
+    url: /docs/back/python/document/pdftotxt/
