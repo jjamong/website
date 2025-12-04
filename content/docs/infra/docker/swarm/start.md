@@ -72,6 +72,23 @@ docker swarm leave --force
 docker swarm ls
 ```
 
+### 네트워크 생성
+```
+$ docker network create -d overlay net-spring
+$ docker network create -d overlay net-db
+```
+
+### 네트워크 확인
+```
+docker network ls
+docker network inspect net-db
+```
+
+### 네트워크 삭제
+```
+$ docker network rm net-db
+```
+
 ### 스웜 노드 확인
 ```
 $ docker node ls
@@ -120,7 +137,7 @@ volumes:
 ```
 
 ```
-docker stack deploy -c docker-stack.yml dockerStack
+docker stack deploy -c docker-compose-swarm.yml dockerStack
 ```
 
 ### 스택 확인
